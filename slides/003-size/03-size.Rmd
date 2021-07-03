@@ -195,110 +195,282 @@ name: data
 ---
 
 name: history
-#A Brief History Lesson
+
+# Technological shifts
 
 .hi-slate[Claim:] Over the last few hundred years the world _has become_ .hi-pink[flat]
+
 --
-.col-left[
- - .hi[1840s] + : .hi.orange[Rail transit] takes over
+
+ - .hi-orange[1840s:] .hi-pink[Rail freight] becomes ubiquitous
+ 
+  - Transportation costs $\downarrow$
+
+.center[
+![:scale 65%](figures/cronon.png)
 ]
-![](figures/cronon.png)
 
-Source: [Cronon's _Natures Metropolis:  Chicago and the Great West_](https://www.amazon.com/Natures-Metropolis-Chicago-Great-West/dp/0393308731)
+--
 
----
-
-#A Brief History Lesson
-
-
-##Claim
-
-Over the last few hundred years the world _has become_ .hi.purple[flat]
-
-.pull-left[
- - .ex[1840s >: Rail transit takes over]
-
--  .hi[1840s]: .hi.orange[telegraph] .hi[1870's]: .hi.orange[telephone]. Informational distance $\rightarrow$ 0
-
+.footnote[Source: [Cronon's _Natures Metropolis:  Chicago and the Great West_](https://www.amazon.com/Natures-Metropolis-Chicago-Great-West/dp/0393308731)
 ]
 
 ---
+class: hide-count
 
+# Technological shifts
 
+.hi-slate[Claim:] Over the last few hundred years the world _has become_ .hi-pink[flat]
 
+.smallerer[.pull-left[
+.ex[- 1840s: Rail becomes ubiquitous
 
-#A Brief History Lesson
+  - Transportation costs $\downarrow$]
+  
+-  .hi-orange[1840s:] .hi-pink[Telegraph] is invented
 
+  - Informational distance $\downarrow$
 
-##Claim
+]]
 
-Over the last few hundred years the world _has become_ .hi.purple[flat]
+---
+class: hide-count
 
+# Technological shifts
+
+.hi-slate[Claim:] Over the last few hundred years the world _has become_ .hi-pink[flat]
+
+.smallerer[
 .pull-left[
- - .ex[1840s >: Rail transit takes over]
+.ex[- 1840s: Rail becomes ubiquitous
 
--  .ex[1840s: telegraph 1870s: telephone. Informational distance] $\rightarrow$ .ex[0]
+  - Transportation costs $\downarrow$]
+  
+.ex[- 1840s: Telegraph is invented
 
-- .hi[1914]: First commercial .hi.orange[airline flight]. Physical distance shrinks again
+  - Informational distance $\downarrow$]
 
+- .hi-orange[1870's:] .hi-pink[Telephone] is invented
+
+  - Informational distance $\downarrow$
+]
 ]
 
 ---
+class: hide-count
 
-#A Brief History Lesson
+# Technological shifts
 
+.hi-slate[Claim:] Over the last few hundred years the world _has become_ .hi-pink[flat]
 
-##Claim
+.smallerer[.pull-left[
+.ex[- 1840s: Rail becomes ubiquitous
 
-Over the last few hundred years the world _has become_ .hi.purple[flat]
+  - Transportation costs $\downarrow$]
 
-.pull-left[
-- .ex[1840s >: Rail transit takes over]
+.ex[- 1840s: Telegraph is invented
 
--  .ex[1840s: telegraph 1870s: telephone. Informational distance] $\rightarrow$ .ex[0]
+  - Informational distance $\downarrow$]
 
-- .ex[1914: First commercial airline flight. Physical distance shrinks again]
+.ex[- 1870's: Telephone is invented
 
+  - Informational distance $\downarrow$]
+
+- .hi-orange[1908:] .hi-pink[Model T] production starts
+
+  - Transportation costs $\downarrow$
+]]
+
+---
+class: hide-count
+
+# Technological shifts
+
+.hi-slate[Claim:] Over the last few hundred years the world _has become_ .hi-pink[flat]
+
+.smallerer[.pull-left[
+.ex[- 1840s: Rail becomes ubiquitous
+
+  - Transportation costs $\downarrow$]
+
+.ex[- 1840s: Telegraph is invented
+
+  - Informational distance $\downarrow$]
+
+.ex[- 1870's: Telephone is invented
+
+  - Informational distance $\downarrow$]
+  
+.ex[- 1908: Model T production starts
+
+  - Transportation costs $\downarrow$]
+
+- .hi-orange[1914:] First commercial .hi-pink[airline flight]
+
+  - Transportation costs $\downarrow$
+  
+]]
+
+---
+class: hide-count
+
+# Technological shifts
+
+.hi-slate[Claim:] Over the last few hundred years the world _has become_ .hi-pink[flat]
+
+.smallerer[.pull-left[
+.ex[- 1840s: Rail becomes ubiquitous
+
+  - Transportation costs $\downarrow$]
+
+.ex[- 1840s: Telegraph is invented
+
+  - Informational distance $\downarrow$]
+
+.ex[- 1870's: Telephone is invented
+
+  - Informational distance $\downarrow$]
+  
+.ex[- 1908: Model T production starts
+
+  - Transportation costs $\downarrow$]
+
+.ex[- 1914: First commercial airline flight
+
+  - Transportation costs $\downarrow$]
+  
 ]
+.pull-right[
+- .hi-orange[1980s:] Airline [deregulation](https://en.wikipedia.org/wiki/Alfred_E._Kahn)
+
+  - Transportation costs $\downarrow$
+
+]]
+
+---
+class: hide-count
+
+# Technological shifts
+
+.hi-slate[Claim:] Over the last few hundred years the world _has become_ .hi-pink[flat]
+
+.smallerer[.pull-left[
+.ex[- 1840s: Rail becomes ubiquitous
+
+  - Transportation costs $\downarrow$]
+
+.ex[- 1840s: Telegraph is invented
+
+  - Informational distance $\downarrow$]
+
+.ex[- 1870's: Telephone is invented
+
+  - Informational distance $\downarrow$]
+  
+.ex[- 1908: Model T production starts
+
+  - Transportation costs $\downarrow$]
+
+- .ex[1914: First commercial airline flight
+
+  - Transportation costs $\downarrow$]
+  
+]
+.pull-right[
+.ex[- 1980s: Airline deregulation
+
+  - Transportation costs $\downarrow$]
+  
+- .hi-orange[1990's:] The internet
+
+  - Information costs $\downarrow$
+
+]]
+
+---
+class: hide-count
+
+# Technological shifts
+
+.hi-slate[Claim:] Over the last few hundred years the world _has become_ .hi-pink[flat]
+
+.smallerer[.pull-left[
+.ex[- 1840s: Rail becomes ubiquitous
+
+  - Transportation costs $\downarrow$]
+
+.ex[- 1840s: Telegraph is invented
+
+  - Informational distance $\downarrow$]
+
+.ex[- 1870's: Telephone is invented
+
+  - Informational distance $\downarrow$]
+  
+.ex[- 1908: Model T production starts
+
+  - Transportation costs $\downarrow$]
+
+- .ex[1914: First commercial airline flight
+
+  - Transportation costs $\downarrow$]]
 
 .pull-right[
-- .hi[1980s] (US): Deregulation of airlines. Competition increases. .hi.orange[Prices plummet]
+.ex[- 1980s: Airline deregulation
 
-  - [This guy](https://en.wikipedia.org/wiki/Alfred_E._Kahn) celebrates crowded flights
+  - Transportation costs $\downarrow$]
   
-.center[
-![:scale 50%](./figures/kahn.jpg)
-]
-]
+.ex[- 1990's: The internet
 
+  - Information costs $\downarrow$]
+  
+- .hi-orange[2020s:] Post COVID
+  
+  - Transportation costs $\downarrow$
+  
+  - Information costs $\downarrow$
+
+]]
 
 ---
 
 name: paradox
-#A Paradox
+# Paradox: Why do cities exist?
 
-
-.qa[Q]: What is the .hi.orange[paradox] between the things I have just discussed?
+Considering the urban population trends and technological shifts, .hi-slate[there seems to be a paradox]
 
 --
 
-.qa[A]:  _Despite_ the world "becoming .hi[smaller]" the urban population has rapidly .hi[increased]
+.qa[Q]: If the world is getting "smaller", why are urban populations booming?
+
+--
+
+This paradox .hi.purple[motivates] the question: 
+
+--
+
+.center[.hi-slate[Why do cities exist in the first place?]]
+
+--
+
+
+Furthermore:
+
+--
+
+.center[
+  .hi-pink[Why have some cities succeeded?]
+  ]
   
-  - Would you expect the opposite? Why?
-
 --
 
-This is .hi.purple[motivation] to ponder the question: why do cities .hi.purple[exist]?
-
---
-
-- __Fundamentals__ of this question can also inform why:
-
-  - Some cities have .hi.purple[succeeded]
-
-  - and other have .hi.purple[declined]
+.center[
+  .hi-purple[Why have some cities failed?]
+  ]
   
 --
+
+Let's use insights from economic models to answer these questions from an economic perspective
 
 ---
 
@@ -331,46 +503,64 @@ class: inverse, middle
 
 ---
 
+# Paradox: Why do cities exist?
 
-
-
-name: exist
-# Why do Cities Exist?
-
-What do you think? .hi.purple[Discuss]
+What do you think?
 
 --
 
-This question has a pretty simple answer. What is it?
+There is a pretty simple, one-word answer. .hi-pink[Any guesses?]
 
 --
 
-<center>
-<font size="15"> Trade </font>
-</center>
+.center[.bigger[.hi-slate[Trade]]]
 
 --
 
-<center>
-<font size="15"> with a few caveats... </font>
-</center>
+.center[.hi-slate[with a few caveats...]]
+
 
 --
 
 
-Suppose there was .hi[no trade]. What would we need for this to be true? _Would this lead to no cities?_
+First, suppose there was .hi[no trade]
 
 --
 
-- Even with trade, _possible_ that households trade amongst themselves (still no cities)
+  - What would we need for this to be true? 
+  
+--
+
+  - _Would this lead to no cities?_
 
 --
+
+- Even with trade, _possible_ that households trade amongst themselves (still no cities)?*
 
 ---
 
+# EC 201 Review 016: Trade
+
+.ul[.hi-slate[Definitions:]]
+
+  - .hi.slate[Absolute Advantage] (AA): An economic agent or entity has .hi.purple[AA] in exchange if they can produce more of the good in the same amount of time 
+  
+      - or the same amount of the good in less time
+ 
+--
+ 
+  - .hi.slate[Comparative Advantage] (CA) : An economic agent or entity has .hi[CA] in exchange if they can produce the good at a lower _oppurtunity cost_
+
+--
+
+- .hi.slate[Production Possibilities Frontier] (PPF): All possible combinations of goods that an economic agent or entity can produce
+
+---
+
+# EC 201 Review 016: Trade - example
 
 
-
+---
 name: trade
 # No Cities
 
@@ -420,32 +610,6 @@ name: trade
 .hi.purple[Answer]: Nope. Let's relax this assumption
 
   - Differences in productivity across cities generate .hi[comparative advantage]
-
---
-
----
-
-
-# Back to 201
-
-##Reminder:
-
-
-  - .hi.slate[Absolute Advantage] (AA): An economic agent or entity has .hi.purple[AA] in exchange if they can produce more of the good in the same amount of time 
-  
-      - or the same amount of the good in less time
- 
---
- 
-  - .hi.slate[Comparative Advantage] (CA) : An economic agent or entity has .hi[CA] in exchange if they can produce the good at a lower _oppurtunity cost_
-
---
-
---
-
-.hi.slate[Production Possibilities Frontier] (PPF): All possible combinations of goods that an economic agent or entity can produce
-
---
 
 ---
 

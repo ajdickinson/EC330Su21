@@ -143,6 +143,12 @@
 .smaller {
   font-size: 95%;
 }
+.smallerer {
+  font-size: 85%;
+}
+.smallererer {
+  font-size: 75%;
+}
 .smallest {
   font-size: 85%;
 }
