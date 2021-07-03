@@ -22,6 +22,7 @@ pacman::p_load(
   gridExtra, kableExtra, dplyr, magrittr, knitr, parallel, tufte, emo, ggrepel,
   sf, hrbrthemes, lwgeom, maps, mapdata, spData, leaflet
 )
+
 # Define colors
 ## source color script from local directory
 ## comment out and replace colors if user is not Andrew
@@ -107,13 +108,13 @@ theme_axes <- theme_void() + theme(
   legend.position = "none"
 )
 
+```
 
-
+```{r}
 income <-  tidycensus::get_acs(
   geography = "county", variables = "B19013_001",
   state = c("WA", "OR", "CA"), geometry = TRUE
 )
-
 ```
 
 
@@ -121,54 +122,76 @@ income <-  tidycensus::get_acs(
 
 ---
 
-#Introduction
+#Introduction: About me
 
-## Me
-__Name__: [Andrew Dickinson](https://github.com/ajdickinson) , __Office__: 823 PLC, __Office Hours__: TBD, __Email__: adickin3@uoregon.edu
+.hi-slate[Name:] [Andrew Dickinson](https://github.com/ajdickinson) (call me Andrew)
 
---
-
-- Third year Ph.D student. I do research in urban and environmental economics.
-
-- Not school: I like bicycling & travel
+- Office: 823 PLC, Office Hours: TBD, Email: .pink[adickin3@uoregon.edu]
 
 --
 
-## You
+- Third year Ph.D student
 
-- An eager and excited student ready to learn about urban economics
+  - My research focus is in environmental economics and data science
 
-- A student that has passed EC201 and has at-least some recollection of what you have learned
+--
+
+.hi-slate[Not school:]
+
+  - From San Diego, CA
+
+  - I enjoy spending time outside `r emo::ji("call me hand")`
+
+      - running, camping, climbing, surfing, skiing, kayaking, cycling, etc.
+  
+---
+
+# Introduction: About you
+
+I hope that you:
+
+--
+
+- Are an eager student ready to learn about urban econ .hi-pink[synchronously<sup>.pink[†]</sup>]
+
+.footnote[.pink[†] we will discuss this more soon]
+
+--
+
+- Has passed EC-201 with at least .hi-pink[some recollection] of the material
+
+--
+
+- Are ready to hit the ground running - this class is going to go fast
 
 
 ---
-
+class: inverse
 name: schedule
 
 # Schedule
 
-## Today
+.pull-left[
+.ul[.bigger[.hi-white[Today:]]]
+
+.hi-white[(i). Syllabus + Course Policies]
+
+.hi-white[(ii). General Economics Discussion]
+
+.hi-white[(iii). Intro to Urban Economics]
+]
 
 --
 
-1) .hi.purple[Syllabus]
+.pull-right[
+.ul[.bigger[.hi-white[Upcoming:]]]
 
-2) .hi.purple[Intro to Urban Economics]
-
-
---
-
---
-
-## Upcoming
-
-  - EC201 Review Quiz on Canvas
+  - .hi-white[EC-201 Review Quiz on Canvas]
   
-  - Letter of Intro on Canvas
+  - .hi-white[Letter of Intro on Canvas]
   
-  - Reading
-
---
+  - .hi-white[Reading]
+]
 
 ---
 
@@ -177,26 +200,34 @@ name: schedule
 name:syllabus
 # Course Policies
 
-All information is on the syllabus, which I __strongly advise__ that you read 
+.biggest[[.hi-pink[All information is on the syllabus]](https://www.youtube.com/watch?v=aOIvB2YtAhY)]
 
-I want us to discuss the following:
+- Please read the syllabus and consult it first before sending emails!
 
+.center[[.hi-blue[ Link ](https://www.youtube.com/watch?v=aOIvB2YtAhY)]]
+
+<br>
 
 --
 
- - Grades
+.bigger[.hi-slate[I want us to discuss the following:]]
 
+--
 
- - Course Policies
-
+.pull-left[
+.hi-slate[(i).] Grades
+]
+.pull-right[
+.hi-slate[(ii).] Course Policies
+]
 
 --
 
 ---
 
 
-# Syllabus: Grading
-There are 500 points total.  __**Your grade will be determined by:**__
+# Syllabus: Grading***
+There are .hi-pink[500] points total.  .hi-slate[Your grade will be determined by:]
 
 --
 
@@ -212,6 +243,8 @@ There are 500 points total.  __**Your grade will be determined by:**__
 
 - 1%: Letter of Intro (1x): 5 points
 
+*temporary, will change
+
 --
 
 ---
@@ -225,7 +258,9 @@ There are 500 points total.  __**Your grade will be determined by:**__
 
 --
 
- In 300 and 400 level classes, roughly 65% of the class will receive A’s and B’s. From the syllabus:
+Following department policies, for 300 and 400 level classes roughly 65% of the class will receive A’s and B’s.
+
+From the syllabus:
  
 --
 
@@ -243,9 +278,9 @@ There will be one midterm and one final
 
 --
 
-- __Midterm__: .hi.orange[Feb 11th] (.slate[week 6])
+- .hi-slate[Midterm:] .hi-blue[Feb 11th] (.slate[week 6])
 
-- __Final__: .hi.orange[Wednesday, March 18th @ 12:30]
+- .hi-slate[Final]: .hi-blue[Wednesday, March 18th @ 12:30]
 
 --
 
@@ -253,9 +288,9 @@ There will be one midterm and one final
 
 - _Absolutely_ .hi[no makeups]
 
-  - However, if approved (by me) you can put .hi.purple[all of the weight from the midterm] on the final (67%) if you must miss the midterm
+  - Under .hi-slate[extraordinary circumstances], I will allow shifting all of the weight from the midterm on the final (67%)
   
-  - I will only do this in __extraordinary circumstances__<sup>.hi[†]</sup>
+    - At my discression<sup>.pink[†]</sup>
 
 --
 

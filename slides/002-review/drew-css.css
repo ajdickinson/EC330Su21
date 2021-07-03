@@ -183,6 +183,10 @@
   /* padding: 1em 2em 1em 2em; */
 }
 
+.hide-count .remark-slide-number {
+  display: none;
+}
+
 .inverse {
   background-color: #23373B;
   text-shadow: 0 0 20px #333;
