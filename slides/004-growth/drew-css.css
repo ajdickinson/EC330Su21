@@ -299,12 +299,6 @@
   float: right;
   width: 80%;
 }
-.tab {
-  margin: auto;
-  width: 75%;
-  /*border: 3px solid green;*/
-  padding: 10px;
-}
 
 /* Remove orange line */
 hr, .title-slide h2::after, .mline h1::after {
