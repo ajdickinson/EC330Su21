@@ -32,126 +32,6 @@ class: inverse, center, middle
 
 
 
-```r
-income &lt;-  tidycensus::get_acs(
-  geography = "county", variables = "B19013_001",
-  state = c("WA", "OR", "CA"), geometry = TRUE
-)
-```
-
-```
-#&gt; 
-  |                                                                            
-  |                                                                      |   0%
-  |                                                                            
-  |                                                                      |   1%
-  |                                                                            
-  |=                                                                     |   1%
-  |                                                                            
-  |=                                                                     |   2%
-  |                                                                            
-  |==                                                                    |   2%
-  |                                                                            
-  |==                                                                    |   3%
-  |                                                                            
-  |===                                                                   |   4%
-  |                                                                            
-  |===                                                                   |   5%
-  |                                                                            
-  |====                                                                  |   5%
-  |                                                                            
-  |====                                                                  |   6%
-  |                                                                            
-  |=========                                                             |  13%
-  |                                                                            
-  |============                                                          |  16%
-  |                                                                            
-  |============                                                          |  17%
-  |                                                                            
-  |============                                                          |  18%
-  |                                                                            
-  |=============                                                         |  18%
-  |                                                                            
-  |=============                                                         |  19%
-  |                                                                            
-  |==============                                                        |  19%
-  |                                                                            
-  |==============                                                        |  20%
-  |                                                                            
-  |==============                                                        |  21%
-  |                                                                            
-  |===============                                                       |  21%
-  |                                                                            
-  |===============                                                       |  22%
-  |                                                                            
-  |================                                                      |  23%
-  |                                                                            
-  |=================                                                     |  24%
-  |                                                                            
-  |==================                                                    |  25%
-  |                                                                            
-  |===================                                                   |  27%
-  |                                                                            
-  |===================                                                   |  28%
-  |                                                                            
-  |======================                                                |  32%
-  |                                                                            
-  |=======================                                               |  32%
-  |                                                                            
-  |=======================                                               |  33%
-  |                                                                            
-  |=======================                                               |  34%
-  |                                                                            
-  |========================                                              |  34%
-  |                                                                            
-  |========================                                              |  35%
-  |                                                                            
-  |=========================                                             |  35%
-  |                                                                            
-  |=========================                                             |  36%
-  |                                                                            
-  |===================================                                   |  51%
-  |                                                                            
-  |========================================                              |  58%
-  |                                                                            
-  |=========================================                             |  58%
-  |                                                                            
-  |=========================================                             |  59%
-  |                                                                            
-  |==========================================                            |  59%
-  |                                                                            
-  |==========================================                            |  60%
-  |                                                                            
-  |==========================================                            |  61%
-  |                                                                            
-  |===========================================                           |  61%
-  |                                                                            
-  |===========================================                           |  62%
-  |                                                                            
-  |=====================================================                 |  75%
-  |                                                                            
-  |=====================================================                 |  76%
-  |                                                                            
-  |======================================================                |  77%
-  |                                                                            
-  |======================================================                |  78%
-  |                                                                            
-  |=======================================================               |  78%
-  |                                                                            
-  |=======================================================               |  79%
-  |                                                                            
-  |========================================================              |  79%
-  |                                                                            
-  |========================================================              |  80%
-  |                                                                            
-  |==========================================================            |  82%
-  |                                                                            
-  |===========================================================           |  84%
-  |                                                                            
-  |===================================================================== |  98%
-  |                                                                            
-  |======================================================================| 100%
-```
 
 
 # Day One: Welcome!
@@ -234,57 +114,44 @@ name: schedule
 
 
 name:syllabus
-# Course Policies
+# Syllabus
 
 .biggest[[.hi-pink[All information is on the syllabus]](https://www.youtube.com/watch?v=aOIvB2YtAhY)]
 
 - Please read the syllabus and consult it first before sending emails!
 
-.center[[.hi-blue[ Link ](https://www.youtube.com/watch?v=aOIvB2YtAhY)]]
-
-&lt;br&gt;
-
 --
 
-.bigger[.hi-slate[I want us to discuss the following:]]
+.hi-slate[I want to discuss the following:]
 
 --
 
 .pull-left[
-.hi-slate[(i).] Grades
+.hi-slate[(i).] Grading breakdowns
 ]
 .pull-right[
 .hi-slate[(ii).] Course Policies
 ]
 
---
-
 ---
 
 
-# Syllabus: Grading***
+# Syllabus: Grading
 There are .hi-pink[500] points total.  .hi-slate[Your grade will be determined by:]
 
 --
 
-- 40%: Final Exam (1x): 200 points
+- 35%: Final Exam (1x): 175 points
 
-- 27%: Midterm Exam (1x): 135 points
+- 30%: Midterm Exam (1x): 150 points
 
-- 24%: HW (4x, 6% each): 30 points each
+- 15%: Problem sets (2x): 37.5 points each
 
-- 4%: Book Report (1x): 20 points
+- 10%: Book Report (1x): 50 points
 
-- 4%: Review Quiz (1x): 20 points
-
-- 1%: Letter of Intro (1x): 5 points
-
-*temporary, will change
-
---
+- 10%: Quizzes (?x): 50 points
 
 ---
-
 
 # Syllabus: Grading
 
@@ -304,61 +171,51 @@ From the syllabus:
 
 ---
 
-
-
-
-
 # Syllabus: Exams
 
-There will be one midterm and one final
+.hi-slate[Midterm:] End of week 2 (.pink[Thursday, July 28]&lt;sup&gt;.pink[†]&lt;/sup&gt;)
+
+.hi-slate[Final]: End of week 4 (.pink[Thursday, August 13])
+
+.footnote[.hi[†] May change to Friday, July 29 if everyone is available]
 
 --
 
-- .hi-slate[Midterm:] .hi-blue[Feb 11th] (.slate[week 6])
-
-- .hi-slate[Final]: .hi-blue[Wednesday, March 18th @ 12:30]
-
+  - _Absolutely_ .hi[no makeups]
+  
 --
-
---
-
-- _Absolutely_ .hi[no makeups]
 
   - Under .hi-slate[extraordinary circumstances], I will allow shifting all of the weight from the midterm on the final (67%)
   
-    - At my discression&lt;sup&gt;.pink[†]&lt;/sup&gt;
-
+    - Entirely by my discretion
+    
+    - Contact me before the exam via email
+    
 --
 
+.hi-slate[Drop this course if you are unable to take the scheduled midterm]
 
-.footnote[
-.hi[†] Don't be afraid to ask if you are unsure.
-]
 ---
-
-
 
 #Syllabus: Triumph of the City
 
-In this class you are required to read [Triumph of the City](https://www.amazon.com/Triumph-City-Greatest-Invention-Healthier/dp/0143120549) by Ed. Glaeser. 
+Required reading [Triumph of the City](https://www.amazon.com/Triumph-City-Greatest-Invention-Healthier/dp/0143120549) by Ed. Glaeser. 
 
-- .hi[HW]: Occassional question from assigned reading (in addition to questions from lecture content)
-
---
-
-- .hi[Exams]: Ocassional question from the book (_if you do the readings_, the questions will be pretty easy)
+- .hi-slate[Problem sets]: Occassional question from assigned reading
 
 --
 
+- .hi-slate[Exams]: Ocassional question from the book 
+
+  - the questions will be pretty easy
+
 --
 
-- .hi[Book Report]: You are __required__ to turn in a book report at the end of the term
+- .hi-slate[Book Report]: Sunday following the last lecture (August 15)
 
-  - I will post instructions and rubric for the book report around week 3
+  - Instructions and a rubric are posted on the course github + canvas
   
-  - The syllabus has a reading schedule. You are free to read the book at a quicker rate
-
---
+  - Syllabus has the reading schedule. Feel free to read ahead
 
 ---
 
