@@ -16,7 +16,7 @@ This README file includes all links to course materials including:
 
 __Lectures:__ Monday, Tuesday, Wednesday, and Thursdays 12:00-1:50 pm
 
-__Office hours:__ After class each day from 2:00-2:30 pm
+__Office hours:__ After class each day from 2:00-2:30 pm + by appointment
   
 ## Lectures
 
