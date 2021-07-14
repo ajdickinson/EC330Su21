@@ -10,7 +10,7 @@ This README file includes all links to course materials including:
   
   - [Problem sets](https://github.com/ajdickinson/ec330-summer21/tree/main/problem-sets)
   
-  - [TotC Rubric](https://github.com/ajdickinson/ec330-summer21/tree/main/report)
+  - [TotC Rubric](https://github.com/ajdickinson/ec330-summer21/blob/main/report/ec330-TotC-rubric.pdf)
   
   - [External resources](https://github.com/ajdickinson/ec330-summer21/tree/main/resources)
   
@@ -64,7 +64,7 @@ __Office hours:__ After class each day from 2:00-2:30 pm + by appointment
 
   - __Lecture 10:__ Local labor markets (part ii)
 
-  - __Lecture 11:__ Introductino to place-based policies
+  - __Lecture 11:__ Introduction to place-based policies
 
   - __Lecture 12:__ Minimum wage
 
