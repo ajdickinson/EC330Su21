@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Econ 330: Urban Economics</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Andrew Dickinson" />
+    <script src="06-nbhd-choice-i_files/header-attrs/header-attrs.js"></script>
+    <link href="06-nbhd-choice-i_files/remark-css/default.css" rel="stylesheet" />
+    <link href="06-nbhd-choice-i_files/remark-css/metropolis.css" rel="stylesheet" />
+    <link href="06-nbhd-choice-i_files/remark-css/metropolis-fonts.css" rel="stylesheet" />
+    <link href="06-nbhd-choice-i_files/tile-view/tile-view.css" rel="stylesheet" />
+    <script src="06-nbhd-choice-i_files/tile-view/tile-view.js"></script>
+    <script src="06-nbhd-choice-i_files/fabric/fabric.min.js"></script>
+    <link href="06-nbhd-choice-i_files/xaringanExtra-scribble/scribble.css" rel="stylesheet" />
+    <script src="06-nbhd-choice-i_files/xaringanExtra-scribble/scribble.js"></script>
+    <script>document.addEventListener('DOMContentLoaded', function() { window.xeScribble = new Scribble({"pen_color":["#FF0000"],"pen_size":3,"eraser_size":30,"palette":[]}) })</script>
+    <link rel="stylesheet" href="padres.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Econ 330: Urban Economics
+## Lecture 06
+### Andrew Dickinson
+### 15 July, 2021
+
+---
+
+class: inverse, center, middle
+
+
+
+
+
+
+# Lecture 6: Neighborhood Choice
+
+---
+class: inverse, middle
+
+# Schedule
+
+.pull-left[
+.ul[.bigger[.hi-gold[Today:]]]
+
+.hi-gold[(i). Amenities + Public goods]
+
+.hi-gold[(ii). Neighborhood sorting model]
+
+.hi-gold[(iii). Racial segregation]
+]
+
+--
+
+.pull-right[
+.ul[.bigger[.hi-gold[Upcoming:]]]
+
+  - .hi-gold[Reading] (Chapter 4)
+  
+  - .hi-gold[Problem set 01 due on TBD*]
+  ]
+
+---
+
+# Housekeeping
+
+---
+
+# Introduction to neighborhood choice
+
+We have a fairly simple model of .hi-orange[residential choice] (rental prices)
+
+--
+
+.qa[Q:] What factor(s) in the model determine housing demand?
+
+--
+
+.qa[A:] Bid-Rent model assumes commuting costs are the .hi-orange[only factor]
+
+--
+
+.hi[Is this all you consider when deciding where to live?]
+
+--
+
+  - What factors influence neighborhood decision choices?
+
+--
+
+.hi-blue[Examples:]
+
+--
+
+.pull-left[
+- Schools
+- Demographics
+- Tax rates]
+.pull-right[
+- Public safety
+- Air quality
+- Natural beauty]
+
+---
+# Neighborhood choice: Amenities
+
+.ul[.hi[Definition:]] .hii[Amenity] 
+
+An _amenity_ is a .hi[location-specific] consumption good
+
+--
+
+.pull-left[
+- Beaches
+- Weather
+- Public transport]
+.pull-right[
+- Parks
+- Restaurants
+- Recreation]
+
+--
+
+Different types of amenities
+- Some are nonrival&lt;sup&gt;.hii[†]&lt;/sup&gt;: Theaters, public transport 
+- Some are nonexcludable&lt;sup&gt;.hii[††]&lt;/sup&gt;: Parks
+- Some are both nonrival and nonexcludable: National defense, sports teams, fireworks
+
+.footnote[.hii[†] Nonrival goods: Accessible by all; usage does limit subsequent use &lt;br&gt; .hii[††] Nonexcludable goods: Impossible to exclude other from consuming]
+
+---
+# Neighborhood choice: Amenities
+
+.hi[Two more refined definitions:]
+
+.hi[(i). Exogenous Amenities:] Location-specific consumption good that exist .hi-pink[are not] influenced by where people decide to live
+
+--
+
+  - .hi-gold[Exogenous:] "Deteremined outside of the model" (fall from the sky)
+    
+  - Weather, geographic characterisitics
+
+--
+
+.hi[(ii). Endogenous Amenities:] Location-specific consumption goods that .hi-pink[are] influenced by location decisions of individuals
+
+--
+
+  - .hi-gold[Endogenous:] "Deteremined within the model"
+  
+  - School quality, crime, pollution
+
+---
+# Neighborhood choice: Amenities
+
+To determine whether or not an amenity is .hi[exogenous] (.hii[endogenous]):
+
+--
+
+.center[_"Will choosing to live here impact the amenity?"_]
+
+&lt;br&gt;
+
+--
+
+  - .hi[Exogenous] _Beaches exist regardless whether people live near by_
+ 
+--
+
+  - .hii[Endogenous] _Crime is a function of the individuals in the area_
+  
+--
+
+&lt;br&gt;
+
+.hi[Questions regarding differences between EXOGENOUS and ENDOGENOUS?]
+
+---
+class: inverse, middle, center
+# Sorting for Public Goods
+
+---
+
+# Neighborhood sorting: Income
+
+.center[
+![:scale 60%](figures/boston.png)
+]
+
+---
+# Neighborhood sorting: Education
+
+.center[
+![:scale 60%](figures/denver.png)
+]
+
+---
+# Demand for public goods
+
+.hi[Consider a simple sorting model for a single, non-rival public good]
+
+--
+
+Model a three-person city with one public good: .hi-blue[Public park]
+
+- Cost .hi[$60 per acre] to build
+
+- Cost is shared equally across all three citizens: .hi-blue[$20 per acre] each
+
+--
+
+Of the three citizen, demand for the park varies:
+
+--
+
+- Low demand: `\(\text{Lyla}: \color{#34b3ff} {P = 30 - 2*\text{acres}}\)`
+
+- Mid demand: `\(\text{Gracie}: \color{#e64173}{P = 40 -2*\text{acres}}\)`
+
+- High demand: `\(\text{Cooper}: \color{#6A5ACD} {P = 50 -2*\text{acres}}\)`
+
+--
+
+.hi-blue[Together they must vote for one park size]
+
+---
+# Demand for public goods
+
+&lt;img src="06-nbhd-choice-i_files/figure-html/inc_plot-1.svg" style="display: block; margin: auto;" /&gt;
+
+---
+# Demand for public goods
+
+&lt;img src="06-nbhd-choice-i_files/figure-html/demand2-1.svg" style="display: block; margin: auto;" /&gt;
+
+---
+# Demand for public goods
+
+&lt;img src="06-nbhd-choice-i_files/figure-html/demand3-1.svg" style="display: block; margin: auto;" /&gt;
+
+---
+
+# Demand for public goods: Majority rule
+
+For each citizen, optimal park size is found when `\(MB_{park} = MC_{park}\)`
+
+--
+
+Under .hi[majority rule] Gracie's optimal park wins
+
+--
+
+.center[.hii[Why?]]
+
+![](./figures/table8-1.png)
+
+Make kable
+
+--
+
+Gracie is the .hii[median voter]
+
+  - Splits the voting public in half
+  
+--
+
+Majority rule always leave two citizens unhappy: Cooper and Lyla
+
+
+---
+# Alternative to majority rule
+
+Suppose the city can be split into .hii[3 identical districts] with 3 citizen
+
+- Each district votes on their own park
+
+- Each citizen knowns each other's preferences
+
+--
+
+.hii[Key assumption:] Citizens pick which district to live in
+
+--
+
+.center[.hi[What is the implication?]]
+
+--
+
+.center[.hi[Similar types sort into the same neighborhood]]
+
+--
+
+.pull-left[
+- Lylaville: 5 acre park
+- Gracity: 10 acre park]
+.pull-right[
+- Cooperstown: 15 acre park]
+
+---
+# Alternative to majority rule
+
+By .hi[voting with their feet] each citizen sorts themselves into homogenous communities with their preferred public good allocation (park size)
+
+.hi[Now our city has three neighborhoods with homogenous types]
+
+- Accomodates diversity in demand
+
+--
+
+.center[.hi[Is reality this simple?]]
+
+--
+
+.center[.hii[Nope]]
+
+--
+
+.hi[Let's add another layer of complexity:] .hii[Taxes]
+
+---
+# Alternative to majority rule
+
+Up to this point, funding for the park is financed with a .hi[head tax]
+
+--
+
+A realistic way to model neighborhood sorting is to us .hi[property taxes] instead
+
+-- 
+
+---
+
+# Map 1
+
+.center[
+![:scale 95%](figures/map1.png)
+]
+
+Source: [Oppurtunity Atlas](https://www.opportunityatlas.org/)
+
+---
+
+# Amenities as Public Goods
+
+Some amenities, like city parks, are _local public goods_. Does everyone care about these parks equally?
+
+
+
+--
+
+Probably not
+
+--
+
+.hi.slate[Example]: 
+
+  - Consider a 3 citizen city each with differing demands (Max WTP) for parks
+  
+    - Saurabh has low demand, Sam has medium demand, Jenny has high demand
+
+--
+
+- Park Costs .hi[$60 per acre] to build
+
+--
+
+   - One way to fund: .hi.orange[share the burden] equally via a _per capita tax_ (each person pays 20 bucks p acre)
+
+--
+
+--
+
+
+
+---
+
+
+# Some Math
+
+Let's be a bit more specific. Suppose the demand curves for each person are given by:
+
+
+
+--
+
+- `\(\text{Saurabh}:\color{#6A5ACD} {P = 50 -2*\text{acres}}\)`
+ 
+- `\(\text{Sam}: \color{#e64173}{P = 40 -2*\text{acres}}\)`
+
+- `\(\text{Jenny}: \color{#34b3ff}{P = 30 - 2*\text{acres}}\)`
+
+--
+
+--
+
+.qa[Q]: Derive the number of acres of parks for each individuals with a `\(\color{#009A00}{20}\)` dollar per person per acre tax
+
+
+
+---
+
+
+
+# Flat Tax
+
+Tough decisions to make when deciding how much to build
+
+--
+
+- Any thoughts on how to allocate the resource? 
+
+  - How much do we charge people?
+  
+  - How much do we build?
+  
+--
+
+.hi[Discuss]
+
+---
+
+
+# Majority Rule and Median Voter
+
+One way to make the collective choice of how many acres of parks to build: .hi.orange[majority rule]
+
+  - Have a series of .hi[binary elections] (.pink[multiple votes, each vote there is only one option])
+  
+  - This election will always result in the winning option being the median voter (Sam)
+
+
+--
+
+What is the issue with this theory/model of park dev?
+
+--
+
+  - We see variation in size of parks built .hi.purple[IRL]
+  
+--
+
+  - How do we rectify this?
+
+--
+
+---
+
+
+# A twist
+
+Now suppose there is a city with .hi[3 identical districts], each with 3 citizens (Saurabh, Sam, Jenny)'s
+
+--
+
+ - Each district votes on their own park
+  
+ - Each citizen knows the preferences for parks of other citizens
+
+--
+
+
+
+--
+
+_Key Assumption_: .hi[Citizens pick which district to to live]. What is the implication?
+
+--
+
+--
+
+
+- Similar types sort into the same neighborhood
+
+--
+
+- Ie, Saurabh and other low demand types recognize that if they move into the same district they have the highest chance of getting the level of parks they desire
+  
+
+
+---
+
+
+
+
+
+# A twist
+
+So, we have 3 neighborhoods with _homogenous types_. What does this do?
+
+--
+
+&lt;center&gt;
+&lt;font size="12"&gt; Accomodate Diversity in Demand &lt;/font&gt;
+&lt;/center&gt;
+
+--
+
+- In this perfect world, everybody gets what they want. Is reality this simple?
+
+--
+
+&lt;center&gt;
+&lt;font size="12"&gt; Nope &lt;/font&gt;
+&lt;/center&gt;
+
+--
+
+
+---
+
+
+
+# Reality
+
+## Real Cities
+
+- Usually tax property - not a flax per capita tax
+
+--
+
+- Variation in property value also causes municipal formation (ie, .hi.orange[people sort on income], _.orange[not just preference for public goods]_)
+
+--
+
+--
+
+## Real People
+
+  - Care about a diverse set of things (not just parks). These usually don't overlap perfectly
+
+--
+
+  - Also: people do not know .hi[full set of preferences] of others
+
+--
+
+  - __Reality__: Not everyone gets what they want! ☹️
+
+
+--
+
+---
+
+
+
+
+class: inverse, middle
+# Checklist
+
+.pull-left[
+
+
+1) .hi[Introduction to Amenities] ✅
+
+  - Exogenous Amenities
+  
+  - Endogenous Amenities
+  
+2) .hi.purple[Sorting for Public Goods] 
+
+- Demand for public goods
+
+- Simple model with public goods and taxes
+
+]
+
+
+.pull-right[
+
+3) .hi.purple[Neighborhood Choice Intro]:
+
+
+
+]
+
+
+
+---
+
+
+
+# Neighborhood Sorting
+
+I will motivate this with a .qa[question]:
+
+--
+
+  - Do you _fully_ internalize the costs and benefits of where you decide to live?
+  
+  - Put differently: Is your choice of neighborhood free from externalities?
+
+--
+
+
+.qa[Short Answer]: Nope. These externalities are different for adults and children
+
+
+---
+
+
+# Neighborhood Sorting
+
+
+.hi[Externalities] for kids:
+
+  - Good/bad role models as adults
+  
+  - Classmates in school: focused vs disruptive
+
+
+--
+
+.hi[Externalities] for adults:
+
+  - Postive: job information, property valuation
+  
+  - Negative: property values 
+
+--
+
+In general: positive externalities increase with income and education level. Why?
+
+---
+
+
+# Neighborhood Sorting
+
+These externalities give rise to the following questions:
+
+1. Who gets desirable neighbors?
+
+--
+
+2. Will there be segregated or integrated neighborhoods?
+
+--
+
+3. Will there be sorting or mixing with respect to income, age, race, or some combination of those factors?
+
+  - Is this sorting _de jure_, _de facto_, or both? More on this next time
+
+--
+
+4. What are the implications for the price of land in various neighborhoods?
+
+--
+
+
+
+---
+
+
+
+
+class: inverse, middle
+# Checklist
+
+.pull-left[
+
+
+1) .hi[Introduction to Amenities] ✅
+
+  - Exogenous Amenities
+  
+  - Endogenous Amenities
+  
+2) .hi[Sorting for Public Goods] ✅
+
+
+]
+
+ .pull-right[
+ 
+3) .hi[Neighborhood Sorting Intro]: ✅
+
+
+
+]
+
+---
+
+
+
+
+
+
+
+
+
+
+&lt;!-- --- --&gt;
+&lt;!-- exclude: true --&gt;
+
+&lt;!-- ```{R, generate pdfs, include = F} --&gt;
+&lt;!-- system("decktape remark 02_goodsmarket_part1.html 02_goodsmarket_part1.pdf --chrome-arg=--allow-file-access-from-files") --&gt;
+&lt;!-- ``` --&gt;
+
+
+
+
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="macros.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

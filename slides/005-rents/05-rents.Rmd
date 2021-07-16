@@ -1,6 +1,6 @@
 ---
 title: "Econ 330: Urban Economics"
-subtitle: "Lecture 5"
+subtitle: "Lecture 05"
 author: "Andrew Dickinson"
 date: "`r format(Sys.time(), '%d %B, %Y')`"
 output:
@@ -112,90 +112,6 @@ theme_axes <- theme_void() + theme(
 )
 theme_curves <- theme_ipsum() + theme(axis.line = element_line(),
         panel.grid.minor = element_blank())
-
-# Define pink color
-red_pink <- "#e64173"
-turquoise <- "#20B2AA"
-grey_light <- "grey70"
-grey_mid <- "grey50"
-grey_dark <- "grey20"
-# Dark slate grey: #314f4f
-# Knitr options
-opts_chunk$set(
-  comment = "#>",
-  fig.align = "center",
-  fig.height = 7,
-  fig.width = 10.5,
-  warning = F,
-  message = F
-)
-opts_chunk$set(dev = "svg")
-options(device = function(file, width, height) {
-  svg(tempfile(), width = width, height = height)
-})
-# A blank theme for ggplot
-theme_empty <- theme_bw() + theme(
-  line = element_blank(),
-  rect = element_blank(),
-  strip.text = element_blank(),
-  axis.text = element_blank(),
-  plot.title = element_blank(),
-  axis.title = element_blank(),
-  plot.margin = structure(c(0, 0, -0.5, -1), unit = "lines", valid.unit = 3L, class = "unit"),
-  legend.position = "none"
-)
-theme_simple <- theme_bw() + theme(
-  line = element_blank(),
-  panel.grid = element_blank(),
-  rect = element_blank(),
-  strip.text = element_blank(),
-  axis.text.x = element_text(size = 18, family = "STIXGeneral"),
-  axis.text.y = element_blank(),
-  axis.ticks = element_blank(),
-  plot.title = element_blank(),
-  axis.title = element_blank(),
-  # plot.margin = structure(c(0, 0, -1, -1), unit = "lines", valid.unit = 3L, class = "unit"),
-  legend.position = "none"
-)
-theme_axes_math <- theme_void() + theme(
-  text = element_text(family = "MathJax_Math"),
-  axis.title = element_text(size = 22),
-  axis.title.x = element_text(hjust = .95, margin = margin(0.15, 0, 0, 0, unit = "lines")),
-  axis.title.y = element_text(vjust = .95, margin = margin(0, 0.15, 0, 0, unit = "lines")),
-  axis.line = element_line(
-    color = "grey70",
-    size = 0.25,
-    arrow = arrow(angle = 30, length = unit(0.15, "inches")
-  )),
-  plot.margin = structure(c(1, 0, 1, 0), unit = "lines", valid.unit = 3L, class = "unit"),
-  legend.position = "none"
-)
-theme_axes_serif <- theme_void() + theme(
-  text = element_text(family = "MathJax_Main"),
-  axis.title = element_text(size = 22),
-  axis.title.x = element_text(hjust = .95, margin = margin(0.15, 0, 0, 0, unit = "lines")),
-  axis.title.y = element_text(vjust = .95, margin = margin(0, 0.15, 0, 0, unit = "lines")),
-  axis.line = element_line(
-    color = "grey70",
-    size = 0.25,
-    arrow = arrow(angle = 30, length = unit(0.15, "inches")
-  )),
-  plot.margin = structure(c(1, 0, 1, 0), unit = "lines", valid.unit = 3L, class = "unit"),
-  legend.position = "none"
-)
-theme_axes <- theme_void() + theme(
-  text = element_text(family = "Fira Sans Book"),
-  axis.title = element_text(size = 18),
-  axis.title.x = element_text(hjust = .95, margin = margin(0.15, 0, 0, 0, unit = "lines")),
-  axis.title.y = element_text(vjust = .95, margin = margin(0, 0.15, 0, 0, unit = "lines")),
-  axis.line = element_line(
-    color = grey_light,
-    size = 0.25,
-    arrow = arrow(angle = 30, length = unit(0.15, "inches")
-  )),
-  plot.margin = structure(c(1, 0, 1, 0), unit = "lines", valid.unit = 3L, class = "unit"),
-  legend.position = "none"
-)
 ```
 
 ```{r, echo=FALSE, include=FALSE, cache=TRUE}
@@ -393,22 +309,26 @@ rent_pop_orwa %>%
     ) +
   theme_ipsum()
 ```
+
 ---
 
 # Introduction to rents: OR, WA
 
 ```{r rent2b_plot, echo=FALSE, include=TRUE}
-rent_pop_orwa |> filter(variable == "B01003_001") %>%
+
+rent_pop_orwa |> 
+  filter(variable == "B01003_001") |>
+  mutate(pop_den = estimate / area) |>
   ggplot() +
-  geom_sf(aes(fill = estimate, color = estimate)) +
-  coord_sf(crs = 26910) +
-  scale_fill_viridis_c(name = "Population", labels = scales::comma) +
-  scale_color_viridis_c(name = "Population", labels = scales::comma) +
-  labs(
-    title = "Population across Oregon and Washington",
-    caption = "Data: US Census Bureau"
-    ) +
-  theme_ipsum()
+    geom_sf(aes(fill = pop_den, color = pop_den)) +
+    coord_sf(crs = 26910) +
+    scale_fill_viridis_c(name = "Population", labels = scales::comma) +
+    scale_color_viridis_c(name = "Population", labels = scales::comma) +
+    labs(
+      title = "Population desity across Oregon and Washington",
+      caption = "Data: US Census Bureau"
+      ) +
+    theme_ipsum()
 ```
 
 ---
@@ -457,107 +377,6 @@ rent_pop_orwa |>
 #     opacity = 1
 #     )
 ```
-
-
----
-
-
-# Bonus: COVID19 and Cities research
-
-.hi[Questions:]
-
-__Q1)__ How does COVID19 impact housing/rental prices?
-  
-  - Is the effect the same everywhere? Why or why not?
-  
-__Q2)__ How many jobs can be done remotely? Does this vary systematically across sectors? Cities?
-  
-__Q3)__ What do we think will happen to city structure as a result of increased (potentially permanent) WFH
-  
-  
----
-
-# Bonus: COVID19 and Cities Research
-
-__Q1)__  How does COVID19 impact housing/rental prices?
-
-  - .hi[A1:] [_The Impact of the COVID-19 Pandemic on the Demand for Density: Evidence from the U.S. Housing Market_](https://dallasfed.frswebservices.org/research/papers/2020/wp2024.aspx) (.pink[Liu & Su, 2020])
-  
-__Findings:__
-
-> The pandemic has led to a greater decline in the demand for housing in neighborhoods with high population density. We further show that the reduced demand for density is partially driven by the diminished need of living close to jobs that are telework-compatible and the declining value of access to consumption amenities.
-
----
-
-
-count: false
-# Bonus: COVID19 and Cities Research
-
-  - .hi[A1:] [_The Impact of the COVID-19 Pandemic on the Demand for Density: Evidence from the U.S. Housing Market_](https://dallasfed.frswebservices.org/research/papers/2020/wp2024.aspx) (.pink[Liu & Su, 2020])
-```{R, covid_prices,out.width = "80%", out.height = "80%", echo = F}
-include_graphics("figures/su_rents.png")
-```
-  
----
-
-
-# Bonus: COVID19 and Cities research
-
-__Q2)__ How many jobs can be done remotely? Does this vary systematically across sectors? Cities?
-
-
-- .hi[A2:] [_How many jobs can be done at home?_](https://www.nber.org/system/files/working_papers/w26948/w26948.pdf) (.pink[Dingel & Nieman, 2020])
-
-
-> We find that 37 percent of jobs in the United States can be performed entirely at home, with significant variation across cities andindustries. These jobs typically pay more than jobs that cannot be done at home and account for 46 percent of all US wages.
-
- 
-
----
-
-count: false
-# Bonus: COVID19 and Cities research
-
-
- - .hi[A2:]  [_How many jobs can be done at home?_](https://www.nber.org/system/files/working_papers/w26948/w26948.pdf) (.pink[Dingel & Nieman, 2020])
-```{R, share_home,out.width = "80%", out.height = "80%", echo = F}
-include_graphics("figures/dingel_share_home.png")
-```
-
----
-
-# Bonus: COVID19 and Cities research
-
-__Q3)__ What do we think will happen to city structure as a result of increased (potentially permanent) WFH?
-
- - .hi[A3:] [_How Do Cities Change When We Work from Home?_](https://www.andrii-parkhomenko.net/files/DKP_Covid_Urban.pdf) (.pink[Delventhal et. al, 2020])
-
-
-__Main Predictions:__
-
-> 1) Jobs move to the core of the city, while residents move to the periphery.
-
-> 2) Traffic congestion eases and travel times drop.
-
-> 3) Average real estate prices fall, with declines in core locations and increases in the periphery.
-
-
-
----
-
-count: false
-# Bonus: COVID19 and Cities research
-
-__Q3)__ What do we think will happen to city structure as a result of increased (potentially permanent) WFH?
-
- - .hi[A3:] [_How Do Cities Change When We Work from Home?_](https://www.andrii-parkhomenko.net/files/DKP_Covid_Urban.pdf) (.pink[Delventhal et. al, 2020])
-
-
-
-```{R, kwon_wfh, echo = F}
-include_graphics("figures/kwon_wfh.png")
-```
-
 
 ---
 
@@ -723,7 +542,7 @@ Extend the bid-rent model to the housing sector within a city
 
 .hi[Axiom 1]: _Housing prices adjusts until there is locational indifference_ (and prices in general)
 
-  - IE: until an increase in rent for a closer location just offsets the lower commuting costs
+  - IE: A marginal increase in rent just offsets the lower commuting costs
   
 --
 
@@ -1493,6 +1312,106 @@ ggplot(data.frame(x=c(0, 65)), aes(x)) +
   geom_text(x = 30, y= 0, label = "x_2 = 30", vjust = 2)
   
 
+```
+
+
+---
+
+
+# Bonus: COVID19 and Cities research
+
+.hi[Questions:]
+
+__Q1)__ How does COVID19 impact housing/rental prices?
+  
+  - Is the effect the same everywhere? Why or why not?
+  
+__Q2)__ How many jobs can be done remotely? Does this vary systematically across sectors? Cities?
+  
+__Q3)__ What do we think will happen to city structure as a result of increased (potentially permanent) WFH
+  
+  
+---
+
+# Bonus: COVID19 and Cities Research
+
+__Q1)__  How does COVID19 impact housing/rental prices?
+
+  - .hi[A1:] [_The Impact of the COVID-19 Pandemic on the Demand for Density: Evidence from the U.S. Housing Market_](https://dallasfed.frswebservices.org/research/papers/2020/wp2024.aspx) (.pink[Liu & Su, 2020])
+  
+__Findings:__
+
+> The pandemic has led to a greater decline in the demand for housing in neighborhoods with high population density. We further show that the reduced demand for density is partially driven by the diminished need of living close to jobs that are telework-compatible and the declining value of access to consumption amenities.
+
+---
+
+
+count: false
+# Bonus: COVID19 and Cities Research
+
+  - .hi[A1:] [_The Impact of the COVID-19 Pandemic on the Demand for Density: Evidence from the U.S. Housing Market_](https://dallasfed.frswebservices.org/research/papers/2020/wp2024.aspx) (.pink[Liu & Su, 2020])
+```{R, covid_prices,out.width = "80%", out.height = "80%", echo = F}
+include_graphics("figures/su_rents.png")
+```
+  
+---
+
+
+# Bonus: COVID19 and Cities research
+
+__Q2)__ How many jobs can be done remotely? Does this vary systematically across sectors? Cities?
+
+
+- .hi[A2:] [_How many jobs can be done at home?_](https://www.nber.org/system/files/working_papers/w26948/w26948.pdf) (.pink[Dingel & Nieman, 2020])
+
+
+> We find that 37 percent of jobs in the United States can be performed entirely at home, with significant variation across cities andindustries. These jobs typically pay more than jobs that cannot be done at home and account for 46 percent of all US wages.
+
+ 
+
+---
+
+count: false
+# Bonus: COVID19 and Cities research
+
+
+ - .hi[A2:]  [_How many jobs can be done at home?_](https://www.nber.org/system/files/working_papers/w26948/w26948.pdf) (.pink[Dingel & Nieman, 2020])
+```{R, share_home,out.width = "80%", out.height = "80%", echo = F}
+include_graphics("figures/dingel_share_home.png")
+```
+
+---
+
+# Bonus: COVID19 and Cities research
+
+__Q3)__ What do we think will happen to city structure as a result of increased (potentially permanent) WFH?
+
+ - .hi[A3:] [_How Do Cities Change When We Work from Home?_](https://www.andrii-parkhomenko.net/files/DKP_Covid_Urban.pdf) (.pink[Delventhal et. al, 2020])
+
+
+__Main Predictions:__
+
+> 1) Jobs move to the core of the city, while residents move to the periphery.
+
+> 2) Traffic congestion eases and travel times drop.
+
+> 3) Average real estate prices fall, with declines in core locations and increases in the periphery.
+
+
+
+---
+
+count: false
+# Bonus: COVID19 and Cities research
+
+__Q3)__ What do we think will happen to city structure as a result of increased (potentially permanent) WFH?
+
+ - .hi[A3:] [_How Do Cities Change When We Work from Home?_](https://www.andrii-parkhomenko.net/files/DKP_Covid_Urban.pdf) (.pink[Delventhal et. al, 2020])
+
+
+
+```{R, kwon_wfh, echo = F}
+include_graphics("figures/kwon_wfh.png")
 ```
 
 
