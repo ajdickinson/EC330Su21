@@ -67,6 +67,7 @@ h2, h3, h4 {
 .title-slide {
   background-color: #FAFAFA;
     border-top: 80px solid #FAFAFA;
+    fon
 }
 
 .title-slide h1  {
@@ -159,6 +160,10 @@ hr, .mline h1::after {
   font-weight: 600;
   color: #E35205 !important;
 }
+.hi-gold {
+  font-weight: 600;
+  color: #FFC425 !important;
+}
 .hi-pink {
   font-weight: 600;
   color: #e64173 !important;
@@ -187,7 +192,7 @@ hr, .mline h1::after {
   font-weight: 600;
   color: #8AA19E !important;
 }
-.hi-lightblue {
+.hi-light-blue {
   font-weight: 600;
   color: #54778B !important;
 }
@@ -204,6 +209,9 @@ hr, .mline h1::after {
   color: #ffffff !important;
 }
 /* Pink text */
+.blue {
+  color: #041E42 !important;
+}
 .pink {
   color: #e64173 !important;
 }
@@ -238,7 +246,7 @@ hr, .mline h1::after {
 .grey {
   color: #8AA19E !important;
 }
-.blue {
+.light-blue {
   color: #54778B !important;
 }
 .red {
@@ -417,7 +425,7 @@ hr, .mline h1::after {
 .title-slide > h2  {
   margin-top: -25px;
   padding-bottom: -20px;
-  color: rgba(227, 82, 5);
+  color: rgba(4, 30, 66);
   text-shadow: none;
   font-weight: 300;
   font-size: 35px;
@@ -452,7 +460,7 @@ hr, .title-slide h2::after, .mline h1::after {
   content: '';
   display: block;
   border: none;
-  background-color: #041E42;
-  color: #041E42;
+  background-color: #E35205;
+  color: #E35205;
   height: 1px;
 }

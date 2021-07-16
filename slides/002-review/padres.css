@@ -160,6 +160,10 @@ hr, .mline h1::after {
   font-weight: 600;
   color: #E35205 !important;
 }
+.hi-gold {
+  font-weight: 600;
+  color: #FFC425 !important;
+}
 .hi-pink {
   font-weight: 600;
   color: #e64173 !important;
@@ -188,7 +192,7 @@ hr, .mline h1::after {
   font-weight: 600;
   color: #8AA19E !important;
 }
-.hi-lightblue {
+.hi-light-blue {
   font-weight: 600;
   color: #54778B !important;
 }
@@ -205,6 +209,9 @@ hr, .mline h1::after {
   color: #ffffff !important;
 }
 /* Pink text */
+.blue {
+  color: #041E42 !important;
+}
 .pink {
   color: #e64173 !important;
 }
@@ -239,7 +246,7 @@ hr, .mline h1::after {
 .grey {
   color: #8AA19E !important;
 }
-.blue {
+.light-blue {
   color: #54778B !important;
 }
 .red {

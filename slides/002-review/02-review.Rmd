@@ -667,7 +667,7 @@ Suppose the price of the output good is $3$ dollars per unit. Suppose a firm's c
 
 ---
 
-class: inverse
+class: inverse, center, middle
 name:axioms
 # The Five Axioms of Urban Economics
 
