@@ -50,30 +50,30 @@ __Office hours:__ After class each day from 2:00-2:30 pm + by appointment
 
 - __Week 02__
 
-  - __Lecture 05:__ Rents and urban land use (part i)
+  - __Lecture 05:__ Rents and urban land use
 
-  - __Lecture 06:__ Rents and urban land use (part ii)
+  - __Lecture 06:__ Neighborhood choice
 
-  - __Lecture 07:__ Neighborhood choice
+  - __Lecture 07:__ Local labor markets
 
   - __Lecture 08:__ __Midterm__
 
 - __Week 03__
 
-  - __Lecture 09:__ Local labor markets (part i)
+  - __Lecture 09:__ Introduction to place-based policies
 
-  - __Lecture 10:__ Local labor markets (part ii)
+  - __Lecture 10:__ Minimum wage + Causal inference
 
-  - __Lecture 11:__ Introduction to place-based policies
+  - __Lecture 11:__ Housing policy
 
-  - __Lecture 12:__ Minimum wage
+  - __Lecture 12:__ Automobiles
 
 - __Week 04__
 
-  - __Lecture 13:__ Housing policy
+  - __Lecture 13:__ Urban transit
 
-  - __Lecture 14:__ Automobiles
+  - __Lecture 14:__ Education + Crime
 
-  - __Lecture 15:__ Urban transit
+  - __Lecture 15:__ Energy, Pollution, and Sustainabiliy
   
   - __Lecture 16:__ __Final Exam__
