@@ -26,25 +26,25 @@ __Office hours:__ After class each day from 2:00-2:30 pm + by appointment
 
   - __Lecture 01:__ Introduction to urban economics
 
-    - [slides](https://rawcdn.githack.com/ajdickinson/ec330-summer21/0f36b38a2f45ea4c9e500e131648a017ca605189/slides/001-intro/lecture01.html)
+    - slides
 
     - Reading: Introduction of TofC
 
   - __Lecture 02:__ EC201 Review + The 5 axioms of urban economics
   
-    - [slides](https://rawcdn.githack.com/ajdickinson/ec330-summer21/0f36b38a2f45ea4c9e500e131648a017ca605189/slides/002-review/02-review.html)
+    - slides
     
     - Reading: Chapter 1 of TofC
 
   - __Lecture 03:__ City size
 
-    - [slides](https://rawcdn.githack.com/ajdickinson/ec330-summer21/0f36b38a2f45ea4c9e500e131648a017ca605189/slides/003-size/03-size.html)
+    - slides
   
     - Reading: Chapter 2 of TofC
     
   - __Lecture 04:__ Firm clustering and city growth
   
-    - [slides](https://rawcdn.githack.com/ajdickinson/ec330-summer21/0f36b38a2f45ea4c9e500e131648a017ca605189/slides/004-growth/04-growth.htmln/ec330-summer21/blob/main/slides/003-size/03-size.html)
+    - slides
     
     - Reading: Chapter 2 of TofC
 
@@ -60,9 +60,9 @@ __Office hours:__ After class each day from 2:00-2:30 pm + by appointment
 
 - __Week 03__
 
-  - __Lecture 09:__ Introduction to place-based policies
+  - __Lecture 09:__ Minimum wage + Causal inference
 
-  - __Lecture 10:__ Minimum wage + Causal inference
+  - __Lecture 10:__ Introduction to place-based policies
 
   - __Lecture 11:__ Housing policy
 
