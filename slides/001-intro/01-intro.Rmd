@@ -312,9 +312,9 @@ From the syllabus:
 ---
 # Syllabus: Exams
 
-.hi[Midterm:] Monday of week 03 (.pink[August 01])
+.hi[Midterm:] Monday of week 03 (.pink[August 02])
 
-.hi[Final]: Thursday of week 04 (.pink[August 13])
+.hi[Final]: Thursday of week 04 (.pink[August 12])
 
 --
 
