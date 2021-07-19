@@ -26,7 +26,7 @@ __Office hours:__ After class each day from 2:00-2:30 pm + by appointment
 
   - __Lecture 01:__ Introduction to urban economics
 
-    - slides
+    - [slides](https://rawcdn.githack.com/ajdickinson/ec330-summer21/9d60687d4b2cb95fc47061be2a26134d62c7c9a7/slides/001-intro/01-intro.html)
 
     - Reading: Introduction of TofC
 
@@ -56,11 +56,11 @@ __Office hours:__ After class each day from 2:00-2:30 pm + by appointment
 
   - __Lecture 07:__ Local labor markets
 
-  - __Lecture 08:__ Minimum wage + Causal inference
+  - __Lecture 08:__ __Midterm__
 
 - __Week 03__
 
-  - __Lecture 09:__ __Midterm__
+  - __Lecture 09:__ Minimum wage + Causal inference
 
   - __Lecture 10:__ Introduction to place-based policies
 
