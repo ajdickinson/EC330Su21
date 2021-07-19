@@ -56,11 +56,11 @@ __Office hours:__ After class each day from 2:00-2:30 pm + by appointment
 
   - __Lecture 07:__ Local labor markets
 
-  - __Lecture 08:__ __Midterm__
+  - __Lecture 08:__ Minimum wage + Causal inference
 
 - __Week 03__
 
-  - __Lecture 09:__ Minimum wage + Causal inference
+  - __Lecture 09:__ __Midterm__
 
   - __Lecture 10:__ Introduction to place-based policies
 
