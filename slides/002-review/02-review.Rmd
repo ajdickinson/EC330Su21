@@ -500,7 +500,7 @@ Using the follow supply + demand functions
 
 .hii[Supply:] $Q(p_s) = 15 + \frac{1}{2} * p_s$
 
-.hi[Demand:] $Q(p_d) = 40 + \frac{2}{3} * p_d$
+.hi[Demand:] $Q(p_d) = 40 - \frac{2}{3} * p_d$
 
 Determine:
 
