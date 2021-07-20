@@ -26,7 +26,7 @@ __Office hours:__ After class each day from 2:00-2:30 pm + by appointment
 
   - __Lecture 01:__ Introduction to urban economics
 
-    - [slides](https://rawcdn.githack.com/ajdickinson/ec330-summer21/9d60687d4b2cb95fc47061be2a26134d62c7c9a7/slides/001-intro/01-intro.html)
+    - slides: [html](https://rawcdn.githack.com/ajdickinson/ec330-summer21/a75becc5e8f60e4d338d1a81d452b5fd09c2a905/slides/001-intro/01-intro.html), [pdf](https://rawcdn.githack.com/ajdickinson/ec330-summer21/a75becc5e8f60e4d338d1a81d452b5fd09c2a905/slides/001-intro/01-intro.pdf)
 
     - Reading: Introduction of TofC
 
