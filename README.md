@@ -26,13 +26,13 @@ __Office hours:__ After class each day from 2:00-2:30 pm + by appointment
 
   - __Lecture 01:__ Introduction to urban economics
 
-    - slides: [html](https://rawcdn.githack.com/ajdickinson/ec330-summer21/a75becc5e8f60e4d338d1a81d452b5fd09c2a905/slides/001-intro/01-intro.html), [pdf](https://rawcdn.githack.com/ajdickinson/ec330-summer21/a75becc5e8f60e4d338d1a81d452b5fd09c2a905/slides/001-intro/01-intro.pdf)
+    - [slides](https://rawcdn.githack.com/ajdickinson/ec330-summer21/a75becc5e8f60e4d338d1a81d452b5fd09c2a905/slides/001-intro/01-intro.html), [pdf](https://rawcdn.githack.com/ajdickinson/ec330-summer21/a75becc5e8f60e4d338d1a81d452b5fd09c2a905/slides/001-intro/01-intro.pdf)
 
     - Reading: Introduction of TofC
 
   - __Lecture 02:__ EC201 Review + The 5 axioms of urban economics
   
-    - slides
+    - [slides](https://rawcdn.githack.com/ajdickinson/ec330-summer21/f214d3c0102932100c0a04bc348bfe7090150636/slides/002-review/02-review.html) [pdf](https://rawcdn.githack.com/ajdickinson/ec330-summer21/f214d3c0102932100c0a04bc348bfe7090150636/slides/002-review/02-review.pdf)
     
     - Reading: Chapter 1 of TofC
 
