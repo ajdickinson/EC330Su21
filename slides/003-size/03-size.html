@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Econ 330: Urban Economics</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Andrew Dickinson" />
+    <script src="03-size_files/header-attrs/header-attrs.js"></script>
+    <link href="03-size_files/remark-css/default.css" rel="stylesheet" />
+    <link href="03-size_files/remark-css/metropolis.css" rel="stylesheet" />
+    <link href="03-size_files/remark-css/metropolis-fonts.css" rel="stylesheet" />
+    <link href="03-size_files/tile-view/tile-view.css" rel="stylesheet" />
+    <script src="03-size_files/tile-view/tile-view.js"></script>
+    <script src="03-size_files/fabric/fabric.min.js"></script>
+    <link href="03-size_files/xaringanExtra-scribble/scribble.css" rel="stylesheet" />
+    <script src="03-size_files/xaringanExtra-scribble/scribble.js"></script>
+    <script>document.addEventListener('DOMContentLoaded', function() { window.xeScribble = new Scribble({"pen_color":["#FF0000"],"pen_size":3,"eraser_size":30,"palette":[]}) })</script>
+    <link rel="stylesheet" href="padres.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Econ 330: Urban Economics
+## Lecture 03
+### Andrew Dickinson
+### 21 July, 2021
+
+---
+
+class: inverse, center, middle
+
+
+
+
+
+# Lecture 03: Existence of Cities
+
+---
+class: inverse
+name: schedule
+
+# Schedule
+
+.pull-left[
+.ul[.bigger[.hi-white[Today:]]]
+
+.hi-white[(i). Data and history]
+
+.hi-white[(ii). Why do cities exist]
+
+.hi-white[(iii). Introduction to clustering]
+]
+
+--
+
+.pull-right[
+.ul[.bigger[.hi-white[Upcoming:]]]
+
+  - .hi-white[EC-201 Review Quiz on Canvas]
+  
+  - .hi-white[Problem set 01 due next Friday]
+  
+  - .hi-white[Reading:] intro + ch. 1, 2
+]
+
+---
+# Housekeeping: 
+
+PS01 will be posted after class (tonight or tomorrow morning)
+
+- Due on .hii[Friday, July 30th] on canvas
+
+--
+
+PS01 is long and I recommend you start it .hi[early]
+
+  - But it will include many questions you cannot answer yet...
+
+.hi[Important:]
+
+- Use the space provided on the pdfs
+
+- Use scratch paper! .hi[Points will be deducted for messy work]
+
+--
+
+&lt;br&gt;
+
+I'll go over it tomorrow in class with more info and direction
+
+---
+# Housekeeping:
+
+I wanted to go over a few things:
+
+- Where do I submit each quiz
+
+- Where are the recordings
+
+--
+
+.center[.hi-pink[Is the recording on?]]
+
+---
+class: inverse, center, middle
+# Why do cities exist? Some data
+
+---
+name: data
+# Data: Global urban trends (1960-2017)
+
+*iframe src="https://ourworldindata.org/grapher/urban-and-rural-population?time=2017&amp;country=~OWID_WRL" loading="lazy" style="width: 100%; height: 600px; border: 0px none;"&gt;&lt;/iframe&gt;
+
+---
+# Data: Global urban trends (1960-2017)
+
+*iframe src="https://ourworldindata.org/grapher/urban-and-rural-population?country=~OWID_WRL" loading="lazy" style="width: 100%; height: 600px; border: 0px none;"&gt;&lt;/iframe&gt;
+
+---
+# Data: Global urban trends (1960-2017)
+
+*iframe src="https://ourworldindata.org/grapher/share-of-population-urban" loading="lazy" style="width: 100%; height: 600px; border: 0px none;"&gt;&lt;/iframe&gt;
+
+---
+name: history
+
+# Technological shifts
+
+.hi[Claim:] Over the last few hundred years the world _has become_ .hi[flat]
+
+--
+
+ - .hii[1840s:] .hi[Rail freight] becomes ubiquitous
+ 
+  - Transportation costs `\(\downarrow\)`
+
+.center[
+![:scale 65%](figures/cronon.png)
+]
+
+--
+
+.footnote[Source: [Cronon's _Natures Metropolis:  Chicago and the Great West_](https://www.amazon.com/Natures-Metropolis-Chicago-Great-West/dp/0393308731)
+]
+
+---
+class: hide-count
+
+# Technological shifts
+
+.hi[Claim:] Over the last few hundred years the world _has become_ .hi[flat]
+
+.smallerer[.pull-left[
+.ex[- 1840s: Rail becomes ubiquitous
+
+  - Transportation costs `\(\downarrow\)`]
+  
+-  .hi-orange[1840s:] .hi-pink[Telegraph] is invented
+
+  - Informational distance `\(\downarrow\)`
+
+]]
+
+---
+class: hide-count
+
+# Technological shifts
+
+.hi[Claim:] Over the last few hundred years the world _has become_ .hi[flat]
+
+.smallerer[
+.pull-left[
+.ex[- 1840s: Rail becomes ubiquitous
+
+  - Transportation costs `\(\downarrow\)`]
+  
+.ex[- 1840s: Telegraph is invented
+
+  - Informational distance `\(\downarrow\)`]
+
+- .hi-orange[1870's:] .hi-pink[Telephone] is invented
+
+  - Informational distance `\(\downarrow\)`
+]
+]
+
+---
+class: hide-count
+
+# Technological shifts
+
+.hi[Claim:] Over the last few hundred years the world _has become_ .hi[flat]
+
+.smallerer[.pull-left[
+.ex[- 1840s: Rail becomes ubiquitous
+
+  - Transportation costs `\(\downarrow\)`]
+
+.ex[- 1840s: Telegraph is invented
+
+  - Informational distance `\(\downarrow\)`]
+
+.ex[- 1870's: Telephone is invented
+
+  - Informational distance `\(\downarrow\)`]
+
+- .hi-orange[1908:] .hi-pink[Model T] production starts
+
+  - Transportation costs `\(\downarrow\)`
+]]
+
+---
+class: hide-count
+
+# Technological shifts
+
+.hi[Claim:] Over the last few hundred years the world _has become_ .hi[flat]
+
+.smallerer[.pull-left[
+.ex[- 1840s: Rail becomes ubiquitous
+
+  - Transportation costs `\(\downarrow\)`]
+
+.ex[- 1840s: Telegraph is invented
+
+  - Informational distance `\(\downarrow\)`]
+
+.ex[- 1870's: Telephone is invented
+
+  - Informational distance `\(\downarrow\)`]
+  
+.ex[- 1908: Model T production starts
+
+  - Transportation costs `\(\downarrow\)`]
+
+- .hi-orange[1914:] First commercial .hi-pink[airline flight]
+
+  - Transportation costs `\(\downarrow\)`
+  
+]]
+
+---
+class: hide-count
+
+# Technological shifts
+
+.hi[Claim:] Over the last few hundred years the world _has become_ .hi[flat]
+
+.smallerer[.pull-left[
+.ex[- 1840s: Rail becomes ubiquitous
+
+  - Transportation costs `\(\downarrow\)`]
+
+.ex[- 1840s: Telegraph is invented
+
+  - Informational distance `\(\downarrow\)`]
+
+.ex[- 1870's: Telephone is invented
+
+  - Informational distance `\(\downarrow\)`]
+  
+.ex[- 1908: Model T production starts
+
+  - Transportation costs `\(\downarrow\)`]
+
+.ex[- 1914: First commercial airline flight
+
+  - Transportation costs `\(\downarrow\)`]
+  
+]
+.pull-right[
+- .hi-orange[1980s:] Airline [deregulation](https://en.wikipedia.org/wiki/Alfred_E._Kahn)
+
+  - Transportation costs `\(\downarrow\)`
+
+]]
+
+---
+class: hide-count
+
+# Technological shifts
+
+.hi[Claim:] Over the last few hundred years the world _has become_ .hi[flat]
+
+.smallerer[.pull-left[
+.ex[- 1840s: Rail becomes ubiquitous
+
+  - Transportation costs `\(\downarrow\)`]
+
+.ex[- 1840s: Telegraph is invented
+
+  - Informational distance `\(\downarrow\)`]
+
+.ex[- 1870's: Telephone is invented
+
+  - Informational distance `\(\downarrow\)`]
+  
+.ex[- 1908: Model T production starts
+
+  - Transportation costs `\(\downarrow\)`]
+
+- .ex[1914: First commercial airline flight
+
+  - Transportation costs `\(\downarrow\)`]
+  
+]
+.pull-right[
+.ex[- 1980s: Airline deregulation
+
+  - Transportation costs `\(\downarrow\)`]
+  
+- .hi-orange[1990's:] The internet
+
+  - Information costs `\(\downarrow\)`
+
+]]
+
+---
+class: hide-count
+
+# Technological shifts
+
+.hi[Claim:] Over the last few hundred years the world _has become_ .hi[flat]
+
+.smallerer[.pull-left[
+.ex[- 1840s: Rail becomes ubiquitous
+
+  - Transportation costs `\(\downarrow\)`]
+
+.ex[- 1840s: Telegraph is invented
+
+  - Informational distance `\(\downarrow\)`]
+
+.ex[- 1870's: Telephone is invented
+
+  - Informational distance `\(\downarrow\)`]
+  
+.ex[- 1908: Model T production starts
+
+  - Transportation costs `\(\downarrow\)`]
+
+- .ex[1914: First commercial airline flight
+
+  - Transportation costs `\(\downarrow\)`]]
+
+.pull-right[
+.ex[- 1980s: Airline deregulation
+
+  - Transportation costs `\(\downarrow\)`]
+  
+.ex[- 1990's: The internet
+
+  - Information costs `\(\downarrow\)`]
+  
+- .hi-orange[2020s:] Post COVID
+  
+  - Transportation costs `\(\downarrow\)`
+  
+  - Information costs `\(\downarrow\)`
+
+- Among many other technological changes
+
+]]
+
+---
+class: inverse, middle, center
+# Why do cities exist?
+
+---
+name: paradox
+# Paradox: Why do cities exist?
+
+Considering the urban population trends and technological shifts, .hi[there seems to be a paradox]
+
+--
+
+.qa[Q]: If the world is getting "smaller", why are urban populations booming?
+
+--
+
+This paradox motivates the question: 
+
+--
+
+.center[.hi[Why do cities exist in the first place?]]
+
+--
+
+.center[
+  .hii[Why have some cities succeeded?]
+  ]
+  
+--
+
+.center[
+  .hi-gold[Why have some cities failed?]
+  ]
+  
+--
+
+Let's use insights from economic models to answer these questions from an economic perspective
+
+
+---
+
+# Paradox: Why do cities exist?
+
+What do you think?
+
+--
+
+There is a pretty simple, one-word answer. .hi-pink[Any guesses?]
+
+--
+
+.center[.bigger[.hi[Trade]]]
+
+--
+
+.center[.hi[with a few caveats...]]
+
+
+--
+
+
+First, suppose there was .hi[no trade]
+
+--
+
+  - What would we need for this to be true? 
+  
+--
+
+  - _Would this lead to no cities?_
+
+--
+
+- Even with trade, _possible_ that households trade amongst themselves (still no cities)?*
+
+---
+
+# EC 201 Review 016: Trade
+
+.ul[.hi[Definitions:]]
+
+--
+
+  - .hi[Absolute Advantage] (AA): An economic agent or entity has .hi-slate[AA] in exchange if they can produce more of the good in the same amount of time 
+  
+--
+ 
+  - .hi[Comparative Advantage] (CA) : An economic agent or entity has .hi-slate[CA] in exchange if they can produce the good at a lower _oppurtunity cost_
+
+--
+
+- .hi[Production Possibilities Frontier] (PPF): All possible combinations of goods that an economic agent or entity can produce
+
+---
+
+# EC 201 Review 016: Trade - example
+
+.hi[Example]: 
+
+  - Suppose we have two countries, A &amp; B. They are producing guns and oil
+  
+Each counties PPF is .note[given] by:
+
+- .hi[County A]: `\(\color{#e64173} {Guns_A = 10 - 2*Oil_A}\)`
+
+- .hi[County B]: `\(\color{#6A5ACD} {Guns_B = 20 - 5*Oil_B}\)`
+
+
+--
+
+1) Graph each countries PPF
+
+2) Determine who has the AA in each good and who has the CA in each good
+
+---
+
+# EC 201 Review 016: Trade - example
+
+--
+
+.hi-slate[PPFs]
+
+&lt;img src="03-size_files/figure-html/ppf-1.svg" style="display: block; margin: auto;" /&gt;
+
+---
+
+# EC 201 Review 016: Trade - example
+
+.hi-slate[PPFs]
+
+&lt;img src="03-size_files/figure-html/ppf2-1.svg" style="display: block; margin: auto;" /&gt;
+
+---
+
+# EC 201 Review 016: Trade - example
+
+.hi[Idea] Whomever _gives up less_ to produce the same amount extra has the comparative advantage. Check: 
+&lt;img src="03-size_files/figure-html/ppf3-1.svg" style="display: block; margin: auto;" /&gt;
+
+---
+# Why do cities exist?
+
+We need land to produce food and resources; dense cities don't provide
+
+--
+
+Cities exist because of human .hi[technology] has created systems of production and trade that defy the natural order
+
+Three conditions must be satisfied:
+
+--
+
+(i). .hi[Agricultural surplus:] People outside cities must produce enough food to feed themselves and city dwellers
+
+--
+
+(ii). .hi[Urban production:] City dwellers must produce goods or services to exchange for food grown by rural workers
+
+--
+
+(iii). .hi[Transportation for exchange:] There must be an efficient transportation system to facilitate the exchange of food and urban products
+
+--
+
+The technology in this case is what we call .hi[trade]
+
+---
+
+# PPF Heuristics
+
+When looking at PPFs, to determine:
+
+
+1) .hi[AA]: Check .hi-gold[intercepts]
+  
+  - Whoever has higher valued .hi[intercept] has the .hi-slate[AA] in production
+
+
+2) .hi[CA]: Check .hii[slopes]
+
+  - A .hi[steeper slope] indicates .hi-slate[CA] on the vertical axis
+  
+  - A .hi[shallower slope] indicates .hi-slate[CA] on the horizontal axis
+
+
+---
+
+name: backyard
+# Backyard production model
+
+Use a simple economic model to understand the economic incentives behind cities
+
+--
+
+Consider a region that produces and consumers two products:
+
+- .hi[Bread]
+
+- .hii[Shirts]
+
+--
+
+.center[.hi[Let's make three assumptions that would eliminate any incentives for households to geographically cluster]]
+
+--
+
+  - .smallerer[Relaxing each assumption will give us .hii[intuition] about the formation of cities]
+
+
+---
+# Backyard production model
+
+.hi[Model assumptions:]
+
+--
+
+.hi[A01:] There exist no differences in the productivity of land nor labor
+
+  - No comparative advantages
+  
+--
+  
+.hi[A02:] Constant Returns to Scale (CRS) in .hii[exchange] and .hii[transportation]
+
+--
+
+  - Per unit price to .hi[trade] goods _is the same_ no matter how much is traded 
+  
+  - No need for middle man firms to help with distribution
+  
+--
+
+.hi[A03:] CRS in .hii[roduction]
+
+--
+
+  - The per unit price of production is constant
+  
+  - No economies of scale `\(\rightarrow\)` households productivity = firm productivity
+
+---
+# Backyard production model
+
+.center[.hi[These three assumptions would eliminate exchange and ensure each household is self sufficient:]]
+
+.hi[A01:] Equal productivity
+
+.hi[A02:] CRS in exchange and transportation
+
+.hi[A03:] CRS in production
+
+--
+
+There is no incentive to specialization due to transaction costs&lt;sup&gt;.hi[†]&lt;/sup&gt;
+
+--
+
+Locational equilibrium would be uniformly distributed population
+
+- Prices adjust to ensure locational equilibrium&lt;sup&gt;.hi[††]&lt;/sup&gt;
+
+.footnote[&lt;sup&gt;.hi[†]&lt;/sup&gt;transaction cost is the opportunity cost of the time required to exchange products
+&lt;sup&gt;.hi[††]&lt;/sup&gt; Axoim 5 of urban economics]
+
+
+---
+
+# Backyard production model: Relax A01
+
+.qa[Q]: Is all land and labor equally productive? 
+
+--
+ 
+.qa[A]: Nope. Let's relax that assumption
+
+&lt;br&gt;
+
+--
+
+Relaxing A01 will lead to differences in productivity across cities:
+
+`\(\rightarrow\)` .hi-pink[comparative advantages]
+
+`\(\rightarrow\)` specialization + trade
+
+&lt;br&gt;
+
+--
+
+However, specialization and trade will not alone lead to urban growth
+
+---
+
+
+
+
+# Relax A02
+
+In absence of scale economies, households trade directly&lt;sup&gt;.hi[†]&lt;/sup&gt;
+
+
+.footnote[
+.hi[†] Scale economies: _bigger_ `\(\rightarrow\)` _cheaper per unit_
+
+]
+
+--
+
+- .hi[CRS in Exchange]: `\(\implies\)` households are just as efficient at executing trades as firms (no cost benefits to scaling)
+
+- No reason to pay a firm to do so (and thus no reason to pay for density)
+
+--
+
+.center[.hi[A4: Production is subject to economies of scale]]
+
+--
+
+A trading firm will use productive inputs such as:
+
+- Large truck for transportation
+
+- Specialized workers
+
+---
+
+
+# Relax A02
+
+To take full advantage advantage of scale economies firms locate s.t. they minimize costs of distribution
+
+--
+
+.center[.hi[ie. Build near river junctions, crossraods, ports]]
+
+--
+  
+`\(\implies\)` higher prices of land `\(\implies\)` density
+
+--
+
+.hi[Result:] Trading cities 
+
+- .hi[The growth of trading cities is implied by A04]
+
+--
+
+These are represent the cities that existed before the industrial revolution
+
+- Most city workers did not produce goods but distributed them
+
+- Trade was risky; insurance, credit, banking and legal services sprouted
+
+
+---
+
+
+
+name: factory
+# Relax A03
+
+Now relax the final assumption A03
+
+--
+
+Suppose factory workers can produce at a cheaper per-unit cost than HH
+
+--
+
+.hi[Example] (w/ numbers)
+
+Consider the shirt making factory:
+
+  - .hi[Home] production: `\(20\)`  p shirt
+  - .hi[Factory]:  `\(12\)` p shirt (economies of scale)
+  
+--
+
+The factory locates in a town with 50 miles to east and west of villages
+  
+   - 50 cents/mile to ship west.
+   - 20 cents/mile to ship east
+   
+---
+# Factory Towns
+
+--
+
+.hi[Market area:] The area over which factories underprice home production of a good
+
+--
+
+Under what condition will a consumer purchase the shirt from a factory?
+
+`\begin{align*}
+\underbrace{p_f}_\text{factory price} + \underbrace{t \times d}_\text{transit cost = cost p mile$\times$miles} \leq \underbrace{p_h}_\text{Home Price}
+\end{align*}`
+
+--
+
+.qa[Questions]:
+
+1. Graph the cost of shirts throughout the entire region
+
+2. Find the .hi[market area] of the town
+
+--
+
+  - Find the sum of the .hii[maximum distances] to the east and west that consumers will purchase the shirt from the factory
+
+---
+
+#Regional Costs
+
+.hi[Home production:] 20 per shirt .hi[Factory production:] 12 per shirt
+
+.hi[Transportation costs:] 50 cents/mile to ship west; 20 cents/mile east
+
+--
+
+&lt;img src="03-size_files/figure-html/factory_town-1.svg" style="display: block; margin: auto;" /&gt;
+
+---
+#Market Area Calculation
+
+Market area depends on which side we are looking at. Let `\(m\)` denote miles
+
+--
+
+.hi[West:] Consumers buy from factory if
+
+--
+  
+  `\(12 + .5*m_{west} \leq 20 \implies m_{west} \leq 16\)`
+  
+--
+
+.hi[East:] Consumers buy from factory if 
+  
+  `\(12 + .2*m_{east} \leq 20 \implies m_{east} \leq 40\)`
+  
+--
+
+.hi[Market area:]
+
+--
+
+`\(40+16 = 56\)`
+
+---
+
+
+# Factory Towns
+
+1. Would workers rather live .hi.orange[closer] or .hi[further] from the factory?
+  
+--
+  
+  - .hi[Closer!]
+    
+--
+
+2. What happens to land-prices .hi[close] to the factory?
+
+--
+  
+  - They .hi
+  [increase]
+  
+--
+
+3. What happens to .hi[density]?
+
+--
+
+ - It will .hi
+ [increase] 
+--
+
+__Result:__ Factory town!
+
+
+---
+class: inverse, middle, center
+# Introduction to Clustering
+
+
+---
+
+# Clustering
+
+So we explained .hi[why] cities exist.. 
+
+Can we explain why there might be more than one firm?
+
+--
+
+Where to start? .hi[Axoim 5]
+
+--
+
+.center[.hi[A5: _Competition generates zero economic profit_]]
+
+--
+
+Suppose a firm makes a positive economic profit.
+
+--
+
+`\(\Rightarrow\)` additional firms enter the market
+
+--
+
+`\(\Rightarrow \Pi \rightarrow 0\)`
+
+
+---
+
+name: zero_profit
+#Example
+
+How many firms are in the cluster?
+
+&lt;img src="03-size_files/figure-html/cluster_graph-1.svg" style="display: block; margin: auto;" /&gt;
+
+
+
+---
+
+
+#Table of Contents
+
+.pull-left[
+###Data &amp; History
+.smallest[
+1. [Urban Populations](#data)
+1. [History](#history)
+1. [Paradox](#paradox)
+]
+
+
+###Existence
+.smallest[
+
+1. [Why do Cities Exist?](#exist)
+1. [Trade Basics](#trade)
+1. [Factory Towns](#factory_towns)
+
+]
+]
+
+.pull-right[
+##Clustering
+1. [Zero Profit](#zero_profit)
+.smallest[
+
+]
+]
+
+
+
+
+
+
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="macros.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
