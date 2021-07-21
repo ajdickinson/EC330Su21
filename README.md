@@ -38,7 +38,7 @@ __Office hours:__ After class each day from 2:00-2:30 pm + by appointment
 
   - __Lecture 03:__ City size
 
-    - [slides](https://rawcdn.githack.com/ajdickinson/ec330-summer21/e7ea3265b9b13013314ce77f2a70de9d4fca12a1/slides/003-size/03-size.html), [pdf[(https://rawcdn.githack.com/ajdickinson/ec330-summer21/e7ea3265b9b13013314ce77f2a70de9d4fca12a1/slides/003-size/03-size.pdf)
+    - [slides](https://rawcdn.githack.com/ajdickinson/ec330-summer21/e7ea3265b9b13013314ce77f2a70de9d4fca12a1/slides/003-size/03-size.html), [pdf](https://rawcdn.githack.com/ajdickinson/ec330-summer21/e7ea3265b9b13013314ce77f2a70de9d4fca12a1/slides/003-size/03-size.pdf)
   
     - Reading: Chapter 2 of TofC
     
