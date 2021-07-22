@@ -46,7 +46,7 @@ __Office hours:__ After class each day from 2:00-2:30 pm + by appointment
   
     - [slides](https://rawcdn.githack.com/ajdickinson/ec330-summer21/ad4133e8a120c4dbf88612d17f9ef500d46bf23c/slides/004-growth/04-growth.html), [pdf](https://raw.githubusercontent.com/ajdickinson/ec330-summer21/main/slides/004-growth/04-growth.pdf)
     
-    - Reading: Chapter 2 of TofC
+    - Reading: Chapter 3 of TofC
 
 - __Week 02__
 
