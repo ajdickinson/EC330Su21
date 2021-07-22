@@ -1,0 +1,1087 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Econ 330: Urban Economics</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Andrew Dickinson" />
+    <script src="04-growth_files/header-attrs/header-attrs.js"></script>
+    <link href="04-growth_files/remark-css/default.css" rel="stylesheet" />
+    <link href="04-growth_files/remark-css/metropolis.css" rel="stylesheet" />
+    <link href="04-growth_files/remark-css/metropolis-fonts.css" rel="stylesheet" />
+    <link href="04-growth_files/tile-view/tile-view.css" rel="stylesheet" />
+    <script src="04-growth_files/tile-view/tile-view.js"></script>
+    <script src="04-growth_files/fabric/fabric.min.js"></script>
+    <link href="04-growth_files/xaringanExtra-scribble/scribble.css" rel="stylesheet" />
+    <script src="04-growth_files/xaringanExtra-scribble/scribble.js"></script>
+    <script>document.addEventListener('DOMContentLoaded', function() { window.xeScribble = new Scribble({"pen_color":["#FF0000"],"pen_size":3,"eraser_size":30,"palette":[]}) })</script>
+    <link rel="stylesheet" href="padres.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Econ 330: Urban Economics
+## Lecture 04
+### Andrew Dickinson
+### 22 July, 2021
+
+---
+
+class: inverse, center, middle
+
+
+
+# Lecture 04: City Size and Growth
+
+---
+class: inverse
+name: schedule
+
+# Schedule
+
+.pull-left[
+.ul[.bigger[.hi-white[Today:]]]
+
+.hi-white[(i). Clustering]
+
+.hi-white[(ii). City size]
+
+.hi-white[(iii). Introduction to growth]
+]
+
+--
+
+.pull-right[
+.ul[.bigger[.hi-white[Upcoming:]]]
+
+  - .hi-white[Reading] (Chapter 2 &amp; 3)
+  
+  - .hi-white[Problem set 01 due on Friday, July 30th]
+  ]
+
+---
+
+# Last Time
+
+We discussed some .hi[fundamentals] that lead to the existence of cities
+
+--
+
+.hi-blue[Main takeaway]: 
+
+- Need some reason (.hi[economies of scale]) for cost of cities (high land prices, for example) to be justified
+  
+--
+
+.hi-blue[Questions]:
+
+  - Why do cities grow beyond one factory?
+ 
+--
+ 
+  - Why are there differences in size across cities?
+ 
+  - Where do cities emerge?
+  
+---
+class: inverse, middle, center
+
+# Firm clustering
+
+---
+
+# Clustering
+
+So we explained .hi-blue[why] cities exist.. 
+
+Can we explain why there might be more than one firm?
+
+--
+
+Where to start?
+
+--
+
+.center[.hi[Axiom 5: _Competition generates zero economic profit_]]
+
+--
+
+Suppose a firm makes a positive economic profit.
+
+--
+
+`\(\Rightarrow\)` additional firms enter the market
+
+--
+
+`\(\Rightarrow \Pi \rightarrow 0\)`
+
+
+---
+
+name: zero_profit
+# Clustering example
+
+How many firms are in the cluster?
+
+&lt;img src="04-growth_files/figure-html/cluster_graph-1.svg" style="display: block; margin: auto;" /&gt;
+
+---
+
+# Clustering
+
+![](./figures/table01.png)
+
+---
+
+name: cluster
+# Clustering
+
+![](./figures/map01.png)
+
+--
+
+Which axiom do these data relate to?
+
+--
+
+.hi[A2: Self-reinforcing effects generate extreme outcomes]
+
+---
+
+name: cluster
+# Clustering
+
+Why might profit increase ( `\(\Pi \uparrow\)` ) initially as more firms .hi-orange[cluster]?
+
+--
+
+.hi-blue[Firms may mutually benefit from clustering due to:]
+
+--
+
+  - .hi-orange[(i).] Sharing intermediate inputs
+
+  - .hi-orange[(ii).] Labor matching 
+
+  - .hi-orange[(iii).] Knowledge spillovers
+
+  - .hi-orange[(iv).] Labor pool sharing
+
+--
+
+&lt;br&gt;
+
+.center[.hi-blue[Let's look at these in some more detail]]
+
+---
+
+# (i). Sharing inputs
+
+Similar firms .hi-blue[share inputs] to benefit from economies of scale
+
+--
+
+.hi-blue[Example:] High tech firms
+
+--
+
+  - Rapidly changing goods that require sophisticated intermediate inputs
+
+    - Electronic components and testing facilities
+    
+--
+
+  - Firms will share intermediate input suppliers to help reduce costs
+  
+--
+
+    - Costs `\(\downarrow \quad \Rightarrow \quad \Pi \uparrow\)`
+    
+--
+
+&lt;br&gt;
+
+.hi-blue[Exists a optimal cluster size that maximizes the benefits of sharing inputs]
+
+---
+# (ii). Labor matching
+
+Extending the tech example, consider a labor pool of software programmers
+
+--
+
+The skill sets of these programmers vary greatly
+
+  - Coding languages: C, Javascript, Python, Rust, etc.
+  
+  - Programming tasks: graphics, AI/ML, OS development etc.
+
+--
+
+Clustering .hi[attracts] more of the kind of workers they want
+
+--
+
+- Firms and workers are .blue[not always perfectly matched]
+
+- Mitchmatches .hii[require training] to eliminate skill gap. .hi[Training is costly]
+
+--
+
+Better for firm if they can find a worker to fill role immediately
+
+- More likely in a cluster
+
+---
+# (ii). Labor matching: HS model
+
+.hi[Model assumptions:]
+
+
+.smallererer[.hi[(i). Variation in worker skills:] Workers have a unique skill set described by an "address" on a circle]
+
+--
+
+.smallererer[.hi[(ii). Firm entry:] Firms enter the market and pick a good with an associated skill requirement]
+
+--
+
+.smallererer[.hi[(iii). Training costs:] Workers incur the cost associated with closing the gap on the circle between their own skill and the skill requirement to produce the good]
+
+--
+
+.smallererer[.hi[(iv). Competition for workers:] Each firm offers a wage to anyone who meets the skill requirement; workers accept the highest net wage
+- Net wage `\(=\)` gross wage - training costs]
+
+--
+
+.smallererer[Additionally, assume]
+
+- .smallererer[.hi[A4: Production is subject to economies of scale] to ensure firms hire more than one worker]
+
+- .smallererer[.hi[A5: Competition generates zero economic profit]] to ensure perfect competition
+
+---
+# (ii). Labor matching: HS model
+
+.hi[Consider two cities:] Wages `\(w = 12\)` and training costs `\(t_c = 24\)`
+.pull-left[
+- City A
+  - Two firms
+  - Four workers (four skill types)
+
+- City B
+  - Three firms
+  - Six workers (six skill types)]
+  
+--
+
+.pull-right[
+![:scale 50%](figures/four-skills.png)
+
+![:scale 50%](figures/six-skills.png)
+]
+
+---
+# (iii). Knowledge spillovers
+
+.hi-blue[Knowledge spillovers:] Exchange of ideas across individuals within a space
+
+--
+
+  - One of most important external benefit of a college campus (classroom) is the .hii[peer effects]
+  
+--
+
+.hi-blue[Examples:]
+.pull-left[
+- Graduate school
+- Jam sessions
+]
+.pull-right[
+- Attending seminars, workshops, and conferences
+]
+
+--
+
+Knowledge spillovers increase with more people and more knowledge
+
+--
+
+`\(\Rightarrow\)` Knowledge Spillovers `\(\uparrow\)` `\(\longrightarrow\)` Productivity `\(\uparrow\)`
+
+--
+
+.hi-blue[Urban settings:] Silicon Valley, Wall Street, etc.
+
+---
+
+# Agglomeration economies
+
+.ul[.hi-blue[Definition]]: .hi[Agglomeration Economies]
+
+- Benefits that come when firms and people locate near one another together in cities and industrial clusters
+
+--
+
+&gt; Agglomeration economies are the benefits that come when firms and people locate near one another together in cities and industrial clusters. These benefits all ultimately come from transport costs savings: the only real difference between a nearby firm and one across the continent is that it is easier to connect with a neighbor. Of course, transportation costs must be interpreted broadly, and they include the difficulties in exchanging goods, people, and ideas
+
+Source: [Ed. Glaeser](https://www.nber.org/chapters/c7977.pdf)
+
+---
+
+name: urban
+# Agglomeration economies
+
+Let's refine our language with definitions:
+
+--
+
+i. _.hi[Localization economies]_
+
+- The economic forces that cause clustering that act on firms .hii[within the same] industry
+- Local to a particular industry
+- Example: Firms in the software industry cluster in Silicon Valley
+  
+ii. _.hi.orange[Urbanization economies]_
+
+- The economic forces that cause clustering that act on firms .hii[across] industries
+- The precense of one firm in one industry attracts firms from different industries
+- Example: Universities; corporate headquarters
+  
+---
+
+# Localization Economies
+
+A _.hi[localization economy]_ occurs when an increase in the size of an industry leads to an increase in productivity of production
+
+.center[.hi[Why?]]
+
+--
+
+Evidence of higher .hi[labor productivity]
+
+- Higher output `\(\rightarrow\)` more productive workers (Henderson, 1986)
+  
+- Tech workers benefit more from .orange[knowledge spillovers] than manufacturing (Mun &amp; Huchinson, 1995)
+
+--
+
+Evidence of higher .hi[rates of entry]
+
+- More firms are born where .hii[output is higher]; that is, where the industry is clustered (Carlton, 1986)
+
+---
+# Urbanization Economies
+
+_.hii[Urbanization Economies]_ are when the size of a city leads to an increase in productivity
+
+.center[.hi[Why?]]
+
+--
+
+.hi[Sharing intermediate goods]: (banks, accountants, hotels, transport services)
+  
+--
+
+.hi[Pooling]: workers move from industries with low demand to high demand (.orange[across] sector)
+
+--
+  
+.hi[Matching]: common skills across sectors (excel, for example)
+
+--
+
+&lt;br&gt;
+
+Urbanization Economies result in .hi[large, diverse cities]
+
+
+---
+# Examples
+
+Two major examples of .hi[localization] &amp; .hi.orange[urbanization] economies:
+
+1) .hi-blue[Silicon Valley]
+
+--
+
+- .hi[Localization]: firms locate close to each other to share .orange[high-skilled labor pool] despite very high rents
+
+--
+
+
+2) .hi-blue[Los Angeles]
+
+--
+
+- .hii[Urbanization]: Not really any super dominant industries, yet it continues to grow
+
+---
+class: inverse, middle, center
+# City Size
+
+---
+# City Size
+
+.hi[Why are some cities big while others are small?]
+
+--
+
+We've seen why agglomeration economies explain why .hi[firms] cluster.
+
+--
+
+But how to agglomeration economies explain why .hii[people] cluster?
+
+--
+
+- Agglomeration economies increase productivity and lead to higher wages in larger cities
+
+--
+
+&lt;br&gt;
+
+.hi[Let's look at some data of city populations in the US]
+
+---
+# City Size in the US
+
+&lt;img src="04-growth_files/figure-html/zipf_one-1.svg" style="display: block; margin: auto;" /&gt;
+
+--
+
+There seems to be a functional relationship within city sizes and rank within a single country
+
+---
+# What Function? f(x) = 1/x
+
+&lt;img src="04-growth_files/figure-html/zipf_two-1.svg" style="display: block; margin: auto;" /&gt;
+
+---
+# What Function? Zipf's law
+
+&lt;img src="04-growth_files/figure-html/zipf_three-1.svg" style="display: block; margin: auto;" /&gt;
+
+---
+name: zipf
+# Size: Zipf's Law
+
+.hi[Zipf's Law] of city size can be expressed as:
+
+`\begin{align*}
+rank = \frac{C}{N}
+\end{align*}`
+
+.hi[Where]
+
+- C represents a constant for a country/region
+
+- N represents the population level
+
+--
+
+We can use the function described by Zipf's law to approximate city size based on rank
+
+---
+# Zipf's Law: Example
+
+Assume the .hi[third] ( _rank_ ) largest city in a region has .hii[200,000 people] ( `\(N\)` )
+
+- Use Zipf's law to figure out how many people are in the _fifth-largest_ city
+
+
+.hi[Two steps:]
+
+--
+
+1) Calculate the constant `\(C\)`:
+
+`\begin{align*}
+3 &amp;= \frac{C}{200,000}\\
+C &amp;=  600,000
+\end{align*}`
+
+--
+
+2) Use that info to calculate the population of the 5th largest city:
+
+`\begin{align*}
+5 &amp;= \frac{600,000}{Pop_5}
+\end{align*}`
+
+---
+
+
+
+# Zipf's Law: Example
+
+Assume the .hi[third] ( _rank_ ) largest city in a region has .hii[200,000 people] ( `\(N\)` )
+
+- Use Zipf's law to figure out how many people are in the _fifth-largest_ city
+
+
+.hi[Two steps:]
+
+1) Calculate the constant `\(C\)`:
+
+`\begin{align*}
+3 &amp;= \frac{C}{200,000}\\
+C &amp;=  600,000
+\end{align*}`
+
+2) Use that info to calculate the population of the 5th largest city:
+
+`\begin{align*}
+5 &amp;= \frac{600,000}{Pop_5} \implies Pop_5 = 120,000
+\end{align*}`
+
+---
+
+
+# Zipf's Law: Intuition
+
+.qa[Q]: In words, what does .hii[Zipf's law] tell us about the relationship between .hi[rank] and .hi[city size]?
+
+--
+
+.qa[A1]: In words, this equation says:
+
+  - .hi[A few] cities will be big
+
+--
+
+  - There is a .hi[big drop] in population as rank increases
+  
+  - Most low rank (high number) cities are .hi[pretty similar] in size
+
+---
+# Quiz 02: Zipf's Law
+
+Answer the following two part and submit a pdf to Canvas before our next class (Monday). Points will be taken off for poor scans and/or handwriting.
+
+(a). Assume that the Zipf's Law for cities is exactly true. If the .hi[fourth-largest] city in a region has .hii[2.5 million] people, how many people live in the region's .hi[largest] city? Show your work.
+
+&lt;br&gt;
+
+(b). How many people live in the region's .hi[tenth-largest] city? Show your work.
+
+---
+# Primate Cities
+
+.hi-blue[Definition]: A .hi[primate city] is
+
+
+&gt; A major city that works as the .hi.purple[financial, political, and population center of a country] and is not rivaled in any of these aspects by any other city in that country. Normally, a primate city must be at least .purple[twice as populous as the second largest city] in the country.
+
+
+.hi[Examples]:
+.smallerer[
+.pull-left[
+.hi[City]
+- Seoul, South Korea
+- Santiago, Chile 
+- Buenos Aires, Argentina
+- Lima, Peru
+]
+]
+.smallerer[
+.pull-right[
+.hi[Percent of Total Population]
+- 45.8%
+- 35.5%
+- 33.7%
+- 31.7%
+]
+]
+
+
+---
+
+# Why Primate Cities?
+
+What might generate primate cities?
+
+- Large .hi[economies of scale] in exchange
+
+- Inadequate .hii[transportation infastructure] elsewhere
+
+--
+
+- .hi[Political factors]?
+
+--
+
+  - Easier for dictators to bribe, surveil populations of a primary city (?)
+  
+  -  Capital cities with dictatorships are _45%_ larger than capital cities of other countries
+    
+   - Is this relationship .hi.orange[causal]? &lt;sup&gt;.orange[†]&lt;/sup&gt;
+
+--
+
+.footnote[
+.orange[†] Maybe somebody does. But you definitely can't say from the 45% number. Much of modern econ is about figuring out when relationships _are_ causal. For a completely unrelated, but informative and entertaining example, see [this video](https://www.youtube.com/watch?v=6YrIDhaUQOE&amp;t=133s). 
+]
+
+---
+# Why Zipf's Law?
+
+.qa[Q]: _Why does Zipf's Law_ do pretty well in general at describing city size?
+
+--
+
+.qa[A]: __Axiom 2__: _.hi[Self-reinforcing effects] generate extreme outcomes_
+
+  - "Winner take all" situations from policies, agglomeration, knowledge spillovers, etc.
+
+--
+
+  - Wages grow, workers in, firms enter, `\(\rightarrow\)` labor demand `\(\uparrow\)` `\(\rightarrow\)` wages grow . 🔁
+  
+--
+
+.qa[Q]: What slows this process down?
+
+--
+
+.center[.hi[Increases in costs lead to diseconomies of scale]]
+
+---
+# Size
+
+Why do costs increase as workers move in? (Diseconomies of scale?)
+
+(i). .hi[Commute costs increase]
+
+  - More people `\(\implies\)` more congestion (all else equal)
+  
+--
+
+(ii). .hi.green[Pollution] increases
+
+  - More workers `\(\implies\)` more production `\(\implies\)` more .green[pollution]?
+
+--
+
+(iii). .hii[Disease]
+
+--
+  - Early 1900's (US), living in a city `\(\rightarrow\)` life expectancy `\(\downarrow\)` 5 years
+  
+  - Now, the US's largest cities life expectancy exceeds the national average
+
+--
+
+  - Life expectancy in cities is lower than rural areas in developing economies. .hi[Why?]
+
+---
+name: utility
+# Utility
+
+What can we use to model the value individuals place on different attributes of cities? __Utility__
+
+--
+
+.hi-blue[Utility] is an abstract notion of peoples preferences. A few assumptions:
+
+--
+
+
+.hi[(i).] Higher levels of utility are .orange[preferred] to .blue[lower] levels. And more consumption is better than less
+
+.hi[(ii).] Utility is _ordinal, not cardinal_ meaning only the .hii[rank] of the number matters, not the level
+
+--
+
+.hi[(iii).] Marginal utility is diminishing (marginal value is diminishing)
+
+--
+
+.center[.hi[Similar to the assumption that firms maximize profits, we also assume that individuals maximize utility]]
+
+---
+# Modeling City Size
+
+&lt;img src="04-growth_files/figure-html/u_f1-1.svg" style="display: block; margin: auto;" /&gt;
+
+---
+
+
+
+
+# Modeling City Size
+
+
+&lt;img src="04-growth_files/figure-html/u_f2-1.svg" style="display: block; margin: auto;" /&gt;
+
+---
+
+
+
+
+# Modeling City Size
+
+
+&lt;img src="04-growth_files/figure-html/u_f3-1.svg" style="display: block; margin: auto;" /&gt;
+
+---
+name: eq
+# Locational Equilibrium
+
+.hi[Locational Equilibrium] occurs when utility levels (valuations) across cities are the same for all workers
+
+--
+
+In a system of cities, .hi[migration] has a .hii[self-correcting] effect
+
+- Locational equilibrium is stable when the utility curve is downward sloping
+
+- Cities tend to be too large rather than too small
+
+--
+
+In practice, we usually do this by .hii[worker type] (demographic, income level, education, etc)
+  
+- For now, we will just consider the case when .hi[all workers are equivalent] (_but not cities_)
+
+- This assumption is mostly for accounting purposes. Best to start simple.
+
+---
+# Locational Eq Graph
+
+&lt;img src="04-growth_files/figure-html/u_loc-1.svg" style="display: block; margin: auto;" /&gt;
+
+
+---
+
+# Locational Eq: Implications
+
+Back to the .hi.orange[real world]: _Why is this framework useful?_
+
+  - If utility really has this shape, what does this mean for policy?
+  
+--
+
+_Policies that impact the .hi[spatial distribution] of the population can have far flung effects on individuals it was not designed to impact, .hii[via migration]_
+
+
+.hi-blue[Example]:
+
+--
+
+- Local school quality improvements `\(\rightarrow\)` increased prices. Higher utility from school quality, lower from higher prices. Some people may be displaced? (Gentrification)
+  
+--
+
+- Net effect could be positive, but there will be winners and losers
+    
+--
+
+More on this later in the term (.hii[place-based] policies). 
+
+---
+
+
+class: inverse, middle, center
+# Intro to Growth
+
+---
+name:growth_factors
+# Growth
+
+.hii[Econ in General]: Growth is defined as an increase in per-capita income
+
+.hi[Urban Economics]: Growth is defined as an increase .hi[_utility level_] of a typical resident
+
+--
+
+.hi[Urban definition accounts for factors other than wage.] Such as:
+  
+--
+
+.hi[(i).] Increases in natural resources (.blue[gold is found under a city])
+
+--
+
+.hi[(ii).] Increases in physical capital (.blue[computers] 💻)
+
+--
+
+.hi[(iii).] Increases in human capital (.blue[education] 🎓)
+
+--
+
+.hi[(iv).] Technological progress (.blue[computers invented])
+
+--
+
+.hi[(v).] Agglomeration Economies 🏙
+
+
+---
+name:example
+# Example: Innovation
+
+.pull-left[
+&lt;img src="04-growth_files/figure-html/u_innov-1.svg" style="display: block; margin: auto;" /&gt;
+]
+
+.pull-right[
+Initially: 2 cities, both with same utility curve
+
+Population each city: .orange[800k] (total pop, 1.6 m)]
+
+---
+# Example: Innovation
+
+.pull-left[
+&lt;img src="04-growth_files/figure-html/u_innov2-1.svg" style="display: block; margin: auto;" /&gt;
+]
+
+
+.pull-right[
+Productivity shock brings one city's curve up (due to say, higher wages)
+
+In the absence of migration, utility is now higher in the higher productivity city]
+
+---
+# Example: Innovation
+
+.pull-left[
+&lt;img src="04-growth_files/figure-html/u_innov3-1.svg" style="display: block; margin: auto;" /&gt;
+
+]
+.pull-right[
+.hi[Migration] induces workers toward the more productive city and away from the less productive city
+
+- .hi.orange[New locational eq] ( `\(u^*\)` ): utility is equalized (higher than before). populations change 
+]
+
+
+--
+
+.hi-blue[Note]: We are implicitly assuming
+
+- People are identical and perfectly mobile
+
+In real life high skilled workers are generally far more mobile than low skilled
+
+---
+# Example Recap
+
+&lt;div style="text-align: left"&gt; Consider two cities: each with an equilibrium population of 800k and the same utility per worker curve&lt;/div&gt;
+
+- .hi[Innovation] (tech progress) in one city .blue[shifts utility per worker] curve up
+
+--
+
+- Workers in the innovative city enjoy a higher level of utility
+
+- Workers migrate from the city that failed to innovate
+
+--
+
+Eventually, a new equilibrium is reached where .hi[utility per worker] is the .hi[same across both cities]
+  
+- Innovative city is larger
+
+---
+name:economy_wide
+# Economy - Wide Growth
+
+.hi[Note]: If there is an .hii[innovation for the entire economy], then:
+
+  - .hi[Both cities] experience upward shift of utility curve
+  
+  - Since there is no utility gap at original populations,there is .hi[no migration]
+
+--
+
+  - Increase in utility in .purple[both cities] 
+  
+  - Still economic growth, but city sizes stay the same
+
+---
+# Table of Contents
+
+.pull-left[
+### Clustering
+.smallest[
+1. [Reasons for Firm Clustering](#cluster)
+
+1. [Urbanizations vs Localization](#urban)
+]
+
+
+### City Size
+.smallest[
+
+1. [Zipf's Law](#zipf)
+
+1. [Utility](#utility)
+
+1. [Locational Eq](#eq)
+]
+]
+
+.pull-right[
+## Growth
+.smallest[
+
+1. [Growth factors](#growth_factors)
+
+1. [Example](#example)
+
+1. [Economy Wide Growth](#economy_wide)
+
+]
+]
+
+
+---
+
+exclude:true
+
+
+
+
+&lt;!-- --- --&gt;
+&lt;!-- exclude: true --&gt;
+
+&lt;!-- ```{R, generate pdfs, include = F} --&gt;
+&lt;!-- system("decktape remark 02_goodsmarket_part1.html 02_goodsmarket_part1.pdf --chrome-arg=--allow-file-access-from-files") --&gt;
+&lt;!-- ``` --&gt;
+
+
+
+
+
+
+
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="macros.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
