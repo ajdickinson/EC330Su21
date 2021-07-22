@@ -4,7 +4,7 @@ Public repository for EC330 Summer 2021 course in Urban Economics at the Univers
 
 This README file includes all links to course materials including:
 
-  - [Syllabus](https://github.com/ajdickinson/ec330-summer21/blob/main/syllabus/syllabus.pdf)
+  - [Syllabus](https://github.com/ajdickinson/ec330-summer21/raw/main/syllabus/syllabus.pdf)
 
   - [Slides](https://github.com/ajdickinson/ec330-summer21/tree/main/slides)
   
@@ -32,13 +32,13 @@ __Office hours:__ After class each day from 2:00-2:30 pm + by appointment
 
   - __Lecture 02:__ EC201 Review + The 5 axioms of urban economics
   
-    - [slides](https://rawcdn.githack.com/ajdickinson/ec330-summer21/e7ea3265b9b13013314ce77f2a70de9d4fca12a1/slides/002-review/02-review.html), [pdf](https://rawcdn.githack.com/ajdickinson/ec330-summer21/f214d3c0102932100c0a04bc348bfe7090150636/slides/002-review/02-review.pdf)
+    - [slides](https://rawcdn.githack.com/ajdickinson/ec330-summer21/e7ea3265b9b13013314ce77f2a70de9d4fca12a1/slides/002-review/02-review.html), [pdf](https://raw.githubusercontent.com/ajdickinson/ec330-summer21/main/slides/002-review/02-review.pdf)
     
     - Reading: Chapter 1 of TofC
 
   - __Lecture 03:__ City size
 
-    - [slides](https://rawcdn.githack.com/ajdickinson/ec330-summer21/e7ea3265b9b13013314ce77f2a70de9d4fca12a1/slides/003-size/03-size.html), [pdf](https://rawcdn.githack.com/ajdickinson/ec330-summer21/e7ea3265b9b13013314ce77f2a70de9d4fca12a1/slides/003-size/03-size.pdf)
+    - [slides](https://rawcdn.githack.com/ajdickinson/ec330-summer21/c11f9589f6ffb2b097db8bca96e9f96afcf97d2f/slides/003-size/03-size.html), [pdf](https://rawcdn.githack.com/ajdickinson/ec330-summer21/e7ea3265b9b13013314ce77f2a70de9d4fca12a1/slides/003-size/03-size.pdf)
   
     - Reading: Chapter 2 of TofC
     
