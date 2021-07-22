@@ -4,7 +4,7 @@ Public repository for EC330 Summer 2021 course in Urban Economics at the Univers
 
 This README file includes all links to course materials including:
 
-  - [Syllabus](https://github.com/ajdickinson/ec330-summer21/blob/main/syllabus/syllabus.pdf)
+  - [Syllabus](https://github.com/ajdickinson/ec330-summer21/raw/main/syllabus/syllabus.pdf)
 
   - [Slides](https://github.com/ajdickinson/ec330-summer21/tree/main/slides)
   
