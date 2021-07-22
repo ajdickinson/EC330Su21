@@ -32,7 +32,7 @@ __Office hours:__ After class each day from 2:00-2:30 pm + by appointment
 
   - __Lecture 02:__ EC201 Review + The 5 axioms of urban economics
   
-    - [slides](https://rawcdn.githack.com/ajdickinson/ec330-summer21/e7ea3265b9b13013314ce77f2a70de9d4fca12a1/slides/002-review/02-review.html), [pdf](https://rawcdn.githack.com/ajdickinson/ec330-summer21/f214d3c0102932100c0a04bc348bfe7090150636/slides/002-review/02-review.pdf)
+    - [slides](https://rawcdn.githack.com/ajdickinson/ec330-summer21/e7ea3265b9b13013314ce77f2a70de9d4fca12a1/slides/002-review/02-review.html), [pdf](https://raw.githubusercontent.com/ajdickinson/ec330-summer21/main/slides/002-review/02-review.pdf)
     
     - Reading: Chapter 1 of TofC
 
