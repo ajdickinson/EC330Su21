@@ -10,7 +10,7 @@ This README file includes all links to course materials including:
   
   - [Problem sets](https://github.com/ajdickinson/ec330-summer21/tree/main/problem-sets)
   
-  - [TotC Rubric](https://github.com/ajdickinson/ec330-summer21/blob/main/report/ec330-TotC-rubric.pdf)
+  - [TotC Rubric](https://raw.githubusercontent.com/ajdickinson/ec330-summer21/main/report/ec330-TotC-rubric.pdf)
   
   - [External resources](https://github.com/ajdickinson/ec330-summer21/tree/main/resources)
     
