@@ -44,9 +44,9 @@ __Office hours:__ After class each day from 2:00-2:30 pm + by appointment
     
   - __Lecture 04:__ Firm clustering and city growth
   
-    - slides
+    - [slides](https://rawcdn.githack.com/ajdickinson/ec330-summer21/ad4133e8a120c4dbf88612d17f9ef500d46bf23c/slides/004-growth/04-growth.html), [pdf](https://raw.githubusercontent.com/ajdickinson/ec330-summer21/main/slides/004-growth/04-growth.pdf)
     
-    - Reading: Chapter 2 of TofC
+    - Reading: Chapter 3 of TofC
 
 - __Week 02__
 
@@ -56,11 +56,11 @@ __Office hours:__ After class each day from 2:00-2:30 pm + by appointment
 
   - __Lecture 07:__ Local labor markets
 
-  - __Lecture 08:__ __Midterm__
+  - __Lecture 08:__ Minimum wage + Causal inference
 
 - __Week 03__
 
-  - __Lecture 09:__ Minimum wage + Causal inference
+  - __Lecture 09:__ __Midterm__
 
   - __Lecture 10:__ Introduction to place-based policies
 
