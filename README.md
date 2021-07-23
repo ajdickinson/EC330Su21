@@ -13,6 +13,8 @@ This README file includes all links to course materials including:
   - [TotC Rubric](https://github.com/ajdickinson/ec330-summer21/blob/main/report/ec330-TotC-rubric.pdf)
   
   - [External resources](https://github.com/ajdickinson/ec330-summer21/tree/main/resources)
+    
+    - [TotC](https://raw.githubusercontent.com/ajdickinson/ec330-summer21/main/resources/Triumph-of-the-City-Edward-Glaeser.pdf) 
   
 ## Schedule
 
