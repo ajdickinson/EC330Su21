@@ -54,6 +54,8 @@ __Office hours:__ After class each day from 2:00-2:30 pm + by appointment
 
   - __Lecture 05:__ Rents and urban land use
 
+    - [slides](https://rawcdn.githack.com/ajdickinson/ec330-summer21/e6b2ac37d7450546a7e297bc3918d17311778e75/slides/005-rents/05-rents.html), [pdf](https://raw.githubusercontent.com/ajdickinson/ec330-summer21/main/slides/005-rents/05-rents.pdf)
+
   - __Lecture 06:__ Neighborhood choice
 
   - __Lecture 07:__ Local labor markets
