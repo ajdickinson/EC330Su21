@@ -58,6 +58,8 @@ __Office hours:__ After class each day from 2:00-2:30 pm + by appointment
 
   - __Lecture 06:__ Neighborhood choice
 
+    - [slides](https://rawcdn.githack.com/ajdickinson/ec330-summer21/49d7d3cc25734d04c113e17c2e62049ffcbc49a4/slides/006-nbhd-choice/06-nbhd-choice.html), [pdf](https://raw.githubusercontent.com/ajdickinson/ec330-summer21/main/slides/006-nbhd-choice/06-nbhd-choice.pdf)
+
   - __Lecture 07:__ Local labor markets
 
   - __Lecture 08:__ Minimum wage + Causal inference
