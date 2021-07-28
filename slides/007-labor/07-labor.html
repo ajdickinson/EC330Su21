@@ -1,0 +1,1203 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Econ 330: Urban Economics</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Andrew Dickinson" />
+    <script src="07-labor_files/header-attrs/header-attrs.js"></script>
+    <link href="07-labor_files/remark-css/default.css" rel="stylesheet" />
+    <link href="07-labor_files/remark-css/metropolis.css" rel="stylesheet" />
+    <link href="07-labor_files/remark-css/metropolis-fonts.css" rel="stylesheet" />
+    <link href="07-labor_files/tile-view/tile-view.css" rel="stylesheet" />
+    <script src="07-labor_files/tile-view/tile-view.js"></script>
+    <script src="07-labor_files/fabric/fabric.min.js"></script>
+    <link href="07-labor_files/xaringanExtra-scribble/scribble.css" rel="stylesheet" />
+    <script src="07-labor_files/xaringanExtra-scribble/scribble.js"></script>
+    <script>document.addEventListener('DOMContentLoaded', function() { window.xeScribble = new Scribble({"pen_color":["#FF0000"],"pen_size":3,"eraser_size":30,"palette":[]}) })</script>
+    <script src="07-labor_files/kePrint/kePrint.js"></script>
+    <link href="07-labor_files/lightable/lightable.css" rel="stylesheet" />
+    <link rel="stylesheet" href="padres.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Econ 330: Urban Economics
+## Lecture 07
+### Andrew Dickinson
+### 28 July, 2021
+
+---
+
+
+
+
+class: inverse, center, middle
+# Lecture 07: Urban Labor Markets
+
+---
+class: inverse, middle
+# Schedule
+
+.pull-left[
+.ul[.bigger[.hi-gold[Today:]]]
+
+.hi-white[(i). Urban labor markets]
+
+  - .hi-white[Urban labor demand]
+
+  - .hi-white[Urban labor supply]
+
+  - .hi-white[Urban labor EQ]
+
+.hi-white[(ii). Monopsony]
+]
+
+--
+
+.pull-right[
+.ul[.bigger[.hi-gold[Upcoming:]]]
+
+  - .hi-white[Reading] (Chapter 5)
+  
+  - .hi-white[Problem set 01 due on Friday at Midnight]
+  ]
+
+---
+# Housekeeping
+
+---
+class: inverse, middle, center
+# Urban labor markets
+
+---
+# Urban labor Markets
+
+.hi[Why care about labor markets in urban economics?]
+
+David Card: 
+&gt; A city _is_ a labor market
+
+--
+
+Cities provide incentives for firms and workers to locate close to each other
+
+Density of a city is generated entirely by incentives in the labor market
+
+--
+
+&lt;br&gt;
+
+.qa[Q:] Modeling .hii[individual] location decisions, what should we consider?
+
+---
+# Urban labor Markets
+
+.hi[What are the most important features in location decisions?]
+
+--
+.pull-left[
+- Wages
+- Rents
+- Amenities (catch all)]
+
+--
+.pull-right[
+- Birthplace
+- Distance to birthplace]
+
+--
+
+.hii[Wages] are significant factor of individual/household location choices
+
+.hi[Imagine] if Amazon/Google/Microsoft opens a campus in Portland
+  
+--
+
+  - What would happen to rents? Gentrification? Commute times?
+  
+--
+
+&lt;br&gt;
+
+.hi[Introducing large amounts of high paying jobs + capital changes a city]
+
+---
+# Urban labor Markets
+
+.hi[A labor market consists of:]
+
+.hi[(i).] Firms that buy labor. Generate labor demand 
+
+.hi[(ii).] HH's who sell labor. Generate labor supply
+
+--
+
+Labor and urban economist model labor markets (supply) differently
+
+--
+
+.hi-gold[Labor:] Discuss labor supply as being generated from labor-leisure tradeoff
+
+  - Model: Rational agents making optimal choices over leisure/education
+
+--
+
+.hii[Urban:] Discuss labor supply as being generated from _location choices_
+  
+  - Assume people work fixed hours but choose where to work
+
+---
+class: inverse, middle
+# Urban labor Markets: Labor demand
+
+---
+# Urban labor Markets: Labor demand
+
+What do both fields have (somewhat) in common?
+
+--
+
+.center[.hi[Labor demand]]
+
+--
+
+.ul[.hi[Definition:] Labor Demand]
+
+  - Set of quantities of labor demanded corresponding to a _set_ of wages
+  
+--
+ 
+.qa[Q:] What's the difference between changes in:
+.pull-left[
+- _labor demand_]
+.pull-right[
+- _quantity of labor demanded_]
+
+--
+
+`\(\Delta\)` Labor demand: Shift in the demand curve
+
+`\(\Delta\)` Quantity of labor demanded: Movement along a demand curve
+
+---
+# Urban labor Markets: Labor demand
+
+We will start with the .hi[competitive] model:
+
+--
+
+.ul[.hi[Assumptions:]]
+
+.hii[(i).] Firms seek to maximize profits
+
+--
+
+.hii[(ii).] Markets are perfectly competitive (in .orange[both] inputs and output)
+
+--
+
+`\(\Rightarrow\)` No individual firm can influence the price of labor (or other inputs)
+  
+`\(\Rightarrow\)` No individual firm can influence the output price
+
+--
+
+Are these assumptions reasonable? Discuss
+
+--
+
+---
+# Urban labor Markets: Labor demand
+
+Derive a condition for EQ labor the firm will hire in the competitive model?
+
+`\begin{align*}
+\pi &amp;= P*Q - TC
+\end{align*}`
+
+---
+# Urban labor Markets: Labor demand
+
+Derive a condition for EQ labor the firm will hire in the competitive model?
+
+`\begin{align*}
+\pi &amp;= P*Q - TC\\
+\pi &amp;= \underbrace{P*F(L,K)}_\text{TR} - \underbrace{w*L-r*K}_{\text{TC}}
+\end{align*}`
+
+where:
+
+--
+
+ - `\(P\)`: Output price
+ 
+ - `\(F(L,K) = Q\)`: Quantity produced (function of labor and capital)
+ 
+  - `\(Q = F(L,K)\)`
+  
+--
+
+ - `\(w\)`: Wage rate; `\(L\)`: total labor employed `\(\Rightarrow w*L =\)` cost of labor
+ - `\(r\)`: rental rate; `\(K\)`: capital `\(\Rightarrow r*K =\)` cost of capital 
+
+---
+# Urban labor Markets: Labor demand
+
+.hi[Claim]: Firm hires labor iff the _marginal profit_ w.r.t to labor is positive. 
+
+--
+
+.hi[.ul[Definition:] Marginal Profit w.r.t to labor] ( `\(\frac{\Delta \pi}{\Delta L}\)` )
+
+  - The change in profit from hiring an additional unit of labor
+
+--
+
+.hi["Proof":] (Too many cooks)
+
+- If `\(\frac{\Delta \pi}{\Delta L} &lt;0\)`, added profit from an additional unit of labor is negative (ie. a loss), so the firm _should not_ hire the next unit
+
+--
+
+- If `\(\frac{\Delta \pi}{\Delta L} &gt; 0\)`, added profit from an additional unit of labor is positive (ie. a gain), so the firm _should_ hire the next unit
+
+--
+
+- If `\(\frac{\Delta \pi}{\Delta L} = 0\)` Optimal allocation for the firm. Can't do better
+
+--
+
+---
+# Urban labor Markets: Labor demand
+
+.ul[.hi[Definitions:]]
+
+- .hi[Marginal Product of Labor]: Change in output from an additional unit of labor employed
+
+--
+
+  - `\(MP_L = \frac{\Delta F(L,K)}{\Delta L}\)`
+
+--
+
+- .hi[Marginal Revenue Product of Labor]: Value of the change in output from an additional unit of labor employed
+
+--
+
+  -  `\(MRP_L = P*\frac{\Delta F(L,K)}{\Delta L}\)`
+
+---
+# Urban labor Markets: Labor demand
+
+So what is `\(\frac{\Delta \pi}{\Delta L}\)`?
+
+--
+
+`\begin{align*}
+\frac{\Delta \pi}{\Delta L} = P*\frac{\Delta F(L,K)}{\Delta L} - w*\frac{\Delta L}{\Delta L}  
+\end{align*}`
+
+---
+# Urban labor Markets: Labor demand
+
+So what is `\(\frac{\Delta \pi}{\Delta L}\)`?
+
+`\begin{align*}
+\frac{\Delta \pi}{\Delta L} &amp;= P*\frac{\Delta F(L,K)}{\Delta L} - w*\frac{\Delta L}{\Delta L} \\
+&amp;= P*MP_L - w\\
+&amp; = MRP_L - w
+\end{align*}`
+
+--
+
+Now, set `\(\frac{\Delta \pi}{\Delta L}=0\)` to get the labor demand curve:
+
+`\begin{align*}
+ MRP_L - w =0 \implies MRP_L = w
+\end{align*}`
+
+---
+# Urban labor Markets: Labor demand
+
+&lt;img src="07-labor_files/figure-html/supply_demand-1.svg" style="display: block; margin: auto;" /&gt;
+
+---
+# Urban labor Markets: Labor demand
+
+Why might .hi[labor demand] curves vary across cities?
+
+--
+
+.hi[(i).] Differences in productivity across cities (agglomeration)
+
+--
+
+.hi[(ii).] Variation in (business) taxes across cities
+
+--
+
+.hi[(iii).] Industrial public service infastructure (electricity, water, gas pipelines)
+
+--
+
+.hi[(iv).] Land use policies
+  - stricter zoning `\(\implies\)` higher land price `\(\implies\)` less money for other inputs
+
+--
+
+.hi[(v).] Demand for a city's exported goods
+
+---
+# Urban labor Markets: Labor demand
+
+.qa[Q]: What would two cities where everything is equal except one has a higher productivity of labor look like?
+
+--
+
+&lt;img src="07-labor_files/figure-html/supply_demand2-1.svg" style="display: block; margin: auto;" /&gt;
+
+---
+# Urban labor Markets: Labor demand
+
+.qa[Q]: What about a city with lower export demand?
+
+--
+
+&lt;img src="07-labor_files/figure-html/supply_demand3-1.svg" style="display: block; margin: auto;" /&gt;
+
+---
+class: inverse, middle, center
+# Urban labor markets: Supply
+
+---
+#Labor Supply
+
+Labor supply is driven from location decisions of individuals. What generates location choices?
+
+--
+
+1) .hi[Wages]
+
+2) Rents
+
+3) Amenities
+
+4) Other, individual specific stuff (like birth location)
+
+--
+
+---
+# Labor Supply
+
+A _set_ of quantities of labor supplied corresponding to a _set_ of wages. 
+
+.qa[Q1]: What causes _movement along_ the labor supply curve?
+
+--
+
+- A change in wages. That's it!
+
+--
+
+
+.qa[Q2]: What causes a _shift_ of the labor supply curve?
+
+--
+
+1) Changes in amenities (building of a nicer school, eroding of air quality)
+
+2) Changes in residential government expenditures (increase in taxes drives people away, increases in govt spending brings people in)
+
+--
+
+
+---
+# Labor Supply
+
+Knowing how responsive workers are to changes in wages is key for vast swaths of policies
+
+- Estimates for labor supply elasticities are pretty big
+
+- If `\(\varepsilon_{\text{workforce},\text{wage}} = 2\)`, what does this mean?
+
+--
+
+.hi.orange[In general] estimated labor supply elasticities are higher for workers with a college degree than without a college degree. What does this mean?
+
+--
+
+  - College educated individuals are more responsive to changes in wages w.r.t to their location decisions
+
+--
+
+--
+
+
+---
+# Labor Supply Example
+
+
+&lt;img src="07-labor_files/figure-html/labor_supply-1.svg" style="display: block; margin: auto;" /&gt;
+
+
+
+---
+# Labor Supply
+
+
+.qa[Question]: What happens when a city improves its school quality?
+
+--
+
+&lt;img src="07-labor_files/figure-html/labor_supply2-1.svg" style="display: block; margin: auto;" /&gt;
+
+---
+class: inverse, middle
+# Checklist
+.pull-left[
+0) .hi[Rehash model from last class]: ✅
+
+1) .hi[Labor Markets and Urban Econ: overview]: ✅
+
+2) .hi[Urban Labor Demand]: ✅
+]
+
+.pull-right[
+
+3) .hi[Urban Labor Supply] ✅
+
+4) .hi.purple[Equilibrium]
+
+]
+
+---
+#Equilibrium 
+
+__Defn__
+
+  - A .hi[labor market equilibrium] is a pair of points `\((L^*, W^*)\)` such that:
+  
+    - labor supply = labor demand
+
+  - In other words: a labor market eq is where there is no excess supply or demand
+  
+--
+
+We usually think of cities as being "seperate" labor markets, so the eqs can be different across cities
+
+--
+
+---
+# Equilibrium: Example
+
+&lt;img src="07-labor_files/figure-html/eq1-1.svg" style="display: block; margin: auto;" /&gt;
+
+---
+# Min Wage Refresher
+
+Recall from EC201: minimum wages are a form of .hi[price controls]. Specifically, a minimum wage is a:
+
+--
+
+- Price floor: dictates the _minimum_ allowed price for transactions in a marketplace
+
+--
+
+We say that a price floor is .hi.purple[effective] if it has an impact on the market equilibrium
+
+--
+
+  - Price floors that are below the market price are ineffective 
+
+---
+# Min Wage Refresher
+
+Is the following effective/ineffective?:
+
+&lt;img src="07-labor_files/figure-html/min1-1.svg" style="display: block; margin: auto;" /&gt;
+
+
+---
+# Min Wage Refresher
+
+The following is .hi[ineffective]
+
+&lt;img src="07-labor_files/figure-html/min1.5-1.svg" style="display: block; margin: auto;" /&gt;
+
+
+---
+# Min Wage Refresher
+
+Is the following effective/ineffective?:
+
+&lt;img src="07-labor_files/figure-html/min2-1.svg" style="display: block; margin: auto;" /&gt;
+
+
+---
+# Min Wage Refresher
+
+The following is .hi[effective]
+
+&lt;img src="07-labor_files/figure-html/min3-1.svg" style="display: block; margin: auto;" /&gt;
+
+
+---
+# Min Wage Refresher
+
+
+&lt;img src="07-labor_files/figure-html/min4-1.svg" style="display: block; margin: auto;" /&gt;
+
+---
+# Example: Two Cities
+
+If we treat cities as two _seperate_ labor markets, have:
+
+.pull-left[
+
+&lt;img src="07-labor_files/figure-html/city_1-1.svg" style="display: block; margin: auto;" /&gt;
+
+]
+
+.pull-right[
+
+
+&lt;img src="07-labor_files/figure-html/city_2-1.svg" style="display: block; margin: auto;" /&gt;
+
+]
+
+
+---
+#Significance?
+
+__2 Questions__
+
+
+- Why do we care so much about modeling cities as different labor markets? .hi.purple[Discuss]
+  
+--
+
+- Do you think all labor markets across cities and industries are competitive? .hi.purple[Discuss]
+
+---
+# Some Notes
+
+- All else equal, low tax cities grow faster than high tax cities
+
+
+  - Elasticity (business activity, taxes)
+  
+--
+
+  - Across cities: -0.1 to -0.6
+  
+  -  Within cities: -1.0 to -3.0
+
+--
+
+ - Manufacturers are more sensitive to tax differences
+
+# Competitive Model
+
+We built up labor .hi[supply] and .hi[demand]. Where do these come from?
+
+--
+
+  - Demand: Firms
+  
+  - Supply: Workers
+
+--
+
+What did we assume about the market structure?
+
+--
+
+- .hi[Perfect Competition]
+
+--
+
+---
+count: false
+# Competitive Model
+
+We built up labor .hi[supply] and .hi[demand]. Where do these come from?
+
+
+
+  - Demand: Firms
+  
+  - Supply: Workers
+
+
+
+What did we assume about the market structure?
+
+
+
+- .hi[Perfect Competition]
+
+  - Firms pay workers their MV of labor (max WTP)
+  
+  
+--
+
+Probably not super reasonable
+
+--
+
+---
+# Monopsony
+
+Let's consider a different labor market structure:
+
+--
+
+&lt;center&gt;
+&lt;font size="15"&gt; Monopsony &lt;/font&gt;
+&lt;/center&gt;
+
+--
+
+- We say a firm is a .hi[monopsonist] if they are .hi.purple[the only employer] of labor in the area (city)
+
+- We say a firm has .hi[monopsony power] if they have the ability to influence the market wage
+
+--
+
+  - Not to be confused with __monopoly__ (in which there is only one .hi.purple[seller] of a good)
+  
+  - __Monopsony__ has to do with one .hi.purple[buyer] of a good 
+  
+--
+
+---
+# Examples of Monopsonys
+
+Can you think of any?
+
+--
+
+- Universities (go GTFF!)
+
+- Coal Towns
+
+- Amazon / Walmart Towns?
+
+--
+
+
+
+
+---
+# Monopsony
+
+So what do you think the main consequence(s) of .hi[monopsony] are?
+
+&lt;center&gt;
+&lt;font size="15"&gt; Monopsonists have the ability to pay a wage below the marginal value &lt;/font&gt;
+&lt;/center&gt;
+
+The consequences?
+
+--
+
+- .pink[Higher profit] for the firms
+
+- Deadweight loss (inefficient outcome)
+
+--
+
+We will formalize this in a few slides, but first lets go over some evidence of local monopsonys
+
+
+---
+# Monopsony: Formalizing the Result
+
+In the competive model, the firm pays the worker `\(w = MRP_l\)`. 
+
+--
+
+- Is this what the monopsonist would do?
+
+- Where is this?
+
+--
+
+---
+# Recall: The competitive model
+
+Remember: in the competitve model, the firm seeks to maximize profits (but does not influence prices). 
+
+  - The competitive firm hires labor until the marginal profit w.r.t to labor is zero
+  
+`\begin{align*}
+\pi &amp;= TR - TC\\
+\pi &amp;= TR - wL - rK
+\end{align*}`
+
+Profit maxing cond: `\(\frac{\Delta \pi}{\Delta L} = 0 \implies MRP_L -w = 0 \implies w = MRP_L\)`
+
+
+---
+# Monopsony: Formalizing the Result
+
+With a monopsonist, the amount of labor they hire influences the wage. That is, now
+
+--
+`\begin{align*}
+\pi &amp;= TR - w(L)L - rK
+\end{align*}`
+--
+
+where `\(w(L)\)` is an .pink[increasing function] of the .pink[amount of labor hired]
+
+--
+
+- The firm should hire labor until marginal cost is equalized to marginal benefit (.hi.purple[same as before])
+  
+  - or: _.pink[marginal profit] wrt labor_ is equal to zero
+  
+`\begin{align*}
+\frac{\Delta \pi}{\Delta L} =0 
+\end{align*}`
+
+---
+# Monopsony: Formalizing the Result
+
+Notation: `\(TC(L) =w(L)*L\)` is the TC from labor in monopsony (__note__: `\(w(L)\)` wage is a function of labor)
+
+`\begin{align*}
+\pi &amp;= TR - TC(L) - rK
+\end{align*}`
+
+--
+
+Profit Maximization:
+
+`\begin{align*}
+\frac{\Delta \pi}{\Delta L} &amp;=0
+\end{align*}`
+
+---
+count: false
+# Monopsony: Formalizing the Result
+
+Notation: `\(TC(L) =w(L)*L\)` is the TC from labor in monopsony (__note__: `\(w(L)\)` wage is a function of labor)
+
+`\begin{align*}
+\pi &amp;= TR - TC(L) - rK
+\end{align*}`
+
+Profit Maximization:
+
+`\begin{align*}
+\frac{\Delta \pi}{\Delta L} &amp;=0\\
+MRP_L - \frac{\Delta TC(L)}{\Delta L} &amp;= 0\\
+\end{align*}`
+
+
+---
+count: false
+# Monopsony: Formalizing the Result
+
+Notation: `\(TC(L) =w(L)*L\)` is the TC from labor in monopsony (__note__: `\(w(L)\)` wage is a function of labor)
+
+`\begin{align*}
+\pi &amp;= TR - TC(L) - rK
+\end{align*}`
+
+Profit Maximization:
+
+`\begin{align*}
+\frac{\Delta \pi}{\Delta L} &amp;=0\\
+MRP_L - \frac{\Delta TC(L)}{\Delta L} &amp;= 0\\
+MRP_L &amp;= \frac{\Delta TC(L)}{\Delta L}\\
+MRP_L &amp; = MC_L
+\end{align*}`
+
+
+---
+count: false
+# Monopsony: Formalizing the Result
+
+So the monoposonist hires until:
+
+`\begin{align*}
+MRP_L &amp; = MC_L
+\end{align*}`
+
+Compared to the competitve outcome:
+
+`\begin{align*}
+MRP_L &amp; = W
+\end{align*}`
+
+.hi[Important:] Note that in the competitive model, marginal cost of labor was constant (and equal to wage).
+
+
+---
+count: false
+# Monopsony: Formalizing the Result
+
+So the monoposonist hires until:
+
+`\begin{align*}
+MRP_L &amp; = MC_L
+\end{align*}`
+
+Compared to the competitve outcome:
+
+`\begin{align*}
+MRP_L &amp; = W
+\end{align*}`
+
+.hi[Important:] Note that in the competitive model, marginal cost of labor was constant (and equal to wage).
+
+  - Now: marginal cost is increasing because monopsonist is _only_ buyer of labor
+
+---
+# An Example:
+.center[**Monopsonist Wage Schedule**]
+&lt;table class="table table-striped" style="margin-left: auto; margin-right: auto;"&gt;
+&lt;caption&gt;&lt;/caption&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:center;"&gt; .pink[Wage] &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; .purple[Labor] &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; TC &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; .hi[MC] &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:center;line-height: 110%;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:center;line-height: 110%;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:center;line-height: 110%;"&gt;  &lt;/td&gt;
+   &lt;td style="text-align:center;line-height: 110%;"&gt;  &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:center;line-height: 110%;"&gt; 2 &lt;/td&gt;
+   &lt;td style="text-align:center;line-height: 110%;"&gt; 2 &lt;/td&gt;
+   &lt;td style="text-align:center;line-height: 110%;"&gt;  &lt;/td&gt;
+   &lt;td style="text-align:center;line-height: 110%;"&gt;  &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:center;"&gt; 3 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 3 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt;  &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt;  &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:center;"&gt; 4 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 4 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt;  &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt;  &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:center;"&gt; 5 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 5 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt;  &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt;  &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+
+Let's fill in the table. What do you notice?
+
+---
+count: false
+# An Example:
+.center[**Monopsonist Wage Schedule**]
+&lt;table class="table table-striped" style="margin-left: auto; margin-right: auto;"&gt;
+&lt;caption&gt;&lt;/caption&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:center;"&gt; .pink[Wage] &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; .purple[Labor] &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; TC &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; .hi[MC] &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:center;line-height: 110%;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:center;line-height: 110%;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:center;line-height: 110%;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:center;line-height: 110%;"&gt;  &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:center;line-height: 110%;"&gt; 2 &lt;/td&gt;
+   &lt;td style="text-align:center;line-height: 110%;"&gt; 2 &lt;/td&gt;
+   &lt;td style="text-align:center;line-height: 110%;"&gt; 4 &lt;/td&gt;
+   &lt;td style="text-align:center;line-height: 110%;"&gt;  &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:center;"&gt; 3 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 3 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 9 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt;  &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:center;"&gt; 4 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 4 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 16 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt;  &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:center;"&gt; 5 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 5 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 25 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt;  &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+
+Let's fill in the table. What do you notice?
+
+---
+count: false
+# An Example:
+.center[**Monopsonist Wage Schedule**]
+&lt;table class="table table-striped" style="margin-left: auto; margin-right: auto;"&gt;
+&lt;caption&gt;&lt;/caption&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:center;"&gt; .pink[Wage] &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; .purple[Labor] &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; TC &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; .hi[MC] &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:center;line-height: 110%;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:center;line-height: 110%;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:center;line-height: 110%;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:center;line-height: 110%;"&gt; 1 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:center;line-height: 110%;"&gt; 2 &lt;/td&gt;
+   &lt;td style="text-align:center;line-height: 110%;"&gt; 2 &lt;/td&gt;
+   &lt;td style="text-align:center;line-height: 110%;"&gt; 4 &lt;/td&gt;
+   &lt;td style="text-align:center;line-height: 110%;"&gt; 3 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:center;"&gt; 3 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 3 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 9 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 5 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:center;"&gt; 4 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 4 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 16 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 7 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:center;"&gt; 5 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 5 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 25 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 9 &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+
+Let's fill in the table. What do you notice?
+
+
+--
+
+At .pink[every level of labor], the .purple[marginal cost of labor] exceeds the .pink[wage]
+
+--
+
+
+---
+# Graph of Monopsony
+
+&lt;img src="07-labor_files/figure-html/monop1-1.svg" style="display: block; margin: auto;" /&gt;
+
+---
+# Graph of Monopsony
+
+&lt;img src="07-labor_files/figure-html/monop2-1.svg" style="display: block; margin: auto;" /&gt;
+
+
+---
+
+class: inverse, middle
+# Checklist
+.pull-left[
+0) .hi[Rehash model from last class]: ✅
+
+1) .hi[Labor Markets and Urban Econ: overview]: ✅
+
+2) .hi[Urban Labor Demand]: ✅
+]
+
+.pull-right[
+
+3) .hi[Urban Labor Supply]: ✅
+
+4) .hi[Equilibrium]: ✅
+
+]
+
+---
+
+
+exclude: true
+
+
+
+```r
+p_load(pagedown)
+pagedown::chrome_print(here::here("009-labor_one","lecture_nine.html"))
+```
+
+
+
+
+
+&lt;!-- --- --&gt;
+&lt;!-- exclude: true --&gt;
+
+&lt;!-- ```{R, generate pdfs, include = F} --&gt;
+&lt;!-- system("decktape remark 02_goodsmarket_part1.html 02_goodsmarket_part1.pdf --chrome-arg=--allow-file-access-from-files") --&gt;
+&lt;!-- ``` --&gt;
+
+
+
+
+
+
+
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="macros.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

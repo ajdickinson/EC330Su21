@@ -1,0 +1,458 @@
+.remark-slide-content {
+  background-color: #FAFAFA;
+    border-top: 80px solid #041E42;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.5;
+  padding: 1em 2em 1em 2em
+}
+.title-slide .inverse .remark-slide-content {
+  background-color: #FAFAFA;
+}
+.remark-slide-content {
+  background-color: #ffffff;
+  font-size: 24px;
+  /* font-weight: 300; */
+  /* line-height: 1.5; */
+  /* padding: 1em 2em 1em 2em; */
+}
+.inverse {
+  background-color: #041E42;
+    text-shadow: none;
+}
+
+/* Removes colored bar from top of the slide resulting in a clear slide */
+  .clear{
+    border-top: 0px solid #FAFAFA;
+  }
+
+h1 {
+  font-weight: normal;
+  margin-top: -95px;
+  margin-left: -00px;
+  color: #FAFAFA;
+}
+
+h2, h3, h4 {
+  padding-top: -15px;
+  padding-bottom: 00px;
+  color: #1A292C;
+    text-shadow: none;
+  font-weight: 400;
+  text-align: left;
+  margin-left: 00px;
+  margin-bottom: -10px;
+}
+
+.remark-slide-content h1 {
+  font-size: 45px;
+}
+
+.remark-slide-content h2 {
+  font-size: 35px;
+}
+
+.remark-slide-content h3 {
+  font-size: 30px;
+}
+
+.left-column h2, .left-column h3, .left-column h4 {
+  color: #777;
+}
+
+.left-column h2:last-of-type, .left-column h3:last-child {
+  color: #1A292C;
+}
+
+.title-slide {
+  background-color: #FAFAFA;
+    border-top: 80px solid #FAFAFA;
+}
+
+.title-slide h1  {
+  color: #1A292C;
+    font-size: 40px;
+  text-shadow: none;
+  font-weight: 400;
+  text-align: left;
+  margin-left: 15px;
+  padding-top: 80px;
+}
+.title-slide h2  {
+  margin-top: -25px;
+  padding-bottom: -20px;
+  color: #1A292C;
+    text-shadow: none;
+  font-weight: 300;
+  font-size: 35px;
+  text-align: left;
+  margin-left: 15px;
+}
+.title-slide h3  {
+  color: #1A292C;
+    text-shadow: none;
+  font-weight: 300;
+  font-size: 25px;
+  text-align: left;
+  margin-left: 15px;
+  margin-bottom: -30px;
+}
+
+hr, .title-slide h2::after, .mline h1::after {
+  content: '';
+  display: block;
+  border: none;
+  background-color: #EB811B;
+    color: #EB811B;
+    height: 1px;
+}
+
+hr, .mline h1::after {
+  margin: 1em 15px 0 15px;
+}
+
+.title-slide h2::after {
+  margin: 10px 15px 35px 0;
+}
+
+.mline h1::after {
+  margin: 10px 15px 0 15px;
+}
+
+.remark-slide-number {
+  font-size: 13pt;
+  color: #272822;
+    opacity: 1;
+}
+.inverse .remark-slide-number {
+  font-size: 13pt;
+  color: #FAFAFA;
+    opacity: 1;
+}
+
+/* turns off slide numbers for title page: https://github.com/gnab/remark/issues/298 */
+  .title-slide .remark-slide-number {
+    display: none;
+  }
+
+.remark-inline-code {
+  /* background: #F5F5F5; /* lighter */
+    background: #e7e8e2; /* darker */
+    border-radius: 3px;
+  padding: 4px;
+}
+
+/* Create a highlighted class called 'hi'  */
+.hi {
+  font-weight: 600;
+  color: #041E42
+}
+.hii {
+  font-weight: 600;
+  color: #E35205 !important;
+}
+.hi-blue {
+  font-weight: 600;
+  color: #041E42;
+}
+.hi-orange {
+  font-weight: 600;
+  color: #E35205 !important;
+}
+.hi-pink {
+  font-weight: 600;
+  color: #e64173 !important;
+}
+.hi-slate {
+  font-weight: 600;
+  color: #314f4f !important;
+}
+.hi-turquoise {
+  font-weight: 600;
+  color: #44C1C4 !important;
+}
+.hi-purple {
+  font-weight: 600;
+  color: #6A5ACD !important;
+}
+.hi-yellow{
+  font-weight: 600;
+  color: #D8BD44 !important;
+}
+.hi-green {
+  font-weight: 600;
+  color: #7CAE96 !important;
+}
+.hi-grey {
+  font-weight: 600;
+  color: #8AA19E !important;
+}
+.hi-lightblue {
+  font-weight: 600;
+  color: #54778B !important;
+}
+.hi-red {
+  font-weight: 600;
+  color: #fb6107 !important;
+}
+.hi-orange2 {
+  font-weight: 600;
+  color: #FFA500 !important;
+}
+.hi-white {
+  font-weight: 600;
+  color: #ffffff !important;
+}
+/* Pink text */
+.pink {
+  color: #e64173 !important;
+}
+/* Slate ("darkslategrey") text */
+.slate {
+  color: #314f4f !important;
+}
+/* Turquoise ("lightseagreen") text */
+.turquoise {
+  color: #44C1C4 !important;
+}
+/* Purple-ish ("slateblue") text */
+.purple {
+  color: #6A5ACD !important;
+}
+/* Orange ("orange") text */
+.orange {
+  color: #E35205 !important;
+}
+.orange2 {
+  color: #FFA500 !important;
+}
+.gold {
+  color: #FFC425 !important;
+}
+.yellow{
+  color: #D8BD44 !important;
+}
+.green {
+  color: #7CAE96 !important;
+}
+.grey {
+  color: #8AA19E !important;
+}
+.blue {
+  color: #54778B !important;
+}
+.red {
+  color: #fb6107 !important;
+}
+
+/* Grey text */
+.grey-mid {
+  color: #7f7f7f !important;
+}
+/* Grey text */
+.grey-vlight {
+  color: #e5e5e5 !important;
+}
+/* White text */
+.white {
+  color: #ffffff !important;
+}
+.black {
+  color: #000000 !important;
+}
+
+/* Mono-spaced font */
+.mono {
+  font-family: monospace;
+}
+/* Underline */
+.ul {
+  text-decoration: underline;
+}
+/* Overline */
+.ol {
+  text-decoration: overline;
+}
+.st {
+  text-decoration: line-through;
+}
+/* Fraction */
+.top{
+  display:inline-block;
+}
+.bottom{
+  border-top:solid black 1px;
+  display:inline-block;
+  clear:left;
+}
+
+.remark-code-line-highlighted {
+  background-color: rgba(249, 39, 114, 0.5);
+}
+
+/* Transparent text (helpful for spacing) */
+.tran {
+  opacity: 0 !important;
+}
+/* More sizes */
+.biggest {
+  font-size: 150%;
+}
+.bigger {
+  font-size: 125%;
+}
+.smaller {
+  font-size: 95%;
+}
+.smallerer {
+  font-size: 85%;
+}
+.smallererer {
+  font-size: 75%;
+}
+.smallest {
+  font-size: 85%;
+}
+.tiny {
+  font-size: 50%;
+}
+.super{
+  vertical-align: super;
+  font-size: 85%;
+}
+.sub{
+  vertical-align: sub;
+  font-size: 85%;
+}
+
+/* Question and answer */
+.qa {
+  font-weight: 500;
+  /* color: #314f4f !important; */
+  color: #041E42 !important;
+  font-family: 'Zilla Slab' !important;
+}
+
+/* Example */
+.ex {
+  font-weight: 300;
+  /* color: #314f4f !important; */
+  /* color: #8AA19E !important; */
+  /* color: #bebebe !important; */
+  color: #cccccc !important;
+}
+
+.hide-count .remark-slide-number {
+  display: none;
+}
+
+.title-slide {
+  background-color: #FAFAFA;
+}
+
+.footnote {
+  bottom: 1.5em;
+  font-size: 70%;
+}
+
+.dark-slide {
+  background-color: #041E42;
+  border-top: 0px solid #041E42;
+}
+.dark-slide .remark-slide-number {
+  display: none;
+}
+
+.white-slide {
+  background-color: #ffffff;
+  border-top: 0px solid #ffffff;
+}
+.white-slide .remark-slide-number {
+  display: none;
+}
+
+.mjx-chtml{
+  font-size: 103% !important;
+}
+
+/* Mono-spaced font, smaller */
+.mono-small {
+  font-family: monospace;
+  font-size: 20px;
+}
+.mono-small .mjx-chtml {
+  font-size: 103% !important;
+}
+
+.pseudocode, .pseudocode-small {
+  font-family: monospace;
+  background: #f8f8f8;
+  border-radius: 3px;
+  padding: 10px;
+}
+.pseudocode-small {
+  font-size: 20px;
+}
+
+.super{
+  vertical-align: super;
+  font-size: 70%;
+}
+.sub{
+  vertical-align: sub;
+  font-size: 70%;
+}
+
+.remark-code {
+  font-size: 70%;
+}
+
+/*.inverse > h2 {
+  color: #ffffff;
+  font-weight: 300;
+  font-size: 40px;
+  /*font-style: italic;*/
+/*  margin-top: -25px;
+}*/
+.title-slide > h2  {
+  margin-top: -25px;
+  padding-bottom: -20px;
+  color: rgba(227, 82, 5);
+  text-shadow: none;
+  font-weight: 300;
+  font-size: 35px;
+  font-style: normal;
+  text-align: left;
+  margin-left: 15px;
+}
+
+.remark-inline-code {
+  background: #F5F5F5; /* lighter */
+  /* background: #e7e8e2; /* darker */
+  border-radius: 3px;
+  padding: 4px;
+}
+
+/* 2/3 left; 1/3 right */
+.more-left {
+  float: left;
+  width: 63%;
+}
+.less-right {
+  float: right;
+  width: 31%;
+}
+.more-right ~ * {
+  float: right;
+  width: 80%;
+}
+
+/* Remove orange line */
+hr, .title-slide h2::after, .mline h1::after {
+  content: '';
+  display: block;
+  border: none;
+  background-color: #041E42;
+  color: #041E42;
+  height: 1px;
+}

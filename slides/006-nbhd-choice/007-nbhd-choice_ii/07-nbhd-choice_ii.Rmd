@@ -1,39 +1,37 @@
 ---
 title: "Econ 330: Urban Economics"
-subtitle: "Lecture 06"
-author: "Andrew Dickinson"
-date: "`r format(Sys.time(), '%d %B, %Y')`"
+subtitle: "Lecture 7"
+author: "John Morehouse"
+date: "Jan 27th, 2021"
 output:
   xaringan::moon_reader:
-    css: ['default', 'metropolis', 'metropolis-fonts', 'padres.css']
+    css: ['default', 'metropolis', 'metropolis-fonts', 'my-css.css']
     # self_contained: true
     nature:
       highlightStyle: github
       highlightLines: true
       countIncrementalSlides: false
-      beforeInit: "macros.js"
-#knit: pagedown::chrome_print
+knit: pagedown::chrome_print
 
 ---
 class: inverse, center, middle
 
 ```{R, setup, include = F}
 options(htmltools.dir.version = FALSE)
-pacman::p_load(
-  broom, here, tidyverse, latex2exp, ggplot2, ggthemes, viridis, extrafont,
-  gridExtra, kableExtra, dplyr, magrittr, knitr, parallel, tufte, emo, ggrepel,
-  sf, hrbrthemes, lwgeom, maps, mapdata, spData, leaflet, huxtable, janitor,
-  tidycensus
+library(pacman)
+p_load(
+  broom, here, tidyverse,
+  latex2exp, ggplot2, ggthemes, viridis, extrafont, gridExtra,
+  kableExtra,
+  dplyr, magrittr, knitr, parallel, tufte,emo
 )
-# Define colors
-## source color script from local directory
-## comment out and replace colors if user is not Andrew
-source("~/Documents/scripts/colors/colors.R")
-# XaringanExtra functions
-## Tile view
-xaringanExtra::use_tile_view()
-## Scribble
-xaringanExtra::use_scribble()
+# Define pink color
+red_pink <- "#e64173"
+turquoise <- "#20B2AA"
+grey_light <- "grey70"
+grey_mid <- "grey50"
+grey_dark <- "grey20"
+# Dark slate grey: #314f4f
 # Knitr options
 opts_chunk$set(
   comment = "#>",
@@ -43,10 +41,10 @@ opts_chunk$set(
   warning = F,
   message = F
 )
+opts_chunk$set(dev = "svg")
 options(device = function(file, width, height) {
   svg(tempfile(), width = width, height = height)
 })
-# A simple theme for supply + demand curves
 # A blank theme for ggplot
 theme_empty <- theme_bw() + theme(
   line = element_blank(),
@@ -110,550 +108,150 @@ theme_axes <- theme_void() + theme(
   plot.margin = structure(c(1, 0, 1, 0), unit = "lines", valid.unit = 3L, class = "unit"),
   legend.position = "none"
 )
-theme_curves <- theme_ipsum() + theme(axis.line = element_line(),
-        panel.grid.minor = element_blank())
 ```
 
-# Lecture 06: Neighborhood Choice
 
---
 
-.white[_"Love thy neighbor as yourself, but choose your neighborhood."_ .blue[kfjlsdjgjjjjjjjg] -Louise Beal]
+# Lecture 8: Neighborhood Choice II
 
 ---
-class: inverse, middle
+
+name: schedule
+
 # Schedule
 
-.pull-left[
-.ul[.bigger[.hi-gold[Today:]]]
-
-.hi-white[(i). Amenities + Public goods]
-
-.hi-white[(ii). Neighborhood sorting model]
-
-.hi-white[(iii). Racial segregation]
-]
+## Today
 
 --
 
-.pull-right[
-.ul[.bigger[.hi-gold[Upcoming:]]]
 
-  - .hi-white[Reading] (Chapter 4)
+1. .hi.purple[Model of Neighborhood Sorting]
+
+2. .hi.purple[De Facto or De Jure?]
+
+3. .hi.purple[Discussion]
+
+--
+
+--
+
+## Upcoming
+
+  - .hi.slate[HWII] __due Feb 6th__
+
+  - .hi.slate[Reading] (Chapter IV & V _ToTC_)
   
-  - .hi-white[Problem set 01 due on Friday at Midnight]
-  ]
+  - .hi.slate[Midterm] week 6 -- on the horizon
+
+--
 
 ---
-# Housekeeping
+
+
+
+
+
+# Neighborhood Sorting
+
+Last class we asked:
+
+1. Who gets desirable neighbors?
+
+--
+
+2. Will there be segregated or integrated neighborhoods?
+
+--
+
+3. Will there be sorting or mixing with respect to income, age, race, or some combination of those factors?
+
+--
+
+4. What are the implications for the price of land in various neighborhoods?
+
+--
+
+
 
 ---
-# Introduction to neighborhood choice
 
-We have a fairly simple model of .hi-orange[residential choice] (rental prices)
 
---
 
-.qa[Q:] What factor(s) in the model determine housing demand?
 
---
 
-.qa[A:] Bid-Rent model assumes commuting costs are the .hi-orange[only factor]
 
---
 
-.hi[Is this all you consider when deciding where to live?]
 
---
 
-  - What factors influence neighborhood decision choices?
+# Intro
 
---
+We will focus on positive externalities (for now). .hi.slate[Assume]
 
-.hi-blue[Examples:]
-
---
-
-.pull-left[
-- Schools
-- Demographics
-- Tax rates]
-.pull-right[
-- Public safety
-- Air quality
-- Natural beauty]
-
----
-# Neighborhood choice: Amenities
-
-.ul[.hi[Definition:]] .hii[Amenity] 
-
-An _amenity_ is a .hi[location-specific] consumption good
-
---
-
-.pull-left[
-- Beaches
-- Weather
-- Public transport]
-.pull-right[
-- Parks
-- Restaurants
-- Recreation]
-
---
-
-Different types of amenities
-- Some are nonrival<sup>.hii[†]</sup>: Theaters, public transport 
-- Some are nonexcludable<sup>.hii[††]</sup>: Parks
-- Some are both nonrival and nonexcludable: National defense, sports teams, fireworks
-
-.footnote[.hii[†] Nonrival goods: Accessible by all; usage does limit subsequent use <br> .hii[††] Nonexcludable goods: Impossible to exclude other from consuming]
-
----
-# Neighborhood choice: Amenities
-
-.hi[Two more refined definitions:]
-
-.hi[(i). Exogenous Amenities:] Location-specific consumption good that exist .ul[are not] influenced by where people decide to live
-
---
-
-  - .hi-gold[Exogenous:] "Deteremined outside of the model" (fall from the sky)
-    
-  - Weather, geographic characterisitics
-
---
-
-.hi[(ii). Endogenous Amenities:] Location-specific consumption goods that .ul[are] influenced by location decisions of individuals
-
---
-
-  - .hi-gold[Endogenous:] "Deteremined within the model"
-  
-  - School quality, crime, pollution
-
----
-# Neighborhood choice: Amenities
-
-To determine whether or not an amenity is .hi[exogenous] (.hii[endogenous]):
-
---
-
-.center[_"Will choosing to live here impact the amenity?"_]
-
-<br>
-
---
-
-  - .hi[Exogenous] _Beaches exist regardless whether people live near by_
- 
---
-
-  - .hii[Endogenous] _Crime is a function of the individuals in the area_
+  - These increase with income and education level
   
 --
-
-<br>
-
-.hi[Questions regarding differences between EXOGENOUS and ENDOGENOUS?]
-
----
-class: inverse, middle, center
-# Neighborhood choice + Sorting for public goods
-
----
-# Neighborhood choice
-
-.center[.hi[Why are city neighborhoods so heterogenous?]]
-
-<br>
-
---
-
-.center[.hi[What economics factor influence neighborhood sorting within a city?]]
-
-<br>
-
---
-
-.center[.hi[Let's answer these questions in a simple way.]]
-
-<br>
-
-.center[.blue[Modeling public good: Public parks]]
-
----
-# Demand for public goods
-
-.hi[Consider a simple sorting model for a single, non-rival public good]
-
---
-
-Model a three-person city with one public good: .hi-blue[Public park]
-
-- Cost .hi[$60 per acre] to build
-
-- Cost is shared equally across all three citizens: .hi-blue[$20 per acre] each
-
---
-
-Of the three citizen, demand for the park varies:
-
---
-
-- Low demand: $\text{Lyla}: \color{#34b3ff} {P = 30 - 2*\text{acres}}$
-
-- Mid demand: $\text{Gracie}: \color{#e64173}{P = 40 -2*\text{acres}}$
-
-- High demand: $\text{Cooper}: \color{#6A5ACD} {P = 50 -2*\text{acres}}$
-
---
-
-.hi-blue[Together they must vote for one park size in a binary election]
-
----
-# Demand for public goods
-
-```{R, inc_plot, echo=F,fig.height = 5, fig.width = 8, dev = "svg", cache=T}
-
-
-
-cooper <- function(x) 50 - 2*x
-gracie <- function(x) 40 - 2*x
-lyla <- function(x) 30 - 2*x
-tax <- function(x) 20
-
-ggplot(data.frame(x=c(0, 20)), aes(x)) + 
-  stat_function(fun= lyla, col = "#34B3FF")+
-  stat_function(fun = gracie, col = red_pink)+
-  stat_function(fun = cooper, col = "purple")+
-  geom_vline(xintercept = 0)+
-  geom_hline(yintercept = 0)+
-  labs(x = "acres", y = "Price (WTP)")+
-  ggthemes::theme_pander()
-
-
-
-```
-
----
-# Demand for public goods
-
-```{R, demand2, echo=F,fig.height = 5, fig.width = 8, dev = "svg", cache=T}
-
-ggplot(data.frame(x=c(0, 20)), aes(x)) + 
-  stat_function(fun= lyla, col = "#34B3FF")+
-  stat_function(fun = gracie, col = red_pink)+
-  stat_function(fun = cooper, col = "purple")+
-  stat_function(fun = tax, col = "#009A00")+
-  geom_vline(xintercept = 0)+
-  geom_hline(yintercept = 0)+
-  labs(x = "acres", y = "Price (WTP)")+
-  ggthemes::theme_pander()
-
-
-
-```
-
----
-# Demand for public goods
-
-```{R, demand3, echo=F,fig.height = 5, fig.width = 8, dev = "svg", cache=T}
-
-ggplot(data.frame(x=c(0, 20)), aes(x)) + 
-  stat_function(fun= lyla, col = "#34B3FF")+
-  stat_function(fun = gracie, col = red_pink)+
-  stat_function(fun = cooper, col = "purple")+
-  stat_function(fun = tax, col = "#009A00")+
-  geom_segment(x = 5, xend =5 , y = 0, yend = 20,linetype = "dashed")+
-  geom_text(x =5, y=0, label = "Q* Lyla", vjust=2)+
-  geom_segment(x = 10, xend =10 , y = 0, yend = 20,linetype = "dashed")+
-  geom_text(x =10, y=0, label = "Q* Gracie", vjust=2)+
-  geom_segment(x = 15, xend = 15 , y = 0, yend = 20,linetype = "dashed")+
-  geom_text(x =15, y=0, label = "Q* Cooper", vjust=2)+
-  geom_vline(xintercept = 0)+
-  geom_hline(yintercept = 0)+
-  labs(x = "acres", y = "Price (WTP)")+
-  ggthemes::theme_pander()
-
-
-
-```
-
----
-# Demand for public goods: Majority rule
-
-For each citizen, optimal park size is found when $MB_{park} = MC_{park}$
-
---
-
-Under .hi[majority rule] Gracie's optimal park wins
-
---
-
-.center[.hii[Why?]]
-
-```{r, echo=FALSE}
-tib <- tibble(
-  Election = c("5 acres vs 10 acres", "15 acres vs 10 acres"),
-  ten_acre_votes = c("Gracie and Cooper", "Gracie and Lyla"),
-  other_votes = c("Lyla", "Cooper")
-)
-```
-
-```{r, echo=FALSE}
-tib %>% kable(
-  col.names = c("Election", "10 acre votes", "Other votes"),
-  align = c("l", "l", "l")
-) %>%
-kable_styling(font_size = 28) %>%
-row_spec(1:2, background = "white", color = slate)
-```
-
---
-
-Gracie is the .hii[median voter]
-
-  - Splits the voting public in half
-
----
-# Alternative to majority rule
-
-Majority rule always leave two citizens unhappy: Cooper and Lyla
-
---
-
-Suppose the city can be split into .hii[3 identical districts] with 3 citizen
-
-- Each district votes on their own park
-
-- Each citizen knowns each other's preferences
-
---
-
-.hii[Key assumption:] Citizens pick which district to live in
-
---
-
-.center[.hi[What is the implication?]]
-
---
-
-.center[.hi[Similar types sort into the same neighborhood]]
-
---
-
-.pull-left[
-- Lylaville: 5 acre park
-- Gracity: 10 acre park]
-.pull-right[
-- Cooperstown: 15 acre park]
-
----
-# Alternative to majority rule
-
-By .hi[voting with their feet] each citizen sorts themselves into homogenous communities with their preferred public good allocation (park size)
-
-.hi[Now our city has three neighborhoods with homogenous types]
-
-- Accomodates diversity in demand
-
---
-
-.center[.hi[Is reality this simple?]]
-
---
-
-.center[.hii[Nope]]
-
---
-
-.hi[Let's add another layer of complexity:] .hii[Taxes]
-
----
-# Alternative: Property tax
-
-Up to this point, funding for the park is financed with a .hi[head tax]
-
---
-
-More realistic to model neighborhood sorting using .hi[property taxes]
-
---
-
-- Allow for variation in preferences + property values:
-
-  - The higher your property value, the more taxes you pay for the park
-    - $\tau = PV * 10$
-  - .hi[3] different property values: 2, 10, 24
-  - .hi[9] combos: Low-Low, Low-Mid, Low-High, Mid-Low...High-High
   
---
+.hi[Question]: 
 
-```{r, echo=FALSE}
-tibb <- tibble(
-  Outcome = c("Mixed municipality", "Exclusive small PV", "Exclusive mid PV", "Exclusive big PV"),
-  Tax_rate = c("$10", "$60", "$12", "$5"),
-  small = c("$20", "$120", "-", "-"),
-  mid = c("$100", "-", "$120", "-"),
-  big = c("$240", "-", "-", "$120")
-)
-```
-
-
-```{r, echo=FALSE}
-tibb %>% kable(
-  col.names = c("Outcome", "Tax rate per dollar in PV", "Small PV", "Mid PV", "Big PV"),
-  align = c("l", "c", "c", "c", "c")
-) %>%
-kable_styling(font_size = 18) %>%
-row_spec(1:4, background = "white", color = slate)
-```
-
----
-# Alternative: Property tax
-
-```{r, echo=FALSE}
-tibb %>% kable(
-  col.names = c("Outcome", "Tax rate per dollar in PV", "Small PV", "Mid PV", "Big PV"),
-  align = c("l", "c", "c", "c", "c")
-) %>%
-kable_styling(font_size = 18) %>%
-row_spec(1:4, background = "white", color = slate)
-```
-
-Citizen of PV similar type have incentive to sort together to reduce tax
+  - What is the income mix of neighborhoods - segregated or integrated?
 
 --
 
-In equilibrium citizen will form .hii[9 different neighborhoods]
 
-.hi[Generates a fragmented system of local government in a metro area]
-
-- Negative implications arise from this sorting
-
----
-# Neighborhood sorting: Income
-
-.center[
-![:scale 60%](figures/boston.png)
-]
-
----
-# Neighborhood sorting: Education
-
-.center[
-![:scale 60%](figures/denver.png)
-]
-
----
-# Neighborhood sorting: Atlas
-
-.center[
-![:scale 95%](figures/map1.png)
-]
-
-Source: [Oppurtunity Atlas](https://www.opportunityatlas.org/)
-
----
-class: inverse, middle
-# Neighborhood sorting: Externalities
-
----
-# Neighborhood sorting: Externalities
-
-.center[.hi[Do you _fully_ internalize the costs and benefits of where you decide to live?]]
-  
-.center[.blue[Is your choice of neighborhood free from externalities?]]
+## Model
 
 --
 
-.center[.hii[Nope.]]
+- Two neighborhoods: A and B, each with 80 lots
+
+- Essentially infinite number of households on the market. 
 
 --
 
-.hi[Examples?]
-
 --
-
-.pull-left[
-- Social networks
-- Jobs
-- Good schools
-- Culture]
-
---
-
-.pull-right[
-- Noise
-- Drug use
-- Litter
-- Pollution
-]
-
---
-
-.hi[Neighborhood externalities tend to be massively important for youth]
-
-.pull-left[
-  - Peer effects]
-.pull-right[
-  - Role models]
-
----
-# Becker-Murphy model
-
-Focus on positive externalities for now
-
-- .blue[Assume these increase with income and education]
-
---
-  
-.hi[Q:] What is the income mix of neighborhoods - segregated or integrated?
-
---
-
-.ul[.hi[Becker-Murphy model:]]
-
---
-
-- Two neighborhoods: A and B - 80 lots each
-
-- Infinite number of households on the market. 
 
 - Only difference between the neighborhoods is income mix
 
+--
+
 ---
-# Becker-Murphy model
 
-Individual choices to move are determined by the _rent premium_
+# Model
 
-.hi[Rent Premium:] Difference in rent between A and B
+In this model, individual choices to stay or move are determined by the _rent premium_
 
-- $RP = R(A)-R(B)$ (for neighborhood A)
-
---
-
-- Rent premiums for workers (may) differ by type: $RP_{high} \neq RP_{low}$ 
-
-  - .qa[ie:] Benefit of living close to high types might vary by type
+- __Rent Premium__ (for neighborhood A): $RP = R(A)-R(B)$
 
 --
 
-.hi[Assume:] 
+- Premium for workers might be different by type: $RP_{high} \neq RP_{low}$ 
 
-- Land will be allocated to the highest bidder
+--
+
+  - IE, the benefit of living close to high types might vary by type
+
+--
+  
+--
+.hi.slate[Assume]
+--
+
+- __Land will be allocated to the highest bidder__
 
 - Everyone in the same neighborhood pays the same rent/price
 
----
-# Becker-Murphy model: Segregation EQ
-
 --
 
-.pull-left[
-```{R, seg_eq1, echo=F,fig.height = 8, fig.width = 8, dev = "svg", cache=T}
+---
+
+
+
+
+
+# Segregation Eq
+
+.col-left[
+```{R, seg_eq1, echo=F,fig.height = 5, fig.width = 8, dev = "svg", cache=T}
 
 u_1 <- function(x) sqrt(x)
 u_2 <- function(x) 2*sqrt(x)
@@ -682,28 +280,78 @@ ggplot(data.frame(x=c(0, 8)), aes(x)) +
 ```
 ]
 
---
+.col-right[
 
-.pull-right[
+- Suppose we start at 40 HH's in neighborhood A. This is a .hi[perfectly intergrated] equilibrium
 
-Suppose 40 HH's start in A
-$\Rightarrow$ .hi[Perfectly intergrated] equilibrium
+- The RP is 0 for both groups, so households are indifferent between neighborhoods (no incentive to move)
 
-$RP_{low} = RP_{high} = 0$ 
 
-$\Rightarrow$ HH's indifferent between A & B
 
-- .hii[EQ "Shock":] A few high income households move to A?
+]
 
-  - What happens?]
 
 ---
+
+
+
 # Segregation Eq
 
---
+.col-left[
+```{R, seg_eq2, echo=F,fig.height = 5, fig.width = 8, dev = "svg", cache=T}
 
-.pull-left[
-```{R, seg_eq3, echo=F,fig.height = 8, fig.width = 8, dev = "svg", cache=T}
+u_1 <- function(x) sqrt(x)
+u_2 <- function(x) 2*sqrt(x)
+
+
+
+ggplot(data.frame(x=c(0, 8)), aes(x)) +
+  stat_function(fun=u_2, col = "purple")+
+  stat_function(fun= u_1, col = red_pink)+
+  labs(x = "number of high income HH's in neighborhood A",y = "Rent premium = R(A)-R(B)")+
+  ggthemes::theme_pander()+
+  geom_vline(xintercept = 0)+
+  geom_hline(yintercept = 0)+  
+  geom_segment(x = 8, xend=8, y=0, yend=10, linetype = "dashed")+
+  geom_text(x=4, y= 4, label = "premium (high)",vjust=2, hjust=1.5 )+
+  geom_text(x=4, y= 2, label = "premium (low)",vjust=2)+
+  geom_text(x = 0, y= 0, label = "40", vjust=1.5, hjust=-.5)+
+  geom_text(x = 0, y= 0, label = "0", vjust=-.5, hjust=1)+
+  geom_text(x = 8, y= 0, label = "80", vjust=1.5)+
+  theme(axis.text.y=element_blank(),
+        axis.ticks.y=element_blank(),
+        axis.text.x=element_blank(),
+        axis.ticks.x=element_blank(),
+        plot.title = element_text(hjust = 0.5))
+
+```
+]
+
+.col-right[
+
+- Suppose we start at 40 HH's in neighborhood A. This is a .hi[perfectly intergrated] equilibrium
+
+- The RP is 0 for both groups, so households are indifferent between neighborhoods (no incentive to move)
+
+- What happens if there is a small "shock" to the equilibrium and a few high income households move to neighborhood A?
+
+
+
+]
+
+
+---
+
+
+
+
+
+
+
+# Segregation Eq
+
+.col-left[
+```{R, seg_eq3, echo=F,fig.height = 5, fig.width = 8, dev = "svg", cache=T}
 
 u_1 <- function(x) sqrt(x)
 u_2 <- function(x) 2*sqrt(x)
@@ -737,30 +385,128 @@ ggplot(data.frame(x=c(0, 8)), aes(x)) +
 ```
 ]
 
-.pull-right[
-If 5 high income HH's move into A, $RP(high) > RP(low)$
+.col-right[
 
-$\Rightarrow$ More favorable mix of neighbors
+- If 5 high income HH's move into A, $RP(high) > RP(low)$
 
-$\Rightarrow$ High income HH's are WTP more to move to A
+- This means high income HH's are willing to bid more for neighborhood A even if they are in neighborhood B. So what happens?
 
-$\Rightarrow$ Even more favorable mix
-
-$\Rightarrow$ Neighborhood A is only high income HH's
-
-  - Slope .purple[purple line] $>$ slope of .orange2[orange line]
 ]
 
---
-
-Recall  .hi[A02: Self-reinforcing changes lead to extreme outcomes]
 
 ---
+
+
+# Segregation Eq
+
+.col-left[
+```{R, seg_eq4, echo=F,fig.height = 5, fig.width = 8, dev = "svg", cache=T}
+
+u_1 <- function(x) sqrt(x)
+u_2 <- function(x) 2*sqrt(x)
+
+ggplot(data.frame(x=c(0, 8)), aes(x)) +
+  stat_function(fun=u_2, col = "purple")+
+  stat_function(fun= u_1, col = red_pink)+
+  labs(x = "number of high income HH;s in neighborhood A",y = "Rent premium = R(A)-R(B)")+
+  ggthemes::theme_pander()+
+  geom_vline(xintercept = 0)+
+  geom_hline(yintercept = 0)+  
+  geom_segment(x = 8, xend=8, y=0, yend=10, linetype = "dashed")+
+  geom_segment(x = 1, xend=1, y=0, yend=1, linetype = "dashed")+
+  geom_segment(x = 1, xend=1, y=0, yend=2, linetype = "dashed")+
+  geom_segment(x = 0, xend=1, y=1, yend=1, linetype = "dashed")+
+  geom_segment(x = 0, xend=1, y=2, yend=2, linetype = "dashed")+
+  geom_text(x = 0, y= 1, label = "RP(low)", vjust=-1, angle=90)+
+  geom_text(x = 0, y= 2, label = "RP(high)", vjust = -1, angle =90)+
+  geom_text(x = 1, y= 0, label = "45", vjust=2)+
+  geom_text(x=4, y= 4, label = "premium (high)",vjust=2, hjust=1.5 )+
+  geom_text(x=4, y= 2, label = "premium (low)",vjust=2)+
+  geom_text(x = 0, y= 0, label = "40", vjust=1.5, hjust=-.5)+
+  geom_text(x = 0, y= 0, label = "0", vjust=-.5, hjust=1)+
+  geom_text(x = 8, y= 0, label = "80", vjust=1.5)+
+  theme(axis.text.y=element_blank(),
+        axis.ticks.y=element_blank(),
+        axis.text.x=element_blank(),
+        axis.ticks.x=element_blank(),
+        plot.title = element_text(hjust = 0.5))
+
+```
+
+]
+
+.col-right[
+
+- If 5 high income HH's move into A, $RP(high) > RP(low)$
+
+- This means high income HH's are willing to bid more for neighborhood A even if they are in neighborhood B. So what happens?
+
+- More blues move in (and since they bid higher, they get to live in neighborhood A). This is called a _self reinforcing effect_ or positive feedback loop. 
+
+]
+
+
+---
+
+
+
+# Segregation Eq
+
+.col-left[
+```{R, seg_eq5, echo=F,fig.height = 5, fig.width = 8, dev = "svg", cache=T}
+
+u_1 <- function(x) sqrt(x)
+u_2 <- function(x) 2*sqrt(x)
+
+ggplot(data.frame(x=c(0, 8)), aes(x)) +
+  stat_function(fun=u_2, col = "purple")+
+  stat_function(fun= u_1, col = red_pink)+
+  labs(x = "number of high income HH;s in neighborhood A",y = "Rent premium = R(A)-R(B)")+
+  ggthemes::theme_pander()+
+  geom_vline(xintercept = 0)+
+  geom_hline(yintercept = 0)+  
+  geom_segment(x = 8, xend=8, y=0, yend=10, linetype = "dashed")+
+  geom_segment(x = 1, xend=1, y=0, yend=1, linetype = "dashed")+
+  geom_segment(x = 1, xend=1, y=0, yend=2, linetype = "dashed")+
+  geom_segment(x = 0, xend=1, y=1, yend=1, linetype = "dashed")+
+  geom_segment(x = 0, xend=1, y=2, yend=2, linetype = "dashed")+
+  geom_text(x = 0, y= 1, label = "RP(low)", vjust=-1, angle=90)+
+  geom_text(x = 0, y= 2, label = "RP(high)", vjust = -1, angle =90)+
+  geom_text(x = 1, y= 0, label = "45", vjust=2)+
+  geom_text(x=4, y= 4, label = "premium (high)",vjust=2, hjust=1.5 )+
+  geom_text(x=4, y= 2, label = "premium (low)",vjust=2)+
+  geom_text(x = 0, y= 0, label = "40", vjust=1.5, hjust=-.5)+
+  geom_text(x = 0, y= 0, label = "0", vjust=-.5, hjust=1)+
+  geom_text(x = 8, y= 0, label = "80", vjust=1.5)+
+  theme(axis.text.y=element_blank(),
+        axis.ticks.y=element_blank(),
+        axis.text.x=element_blank(),
+        axis.ticks.x=element_blank(),
+        plot.title = element_text(hjust = 0.5))
+
+```
+  - __Axiom 2__: _.hi[Self-reinforcing effects] generate extreme outcomes_ $\implies$ we end up at a fully segregated eq of all 80 high inc HH's in nbhd A
+
+]
+
+.col-right[
+
+- If 5 high income HH's move into A, $RP(high) > RP(low)$
+
+- This means high income HH's are willing to bid more for neighborhood A even if they are in neighborhood B. So what happens?
+
+- More blues move in (and since they bid higher, they get to live in neighborhood A). This is called a _self reinforcing effect_ or positive feedback loop. 
+
+]
+
+
+---
+
+
+
+
 # Integration Eq
-
---
-
-.pull-left[
+.col-left[
 ```{R, int_eq_1, echo=F,fig.height = 5, fig.width = 8, dev = "svg", cache=T}
 
 u_1 <- function(x) sqrt(x)
@@ -791,16 +537,20 @@ ggplot(data.frame(x=c(0, 8)), aes(x)) +
 ```
 ]
 
-.pull-right[
-What happens in this case?
+.col-right[
 
-Notice: Slope .purple[purple line] $<$ slope of .orange2[orange line]
+- Is the story the same here?
+
 
 ]
 
 ---
+
+
+
+
 # Integration Eq
-.pull-left[
+.col-left[
 ```{R, int_eq2, echo=F,fig.height = 5, fig.width = 8, dev = "svg", cache=T}
 
 u_1 <- function(x) sqrt(x)
@@ -838,24 +588,24 @@ geom_segment(x = 8, xend=8, y=0, yend=10, linetype = "dashed")+
 ```
 ]
 
-.pull-right[
-What does the shock do in this case?
+.col-right[
 
-Notice: Slope .purple[purple line] $<$ slope of .orange2[orange line]
+- Is the story the same here?
 
-$\Rightarrow RP(High) < RP(Low)$
+- Now, a small movement of high income HH's into A means $RP(High) < RP(low)$
 
-$\Rightarrow$ Pushed back to the original EQ
 
 ]
 
---
-
-.hi[The starting EQ is the only EQ] $\Rightarrow$ .hii[Stable EQ]
-
 ---
+
+
+
+
+
+
 # Integration Eq
-.pull-left[
+.col-left[
 ```{R, int_eq3, echo=F,fig.height = 5, fig.width = 8, dev = "svg", cache=T}
 
 u_1 <- function(x) sqrt(x)
@@ -892,7 +642,7 @@ geom_segment(x = 8, xend=8, y=0, yend=10, linetype = "dashed")+
 ```
 ]
 
-.pull-right[
+.col-right[
 
 - Is the story the same here?
 
@@ -905,8 +655,13 @@ geom_segment(x = 8, xend=8, y=0, yend=10, linetype = "dashed")+
 ]
 
 ---
+
+
+
+
+
 # Integration Eq
-.pull-left[
+.col-left[
 ```{R, int_eq4, echo=F,fig.height = 5, fig.width = 8, dev = "svg", cache=T}
 
 u_1 <- function(x) sqrt(x)
@@ -945,7 +700,7 @@ geom_segment(x = 8, xend=8, y=0, yend=10, linetype = "dashed")+
 
 ]
 
-.pull-right[
+.col-right[
 
 - Is the story the same here?
 
@@ -958,11 +713,14 @@ geom_segment(x = 8, xend=8, y=0, yend=10, linetype = "dashed")+
 ]
 
 ---
+
+
+
+
+
 #Mixed Eq
 
---
-
-.pull-left[
+.col-left[
 ```{R, mixed_eq, echo=F,fig.height = 5, fig.width = 8, dev = "svg", cache=T}
 
 u_1 <- function(x) sqrt(x)
@@ -993,7 +751,7 @@ ggplot(data.frame(x=c(0, 8)), aes(x)) +
 ```
 ]
 
-.pull-right[
+.col-right[
 
 - What about a story like this?
 
@@ -1001,9 +759,13 @@ ggplot(data.frame(x=c(0, 8)), aes(x)) +
 
 
 ---
+
+
+
+
 #Mixed Eq
 
-.pull-left[
+.col-left[
 ```{R, mixed_eq2, echo=F,fig.height = 5, fig.width = 8, dev = "svg", cache=T}
 
 u_1 <- function(x) sqrt(x)
@@ -1034,7 +796,7 @@ ggplot(data.frame(x=c(0, 8)), aes(x)) +
 ```
 ]
 
-.pull-right[
+.col-right[
 
 - What about a story like this?
 
@@ -1044,9 +806,14 @@ ggplot(data.frame(x=c(0, 8)), aes(x)) +
 
 
 ---
+
+
+
+
+
 #Mixed Eq
 
-.pull-left[
+.col-left[
 ```{R, mixed_eq3, echo=F,fig.height = 5, fig.width = 8, dev = "svg", cache=T}
 
 u_1 <- function(x) sqrt(x)
@@ -1079,7 +846,7 @@ ggplot(data.frame(x=c(0, 8)), aes(x)) +
 ```
 ]
 
-.pull-right[
+.col-right[
 
 - What about a story like this?
 
@@ -1093,9 +860,14 @@ ggplot(data.frame(x=c(0, 8)), aes(x)) +
 
 
 ---
+
+
+
+
+
 #Mixed Eq
 
-.pull-left[
+.col-left[
 ```{R, mixed_eq4, echo=F,fig.height = 5, fig.width = 8, dev = "svg", cache=T}
 
 u_1 <- function(x) sqrt(x)
@@ -1128,7 +900,7 @@ ggplot(data.frame(x=c(0, 8)), aes(x)) +
 ```
 ]
 
-.pull-right[
+.col-right[
 
 - What about a story like this?
 
@@ -1142,9 +914,12 @@ ggplot(data.frame(x=c(0, 8)), aes(x)) +
 
 
 ---
+
+
+
 #Mixed Eq
 
-.pull-left[
+.col-left[
 ```{R, mixed_eq5, echo=F,fig.height = 5, fig.width = 8, dev = "svg", cache=T}
 
 u_1 <- function(x) sqrt(x)
@@ -1178,7 +953,7 @@ ggplot(data.frame(x=c(0, 8)), aes(x)) +
 - .hi.orange[Note]: Full segregation here is _not_ an equilibrium for a similar reason to the last example
 ]
 
-.pull-right[
+.col-right[
 
 - What about a story like this?
 
@@ -1192,6 +967,15 @@ ggplot(data.frame(x=c(0, 8)), aes(x)) +
 
 
 ---
+
+
+
+
+
+
+
+
+
 # Eq Defn
 
 To be clear, an _equilibrium_ in this model is a point at which the rent premium is in balance across both groups
@@ -1206,8 +990,13 @@ To be clear, an _equilibrium_ in this model is a point at which the rent premium
   - If the $RP$ for the group listed on the axis is _.purple[lower]_ then population dynamics move away from this point
 
 --
+  
+--
+
 
 ---
+
+
 # Stable vs Unstable Eq
 
 
@@ -1219,13 +1008,24 @@ To be clear, an _equilibrium_ in this model is a point at which the rent premium
 
 --
 
+--
+
 2) A eq is .hi.purple[unstable] if a small movement away will encounter self - .hi.purple[reinforcing] forces
 
 --
 
   - That is, an eq is untable if when you move away from it, the population dynamics push you even farther than where you came from
   
+--
+
+
+--
+
+
 ---
+
+
+
 # A Heuristic
 
 1) Draw a verticle dashed line at every intersection point
@@ -1238,6 +1038,8 @@ To be clear, an _equilibrium_ in this model is a point at which the rent premium
 
 
 ---
+
+
 # A Heuristic
 
 3) If there are rightward arrows pushing toward 100% in one nbhd, then 100% (complete segregation) is an eq even if the rent prem curves do not intersect there
@@ -1249,94 +1051,339 @@ To be clear, an _equilibrium_ in this model is a point at which the rent premium
   - If there are arrows moving away from it on one or both sides, it is a .hi[unstable eq]
   
 ---
-# Quiz 03
-
-.center[.hi[Posted on Canvas]]
-
-[link](https://raw.githubusercontent.com/ajdickinson/ec330-summer21/main/problem-sets/quiz03.pdf)
-
---
-
-.center[.hii[Post it now]]
-
----
-# Neighborhood Sorting
 
 
-.hi[Externalities] for kids:
 
-  - Good/bad role models as adults
-  
-  - Classmates in school: focused vs disruptive
-
-
---
-
-.hi[Externalities] for adults:
-
-  - Postive: job information, property valuation
-  
-  - Negative: property values 
-
---
-
-In general: positive externalities increase with income and education level. Why?
-
----
-# Neighborhood Sorting
-
-These externalities give rise to the following questions:
-
-1. Who gets desirable neighbors?
-
---
-
-2. Will there be segregated or integrated neighborhoods?
-
---
-
-3. Will there be sorting or mixing with respect to income, age, race, or some combination of those factors?
-
-  - Is this sorting _de jure_, _de facto_, or both? More on this next time
-
---
-
-4. What are the implications for the price of land in various neighborhoods?
-
----
 class: inverse, middle
 # Checklist
 
-.pull-left[
+.col-left[
 
 
-1) .hi[Introduction to Amenities] `r emo::ji("check")`
+1) .hi[Model of Neighborhood Sorting] `r emo::ji("check")`
 
-  - Exogenous Amenities
+  - Segregated, Integrated, & Mixed Equilibria
   
-  - Endogenous Amenities
-  
-2) .hi[Sorting for Public Goods] `r emo::ji("check")`
+  - Stable vs Unstable Equilibria
 
+  
+2) .hi.purple[De Facto vs De Jure] 
 
 ]
 
- .pull-right[
+.col-right[
+
+3) .hi.purple[Discussion] 
+
+]
+
+
+
+---
+
+# Last Model: Big Picture
+
+The model we just covered assumed that people sort entirely based on personal preferences (essentially). We ignored:
+
+  - Financial constraints (varies by demographic group)
+  
+  - Information constraints (may vay across demographic groups)
+  
+  - Institutional constraints (historical and present -- __varies across demographic groups__)
  
-3) .hi[Neighborhood Sorting Intro]: `r emo::ji("check")`
+The equilibrium we observe in the last model might be called __de facto__ 
+
+---
+
+# Definitions
 
 
+.hi[De-facto] segregation: Results from choices made by private individuals (and not deliberate actions by insitutitons)
+
+
+.hi[De-Jure] segregation: Results from (either one or more) local, state, and federal policies that are specifically designed to exclude certain groups 
+
+
+---
+
+
+# Book
+
+You will have an extra credit assignment based on a video and interview with Richard Rothstein on his book [The Color of Law](https://play.google.com/store/books/details?id=SdtDDQAAQBAJ&gl=us&hl=en-US&source=productsearch&utm_source=HA_Desktop_US&utm_medium=SEM&utm_campaign=PLA&pcampaignid=MKT-FDR-na-us-1000189-Med-pla-bk-Evergreen-Jul1520-PLA-eBooks_Social_Science&gclid=CjwKCAiAu8SABhAxEiwAsodSZODS-2X_oCWGar5cGSa_4yX4E1YoV8PRWAVoqLjFzJZNL9JIPGAqehoC-KkQAvD_BwE&gclsrc=aw.ds)
+
+```{R, col_law, out.width = "30%", out.height = "30%", echo = F}
+include_graphics("images/col_law_2.png")
+```
+
+
+---
+
+
+# A bit of History
+
+Let's walk back in time a bit....
+
+
+- .hi[October 29th, 1929:] 
+
+  - Economic devastation. Profound impact on daily American life and culture
+  
+  - Bank failiures $\implies$ mortgages are harder to come by
+  
+
+- .hi[1934:] National Housing Act
+
+  - Created the Federal Housing Administration (FHA). __Goals:__ 
+  
+    - facilitate access to affordable home low for low-middle income buyers
+    
+    - subsidize construction
+  
+- .hi[Sept 1st, 1939:] Germany invades Poland (and WW2 beings)
+
+---
+
+
+# A bit more history
+
+.hi[1945] WW2 is over. Americans are coming home from Europe
+
+   - .hi.purple[unprecented housing demand]
+
+FHA insured (gauranteed) home loans for banks. Except they explicitly did so on the condition that homes were not sold to African Americans
+   
+---
+
+# Example: Levittown
+
+__Levittown, PA__ was a large development built by [Levitt & Sons]. 
+
+  - FHA garunteed Levitt & Sons  demand by offering qualified veterans subsidies on housing
+  
+  - FHA explicility included racial covenants, and Levitt & Sons refused to sell homes to people of color.
+
+---
+
+
+# Example: Levittown
+
+```{R, col_law2, out.width = "80%", echo = F}
+include_graphics("images/LevittownPA.jpg")
+```
+
+
+---
+
+# Housing Policy
+
+Many things I am not covering here. Read the book, watch the video. Read parts of the underwriting manual for specifics
+
+.hi[1968:] Fair Housing Act (Title VII of the Civil Rights Act)
+
+
+---
+
+count: false
+# Housing Policy
+
+Many things I am not covering here. Read the book, watch the video. Read parts of the underwriting manual for specifics
+
+.hi[1968:] Fair Housing Act (Title VII of the Civil Rights Act)
+
+  - Explicitly bans racial discrimination in home loans, sales, etc.
+  
+  - Through one of the largest expansions (_the largest?_) in home-ownership _ever_, it was explicit government policy to exclude African Americans. Other people of color impacted, too
+
+  
+---
+
+# Housing Policy
+
+Many things I am not covering here. Read the book, watch the video. Read parts of the underwriting manual for specifics
+
+.hi[1968:] Fair Housing Act (Title VII of the Civil Rights Act)
+
+  - Explicitly bans racial discrimination in home loans, sales, etc.
+  
+  - Through one of the largest expansions (_the largest?_) in home-ownership _ever_, it was explicit government policy to exclude African Americans. Other people of color impacted, too
+  
+__Ideas to explore:__ assets are generally transferred via bequests in families (you get your parents stuff when they die)
+
+  - What has happened to property values over the last 50 years? How might all of these facts help us understand racial income inequality?
+  
+---
+
+class: inverse, middle
+# Checklist
+
+.col-left[
+
+
+1) .hi[Model of Neighborhood Sorting] `r emo::ji("check")`
+
+  - Segregated, Integrated, & Mixed Equilibria
+  
+  - Stable vs Unstable Equilibria
+
+  
+2) .hi.purple[De Facto vs De Jure]  `r emo::ji("check")`
 
 ]
+
+.col-right[
+
+3) .hi.purple[Discussion] 
+
+]
+
+
 
 ---
 
 
 
 
+# Racial Integration
+
+
+```{R, map1, out.width = "80%", echo = F}
+include_graphics("images/race_map_ny.png")
+```
+
+
+---
+
+
+# Racial Integration
+
+```{R, map2, out.width = "80%", echo = F}
+include_graphics("images/race_map_chic.png")
+```
+
+---
 
 
 
+# Racial Integration
+
+```{R, map3, out.width = "80%", echo = F}
+include_graphics("images/race_map_la.png")
+```
+
+---
+
+
+#Racial Integration
+
+```{R, map4, out.width = "80%", echo = F}
+include_graphics("images/race_map_portland.png")
+```
+
+
+---
+
+
+
+
+# Discussion
+
+Common theories for racial segregation (in no particular order)
+
+1) White households have preference for segregated neighborhoods 
+
+--
+
+2) Income and race are strongly correlated, so income segregation contributes to racial segregation
+
+--
+
+3) MLS zoning excludes low-income HHs
+
+--
+
+4) __Racial Steering__: Encouraging by real-estate agents, bureaucrats, or property owners reduce access of minority households to certain neighborhoods
+
+--
+
+---
+
+# So What?
+
+What are the consequences of nbhd segregation? _Spatial Mismatch_
+
+--
+
+- Inferior access to jobs
+  
+  - .hi[Inferior access] explains __25%__ of black-white employment gap
+    
+  - .hi.purple[Inferior acess] explains __31%__ of Hispanic-white employment gap
+    
+- Mismatching bigger problem in large cities
+
+--
+
+---
+
+
+# So What?
+
+Schools and Poverty Traps
+
+- Low education spending $\implies$ low achievement in poor nbhds
+
+- Education more costly in poor nbhds
+    
+  + family crises
+  + security
+  + weak prep
+
+--
+
+.hi[Central City Schools]
+
+  - twice highschool dropout rate
+  
+  - Education for black HS grad eq to ed of white suburban dropout
+  
+  - High poverty schools: low proficiency rates for math and reading
+
+--
+
+---
+
+
+
+
+class: inverse, middle
+# Checklist
+
+.col-left[
+
+
+1) .hi[Model of Neighborhood Sorting] `r emo::ji("check")`
+
+  - Segregated, Integrated, & Mixed Equilibria
+  
+  - Stable vs Unstable Equilibria
+
+
+  
+2) .hi.purple[Minimum Lot Size] `r emo::ji("check")`
+
+]
+
+.col-right[
+
+3) .hi[Discussion] `r emo::ji("check")`
+
+]
+
+
+
+---
+
+exclude: true
 
 
 
@@ -1346,6 +1393,9 @@ class: inverse, middle
 <!-- ```{R, generate pdfs, include = F} -->
 <!-- system("decktape remark 02_goodsmarket_part1.html 02_goodsmarket_part1.pdf --chrome-arg=--allow-file-access-from-files") -->
 <!-- ``` -->
+
+
+
 
 
 
