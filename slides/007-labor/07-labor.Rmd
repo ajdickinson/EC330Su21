@@ -130,7 +130,6 @@ class: inverse, middle
 
   - .hi-white[Urban labor EQ]
 
-.hi-white[(ii). Monopsony]
 ]
 
 --
@@ -140,7 +139,11 @@ class: inverse, middle
 
   - .hi-white[Reading] (Chapter 5)
   
-  - .hi-white[Problem set 01 due on Friday at Midnight]
+  - .hi-white[Problem set 01 due on Sunday at Midnight]
+  
+.ul[.bigger[.hi-gold[After MT:]]]
+
+  - .hi-white[(ii). Monopsony]
   ]
 
 ---
@@ -397,6 +400,14 @@ Now, set $\frac{\Delta \pi}{\Delta L}=0$ to get the labor demand curve:
  MRP_L - w =0 \implies MRP_L = w
 \end{align*}
 
+--
+
+.center[.hi[What does this mean in words?]]
+
+--
+
+.center[.hii[A firm will hire labor until labor costs (wage) exactly ofsets the marginal revenue product of labor]]
+
 ---
 # Urban labor Markets: Labor demand
 
@@ -608,23 +619,8 @@ ggplot(data.frame(x=c(0, 8)), aes(x)) +
 ```
 
 ---
-class: inverse, middle
-# Checklist
-.pull-left[
-0) .hi[Rehash model from last class]: `r emo::ji("check")`
-
-1) .hi[Labor Markets and Urban Econ: overview]: `r emo::ji("check")`
-
-2) .hi[Urban Labor Demand]: `r emo::ji("check")`
-]
-
-.pull-right[
-
-3) .hi[Urban Labor Supply] `r emo::ji("check")`
-
-4) .hi.purple[Equilibrium]
-
-]
+class: inverse, middle, center
+# Equilibrium
 
 ---
 #Equilibrium 
@@ -657,6 +653,15 @@ ggplot(data.frame(x=c(0, 15)), aes(x)) +
   geom_hline(yintercept = 0)
 
 ```
+
+---
+# Quiz 04
+
+[link](https://raw.githubusercontent.com/ajdickinson/ec330-summer21/main/problem-sets/quizzes/quiz04.pdf)
+
+---
+class: inverse, center, middle
+# End of MT material
 
 ---
 # Min Wage Refresher
@@ -855,6 +860,8 @@ __2 Questions__
 --
 
  - Manufacturers are more sensitive to tax differences
+ 
+---
 
 # Competitive Model
 

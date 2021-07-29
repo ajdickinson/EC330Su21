@@ -64,7 +64,7 @@ __Office hours:__ After class each day from 2:00-2:30 pm + by appointment
 
     - [slides](https://rawcdn.githack.com/ajdickinson/ec330-summer21/178f3b15858e1d3e664dfc16b789c7dede12a3f6/slides/007-labor/07-labor.html), [pdf](https://raw.githubusercontent.com/ajdickinson/ec330-summer21/main/slides/007-labor/07-labor.pdf)
 
-  - __Lecture 08:__ Minimum wage + Causal inference
+  - __Lecture 08:__ Local labor markets (part ii)
 
 - __Week 03__
 
@@ -72,15 +72,15 @@ __Office hours:__ After class each day from 2:00-2:30 pm + by appointment
 
   - __Lecture 10:__ Introduction to place-based policies
 
-  - __Lecture 11:__ Housing policy
+  - __Lecture 11:__ Minimum wage + Causal inference
 
-  - __Lecture 12:__ Automobiles
+  - __Lecture 12:__ Housing policy
 
 - __Week 04__
 
-  - __Lecture 13:__ Urban transit
+  - __Lecture 13:__ Automobiles + Urban transit
 
-  - __Lecture 14:__ Education + Crime
+  - __Lecture 14:__ Education, Crime, and Racial segregation
 
   - __Lecture 15:__ Energy, Pollution, and Sustainabiliy
   
