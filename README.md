@@ -66,15 +66,19 @@ __Office hours:__ After class each day from 2:00-2:30 pm + by appointment
 
   - __Lecture 08:__ Local labor markets (part ii)
 
-    - [slides](https://rawcdn.githack.com/ajdickinson/ec330-summer21/ddbfb4202ec830e80ef02dd316b9a7eb8c4c5ebc/slides/007-labor/07-labor.html), [pdf](https://raw.githubusercontent.com/ajdickinson/ec330-summer21/main/slides/007-labor/07-labor.pdf)
+    - [slides](https://rawcdn.githack.com/ajdickinson/ec330-summer21/635caca9dcda594bb4a46ab0deb0818c97aeee63/slides/007-labor/07-labor.html), [pdf](https://raw.githubusercontent.com/ajdickinson/ec330-summer21/main/slides/007-labor/07-labor.pdf)
 
 - __Week 03__
 
   - __Lecture 09:__ __Midterm__
 
   - __Lecture 10:__ Midterm review + Monopsony + Minimum wage
+  
+    - Slides (same as lecture 08)
 
   - __Lecture 11:__ Minimum wage + Place-based policies
+  
+    - [slides](https://rawcdn.githack.com/ajdickinson/ec330-summer21/635caca9dcda594bb4a46ab0deb0818c97aeee63/slides/010-pb-policy/10-pb-policy.html), [pdf](https://raw.githubusercontent.com/ajdickinson/ec330-summer21/main/slides/010-pb-policy/10-pb-policy.pdf)
 
   - __Lecture 12:__ Housing policy + Causal inference
 
