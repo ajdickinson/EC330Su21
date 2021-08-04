@@ -70,11 +70,11 @@ __Office hours:__ After class each day from 2:00-2:30 pm + by appointment
 
   - __Lecture 09:__ __Midterm__
 
-  - __Lecture 10:__ Introduction to place-based policies
+  - __Lecture 10:__ Midterm review + Monopsony + Minimum wage
 
-  - __Lecture 11:__ Minimum wage + Causal inference
+  - __Lecture 11:__ Minimum wage + Place-based policies
 
-  - __Lecture 12:__ Housing policy
+  - __Lecture 12:__ Housing policy + Causal inference
 
 - __Week 04__
 
