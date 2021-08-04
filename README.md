@@ -62,9 +62,11 @@ __Office hours:__ After class each day from 2:00-2:30 pm + by appointment
 
   - __Lecture 07:__ Local labor markets
 
-    - [slides](https://rawcdn.githack.com/ajdickinson/ec330-summer21/178f3b15858e1d3e664dfc16b789c7dede12a3f6/slides/007-labor/07-labor.html), [pdf](https://raw.githubusercontent.com/ajdickinson/ec330-summer21/main/slides/007-labor/07-labor.pdf)
+    - [slides](https://rawcdn.githack.com/ajdickinson/ec330-summer21/ddbfb4202ec830e80ef02dd316b9a7eb8c4c5ebc/slides/007-labor/07-labor.html), [pdf](https://raw.githubusercontent.com/ajdickinson/ec330-summer21/main/slides/007-labor/07-labor.pdf)
 
   - __Lecture 08:__ Local labor markets (part ii)
+
+    - [slides](https://rawcdn.githack.com/ajdickinson/ec330-summer21/ddbfb4202ec830e80ef02dd316b9a7eb8c4c5ebc/slides/007-labor/07-labor.html), [pdf](https://raw.githubusercontent.com/ajdickinson/ec330-summer21/main/slides/007-labor/07-labor.pdf)
 
 - __Week 03__
 
