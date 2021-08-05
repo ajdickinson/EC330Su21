@@ -8,6 +8,12 @@
     <link href="10-pb-policy_files/remark-css/default.css" rel="stylesheet" />
     <link href="10-pb-policy_files/remark-css/metropolis.css" rel="stylesheet" />
     <link href="10-pb-policy_files/remark-css/metropolis-fonts.css" rel="stylesheet" />
+    <link href="10-pb-policy_files/tile-view/tile-view.css" rel="stylesheet" />
+    <script src="10-pb-policy_files/tile-view/tile-view.js"></script>
+    <script src="10-pb-policy_files/fabric/fabric.min.js"></script>
+    <link href="10-pb-policy_files/xaringanExtra-scribble/scribble.css" rel="stylesheet" />
+    <script src="10-pb-policy_files/xaringanExtra-scribble/scribble.js"></script>
+    <script>document.addEventListener('DOMContentLoaded', function() { window.xeScribble = new Scribble({"pen_color":["#FF0000"],"pen_size":3,"eraser_size":30,"palette":[]}) })</script>
     <link rel="stylesheet" href="padres.css" type="text/css" />
   </head>
   <body>
@@ -17,7 +23,7 @@ class: center, middle, inverse, title-slide
 # Econ 330: Urban Economics
 ## Lecture 10
 ### Andrew Dickinson
-### 04 August, 2021
+### 05 August, 2021
 
 ---
 
@@ -427,9 +433,7 @@ In practice, could write down an infinite number of functions for `\(U(\cdot)\)`
 ---
 # Utility framework: Locations
 
-.hi[Example:] 
-
-Let the utility function be .hi[linear] and assume everyone is identical:
+.hi[Example:] Assume linear utility functions and everyone is identical:
 
 --
 
@@ -457,7 +461,7 @@ Suppose our two locations are SF and OAK again. If:
 
 --
 
-Well `\(10 &gt; 7.5\)` so... everyone moves to SF
+.center[Well 10 &gt; 7.5 so... everyone moves to SF]
 
 ---
 # Utility framework: Locations
@@ -482,7 +486,11 @@ Can't have: `\(U(w_{SF}, r_{SF}, a_{SF}) &gt; U(w_{OAK}, r_{OAK}, a_{OAK})\)`
 
 &lt;br&gt;
 
-.hi[How can we use locational eq to "fix up" our last example?]
+.center[.hi[How can we use locational eq to "fix up" our last example?]]
+
+--
+
+.center[We can .hii[allow rents] (or wages or both) .hii[to adjust] such that utility is equivalent across the two cities]
 
 
 ---
@@ -492,11 +500,12 @@ Can't have: `\(U(w_{SF}, r_{SF}, a_{SF}) &gt; U(w_{OAK}, r_{OAK}, a_{OAK})\)`
 
 --
 
-.hi[Thus far], we have assumed .hii[wages] and .hi-gold[rents] do not respond to these choices
+.hi[Thus far], we assume .hii[wages] and .hi-gold[rents] are exogenous
+- Fall from the sky, do not change with location decisions
 
 --
 
-This is a .hi[bad assumption] right?
+.center[This is a .hi[bad assumption] right?]
 
 --
 
@@ -553,7 +562,7 @@ Suppose we have two cities `\(1\)` and `\(2\)`, with 7 people total: `\(L_1 + L_
 
 --
 
-- .qa[Q:] How many people live in each city? What are rents in each city? 
+.qa[Qs:] How many people live in each city? What are rents in each city? 
 
 .hi[Note:] You have .hi[two equations] and .hi[two unknowns] (namely, `\(L_1\)` and `\(L_2\)`)
   
@@ -565,6 +574,8 @@ Suppose we have two cities `\(1\)` and `\(2\)`, with 7 people total: `\(L_1 + L_
 # Utility framework: Rents example
 
 Locational eq gives:
+
+--
 
 `\begin{align*}
 w_1 - .5*r_1(L_1) &amp;= w_2 - .5*r_1(L_2)\\
@@ -581,7 +592,7 @@ Population must sum to 7. Thus:
 L_1 + L_2 &amp;= 7\\
 5+ L_2 + L_2 &amp;= 7\\
 2*L_2 &amp;= 2\\
-L_2 = 2 \implies L_1 = 5
+L_2 = 1 \implies L_1 = 6
 \end{align*}`
 
 ---
@@ -644,7 +655,7 @@ So utility goes up in SF until `\(U(w^{tax}_{SF}, r_{SF}(L_{SF}),a_{SF}) = k\)`
 
 # Extensions
 
-- This flexible way of modeling gives us many options for modeling place based policies
+This flexible way of modeling gives us many options for modeling place based policies
 
 --
 
@@ -657,33 +668,8 @@ So utility goes up in SF until `\(U(w^{tax}_{SF}, r_{SF}(L_{SF}),a_{SF}) = k\)`
 - .qa[Q]: How would you model an increase in public school quality?
 
 ---
-
-
-class: inverse, middle
-# Checklist
-
-.smallest[
-.pull-left[
-1) .hi[Intro to Place-Based Policies] ✅
-
-]
-]
-.smallest[
-.pull-right[
-
-2) .hi[Location-Choice Theory]✅
-
-- Modeling utility across cities
-
-
-- Rent adjustment model
-
-- Modeling place-based policies
-
-]
-]
-
----
+class: inverse, middle, center
+# Fin
 
 
 

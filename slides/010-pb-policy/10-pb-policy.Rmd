@@ -12,27 +12,28 @@ output:
       highlightLines: true
       countIncrementalSlides: false
       beforeInit: "macros.js"
-knit: pagedown::chrome_print
+# knit: pagedown::chrome_print
 
 ---
 class: inverse, center, middle
 
 ```{R, setup, include = F}
 options(htmltools.dir.version = FALSE)
-library(pacman)
-p_load(
-  broom, here, tidyverse,
-  latex2exp, ggplot2, ggthemes, viridis, extrafont, gridExtra,
-  kableExtra,
-  dplyr, magrittr, knitr, parallel, tufte,emo
+pacman::p_load(
+  broom, here, tidyverse, latex2exp, ggplot2, ggthemes, viridis, extrafont,
+  gridExtra, kableExtra, dplyr, magrittr, knitr, parallel, tufte, emo, ggrepel,
+  sf, hrbrthemes, lwgeom, maps, mapdata, spData, leaflet, huxtable, janitor,
+  tidycensus
 )
-# Define pink color
-red_pink <- "#e64173"
-turquoise <- "#20B2AA"
-grey_light <- "grey70"
-grey_mid <- "grey50"
-grey_dark <- "grey20"
-# Dark slate grey: #314f4f
+# Define colors
+## source color script from local directory
+## comment out and replace colors if user is not Andrew
+source("~/Documents/scripts/colors/colors.R")
+# XaringanExtra functions
+## Tile view
+xaringanExtra::use_tile_view()
+## Scribble
+xaringanExtra::use_scribble()
 # Knitr options
 opts_chunk$set(
   comment = "#>",
@@ -42,10 +43,10 @@ opts_chunk$set(
   warning = F,
   message = F
 )
-opts_chunk$set(dev = "svg")
 options(device = function(file, width, height) {
   svg(tempfile(), width = width, height = height)
 })
+# A simple theme for supply + demand curves
 # A blank theme for ggplot
 theme_empty <- theme_bw() + theme(
   line = element_blank(),
@@ -109,6 +110,8 @@ theme_axes <- theme_void() + theme(
   plot.margin = structure(c(1, 0, 1, 0), unit = "lines", valid.unit = 3L, class = "unit"),
   legend.position = "none"
 )
+theme_curves <- theme_ipsum() + theme(axis.line = element_line(),
+        panel.grid.minor = element_blank())
 ```
 
 
@@ -513,9 +516,7 @@ In practice, could write down an infinite number of functions for $U(\cdot)$
 ---
 # Utility framework: Locations
 
-.hi[Example:] 
-
-Let the utility function be .hi[linear] and assume everyone is identical:
+.hi[Example:] Assume linear utility functions and everyone is identical:
 
 --
 
@@ -543,7 +544,7 @@ Suppose our two locations are SF and OAK again. If:
 
 --
 
-Well $10 > 7.5$ so... everyone moves to SF
+.center[Well 10 > 7.5 so... everyone moves to SF]
 
 ---
 # Utility framework: Locations
@@ -568,7 +569,11 @@ Can't have: $U(w_{SF}, r_{SF}, a_{SF}) > U(w_{OAK}, r_{OAK}, a_{OAK})$
 
 <br>
 
-.hi[How can we use locational eq to "fix up" our last example?]
+.center[.hi[How can we use locational eq to "fix up" our last example?]]
+
+--
+
+.center[We can .hii[allow rents] (or wages or both) .hii[to adjust] such that utility is equivalent across the two cities]
 
 
 ---
@@ -578,11 +583,12 @@ Can't have: $U(w_{SF}, r_{SF}, a_{SF}) > U(w_{OAK}, r_{OAK}, a_{OAK})$
 
 --
 
-.hi[Thus far], we have assumed .hii[wages] and .hi-gold[rents] do not respond to these choices
+.hi[Thus far], we assume .hii[wages] and .hi-gold[rents] are exogenous
+- Fall from the sky, do not change with location decisions
 
 --
 
-This is a .hi[bad assumption] right?
+.center[This is a .hi[bad assumption] right?]
 
 --
 
@@ -639,7 +645,7 @@ Suppose we have two cities $1$ and $2$, with 7 people total: $L_1 + L_2 = 7$
 
 --
 
-- .qa[Q:] How many people live in each city? What are rents in each city? 
+.qa[Qs:] How many people live in each city? What are rents in each city? 
 
 .hi[Note:] You have .hi[two equations] and .hi[two unknowns] (namely, $L_1$ and $L_2$)
   
@@ -651,6 +657,8 @@ Suppose we have two cities $1$ and $2$, with 7 people total: $L_1 + L_2 = 7$
 # Utility framework: Rents example
 
 Locational eq gives:
+
+--
 
 \begin{align*}
 w_1 - .5*r_1(L_1) &= w_2 - .5*r_1(L_2)\\
@@ -667,7 +675,7 @@ Population must sum to 7. Thus:
 L_1 + L_2 &= 7\\
 5+ L_2 + L_2 &= 7\\
 2*L_2 &= 2\\
-L_2 = 2 \implies L_1 = 5
+L_2 = 1 \implies L_1 = 6
 \end{align*}
 
 ---
@@ -730,7 +738,7 @@ So utility goes up in SF until $U(w^{tax}_{SF}, r_{SF}(L_{SF}),a_{SF}) = k$
 
 # Extensions
 
-- This flexible way of modeling gives us many options for modeling place based policies
+This flexible way of modeling gives us many options for modeling place based policies
 
 --
 
@@ -743,33 +751,8 @@ So utility goes up in SF until $U(w^{tax}_{SF}, r_{SF}(L_{SF}),a_{SF}) = k$
 - .qa[Q]: How would you model an increase in public school quality?
 
 ---
-
-
-class: inverse, middle
-# Checklist
-
-.smallest[
-.pull-left[
-1) .hi[Intro to Place-Based Policies] `r emo::ji("check")`
-
-]
-]
-.smallest[
-.pull-right[
-
-2) .hi[Location-Choice Theory]`r emo::ji("check")`
-
-- Modeling utility across cities
-
-
-- Rent adjustment model
-
-- Modeling place-based policies
-
-]
-]
-
----
+class: inverse, middle, center
+# Fin
 
 
 
