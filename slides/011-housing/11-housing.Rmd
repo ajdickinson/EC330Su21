@@ -12,8 +12,7 @@ output:
       highlightLines: true
       countIncrementalSlides: false
       beforeInit: "macros.js"
-#knit: pagedown::chrome_print
-urlcolor: blue
+# knit: pagedown::chrome_print
 
 ---
 class: inverse, center, middle
@@ -1038,7 +1037,7 @@ A fair comparison? Maybe concerned that those living in apartments built before 
 __Moral of the story__: Yes, in SF:
 
 .pull-left[
-![](figures/too_damn_high.jp)
+![](figures/too_damn_high.jpg)
 ]
 
 
@@ -1048,7 +1047,7 @@ count: false
 
 __Moral of the story__: Yes, in SF:
 
-![](figures/too_damn_high.jp)
+![](figures/too_damn_high.jpg)
 
 ]
 
@@ -1062,7 +1061,7 @@ count: false
 
 __Moral of the story__: Yes, in SF:
 
-![](figures/too_damn_high.jp)
+![](figures/too_damn_high.jpg)
 
 .pull-right[
   - Are rent controls the best fix? 
@@ -1075,7 +1074,7 @@ count: false
 
 __Moral of the story__: Yes, in SF:
 
-![](figures/too_damn_high.jp)
+![](figures/too_damn_high.jpg)
 
 
 .pull-right[
