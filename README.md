@@ -94,7 +94,7 @@ __Office hours:__ After class each day from 2:00-2:30 pm + by appointment
 
   - __Lecture 12:__ Housing policy + Causal inference
   
-    - [slides](https://rawcdn.githack.com/ajdickinson/ec330-summer21/2587749d2ab20b56d8e1cf02eb66843f56404dfc/slides/011-housing/11-housing.html), [pdf]()
+    - [slides](https://rawcdn.githack.com/ajdickinson/ec330-summer21/2587749d2ab20b56d8e1cf02eb66843f56404dfc/slides/011-housing/11-housing.html), [pdf](https://raw.githubusercontent.com/ajdickinson/ec330-summer21/main/slides/011-housing/11-housing.pdf)
 
 - __Week 04__
 
