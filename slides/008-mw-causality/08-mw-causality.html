@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Econ 330: Urban Economics</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Andrew Dickinson" />
+    <script src="08-mw-causality_files/header-attrs/header-attrs.js"></script>
+    <link href="08-mw-causality_files/remark-css/default.css" rel="stylesheet" />
+    <link href="08-mw-causality_files/remark-css/metropolis.css" rel="stylesheet" />
+    <link href="08-mw-causality_files/remark-css/metropolis-fonts.css" rel="stylesheet" />
+    <link href="08-mw-causality_files/tile-view/tile-view.css" rel="stylesheet" />
+    <script src="08-mw-causality_files/tile-view/tile-view.js"></script>
+    <script src="08-mw-causality_files/fabric/fabric.min.js"></script>
+    <link href="08-mw-causality_files/xaringanExtra-scribble/scribble.css" rel="stylesheet" />
+    <script src="08-mw-causality_files/xaringanExtra-scribble/scribble.js"></script>
+    <script>document.addEventListener('DOMContentLoaded', function() { window.xeScribble = new Scribble({"pen_color":["#FF0000"],"pen_size":3,"eraser_size":30,"palette":[]}) })</script>
+    <script src="08-mw-causality_files/kePrint/kePrint.js"></script>
+    <link href="08-mw-causality_files/lightable/lightable.css" rel="stylesheet" />
+    <link rel="stylesheet" href="padres.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Econ 330: Urban Economics
+## Lecture 13
+### Andrew Dickinson
+### 10 August, 2021
+
+---
+
+class: inverse, center, middle
+
+
+
+# Lecture 13: Minimum Wage, Monopsony &amp; Empirics
+
+---
+class: inverse, middle
+# Schedule
+
+.pull-left[
+.ul[.bigger[.hi-gold[Today:]]]
+
+.hi-white[(i). The mimimum wage]
+
+.hi-white[(ii). Rent control and LUR]
+
+.hi-white[(iii). Causal Inference]
+
+]
+
+--
+
+.pull-right[
+.ul[.bigger[.hi-gold[Upcoming:]]]
+
+  - .hi-white[Reading] (Chapter 7)
+  
+  - .hi-white[Problem set 02 due Wednesday night]
+  
+]
+
+---
+# Housekeeping
+
+
+---
+
+class: inverse, middle
+# History of the minimum wage
+
+---
+# History of the minimum wage
+
+
+.pull-left[
+- __1894__: New Zealand enacts the [Industrial Concilation and Arbitration Act](https://en.wikipedia.org/wiki/Industrial_Conciliation_and_Arbitration_Act_1894)
+
+  - Worlds first Min wage!
+
+
+]
+
+.pull-right[
+
+]
+
+
+---
+
+
+
+count: false
+# A Brief History Lesson
+
+
+.pull-left[
+- .ex[__1894__: New Zealand enacts the [Industrial Concilation and Arbitration Act](https://en.wikipedia.org/wiki/Industrial_Conciliation_and_Arbitration_Act_1894)]
+
+  - .ex[Worlds first Min wage!]
+  
+- __1912__: Massachusetts enacts the .pink[first minimum wage in the US]. Other states follow
+
+
+]
+
+.pull-right[
+
+]
+
+
+---
+
+count: false
+# A Brief History Lesson
+
+
+.pull-left[
+- .ex[1894: New Zealand enacts the [Industrial Concilation and Arbitration Act](https://en.wikipedia.org/wiki/Industrial_Conciliation_and_Arbitration_Act_1894)]
+
+  - .ex[Worlds first Min wage!]
+  
+- .ex[__1912__: Massachusetts enacts the .pink[first minimum wage in the US]. Other states follow]
+
+-  __1938__: [Fair Labor Standards Act](https://www.dol.gov/agencies/whd/flsa) (25 cents per hour .hi[federal] minimum wage)
+
+
+]
+
+.pull-right[
+
+]
+
+
+---
+
+
+count: false
+# A Brief History Lesson
+
+
+.pull-left[
+- .ex[1894: New Zealand enacts the [Industrial Concilation and Arbitration Act](https://en.wikipedia.org/wiki/Industrial_Conciliation_and_Arbitration_Act_1894)]
+
+  - .ex[Worlds first Min wage!]
+  
+- .ex[__1912__: Massachusetts enacts the .pink[first minimum wage in the US]. Other states follow]
+
+-  .ex[__1938__: [Fair Labor Standards Act](https://www.dol.gov/agencies/whd/flsa) (25 cents per hour .hi[federal] minimum wage)]
+
+
+]
+
+.pull-right[
+
+- __1968__: Federal Minimum Wage reaches .hi[peak purchasing power] at $1.60 per hour ($11.53 in 2019 dollars) 🤯
+
+]
+
+
+---
+
+
+
+count: false
+# A Brief History Lesson
+
+
+.pull-left[
+- .ex[1894: New Zealand enacts the [Industrial Concilation and Arbitration Act](https://en.wikipedia.org/wiki/Industrial_Conciliation_and_Arbitration_Act_1894)]
+
+  - .ex[Worlds first Min wage!]
+  
+- .ex[__1912__: Massachusetts enacts the .pink[first minimum wage in the US]. Other states follow]
+
+-  .ex[__1938__: [Fair Labor Standards Act](https://www.dol.gov/agencies/whd/flsa) (25 cents per hour .hi[federal] minimum wage)]
+
+
+]
+
+.pull-right[
+
+- .ex[__1968__: Federal Minimum Wage reaches .hi[peak purchasing power] at $1.60 per hour ($11.53 in 2019 dollars) 🤯]
+
+-  __2009__: Min wage is $ 7.25 an hour
+
+-  __2019__: 29 states have a higher minimum wage than federal
+
+]
+
+---
+# History of the minimum wage
+
+.center[
+![:scale 70%](./figures/real-minimum-wage.png)
+]
+
+
+---
+
+
+# Minimum wage discussion
+
+So what do you think? Is minimum wage good? Is it bad?
+
+--
+
+.hi[Note]: The question _is minimum wage good?_ is .hi[not] a good question.
+
+--
+
+Good is .hii[normative]
+
+.hi[Better:] Does minimum wage impact all low wage workers .hi[equally?]
+
+--
+
+Does minimum wage cause increases in unemployment?
+
+--
+
+Does minimum wage lead to firms reducing other, non-mandated benefits?
+
+--
+
+Above questions: quantifiable, with answers that can (and should?) be answered empirically
+
+---
+# Geographic Varying Mkt Power
+
+Source: [Rinz, 2018](https://kevinrinz.github.io/concentration.pdf)
+![](figures/rinz_monop.png)
+
+
+---
+# Recent legistlation
+
+_Raise the Wage Act of 2021:_
+ 
+ 
+&gt; If enacted at the end of March 2021, the Raise the Wage Act of 2021 (S. 53, as introduced on January 26, 2021) would raise the federal minimum wage, in annual increments, to $15 per hour by June 2025 and then adjust it to increase at the same rate as median hourly wages. 
+
+
+[CBO on the Raise the Wage Act of 2021](https://www.cbo.gov/publication/56975):
+
+&gt; Employment would be reduced by 1.4 million workers, or 0.9 percent, according to CBO’s average estimate; and
+
+&gt; The number of people in poverty would be reduced by 0.9 million.
+
+
+---
+
+# Recent Empirical Work
+
+[Cengiz et. al (2021)](https://www.nber.org/papers/w28399#.YBhGmiEqePo.twitter): 
+
+&gt; By exploiting 172 prominent minimum wages between 1979 and 2019 we find that there is a very clear increase in average wages of workers in these groups following a minimum wage increase, while there is little evidence of employment loss. Furthermore, we find no indication that minimum wage has a negative effect on the unemployment rate, on the labor force participation, or on the labor market transitions.
+
+---
+
+# Recent Empirical Work
+
+[Jardim et al (2018)](https://www.nber.org/system/files/working_papers/w23532/w23532.pdf): "The" Seattle Min Wage Paper (now peer reviewed):
+
+&gt; This paper evaluates the wage, employment, and hours effects of the first and second phase-in of the
+Seattle Minimum Wage Ordinance, which raised the minimum wage from $9.47 to as much as $11
+in 2015 and to as much as $13 in 2016. ..... we conclude that the second wage increase to $13
+reduced hours worked in low-wage jobs by 6-7 percent, while hourly wages in such jobs increased
+by 3 percent. Consequently, total payroll for such jobs decreased, implying that the Ordinance lowered
+the amount paid to workers in low-wage jobs by an average of $74 per month per job in 2016. Evidence
+attributes more modest effects to the first wage increase. We estimate an effect of zero when analyzing
+employment in the restaurant industry at all wage levels, comparable to many prior studies.
+
+---
+# Recap
+
+Overall, the effects of min wage on all kinds of outcomes is still debated. Though a it does seem like a larger body of evidence is pointing towards minimal advserse employment effects.
+
+  - Why is it _maybe_ not surprising that we get different results from different cities?
+  
+  - Geographic varying labor market power!  (Some places/sectors are closer to competitive, others monopsony)
+  
+As always, more work to do here. A lot more research on this topic we don't have time to go over. But: how does anyone figure any of this stuff out?
+
+---
+# Alternative: EITC
+
+.hi[EITC:]
+
+&gt; A refundable tax credit for low- to moderate-income working individuals, couples, families.
+
+.center[
+![](./figures/eitc.png)
+]
+
+---
+class: inverse, middle
+# Causal inference
+
+---
+
+# Causal inference: Introduction
+
+We are going to talk about .hi[causality]. 
+
+Some of these notes are based on written by [Ed Rubin](http://edrub.in/) &amp; [Kyle Raze](https://kyleraze.com/)
+
+---
+# Causal inference: Introduction
+
+Hisotrically, social sciences had limited data to study policy questions. 
+
+.hi[Result:] Social sciences were .hi[theoretical] fields
+
+  - Economists used .hii[mathematical models]
+  - Sociologists developed .hi[qualitative theories]
+  - Both used their theories to make policy reccomendations
+
+--
+
+.hii[Problem:] Theories can be (and often are) wrong
+
+  - 5 economists often have 5 answers to .pink[the same question]
+  - Leads to a politicization of questions that, in principle, have scientific answers (ie: does minimum wage cause increased in unemployment?)
+
+
+---
+# Causal revolution
+
+.hi[Today]: social sciences are increasingly .hii[empirical] thanks to the growing availability of data
+
+  - Ability to test and improve theories using real data
+  
+  - Data driven answers `\(\implies\)` less politicization
+  
+--
+
+Furthermore, the .hi[causal revolution] that started 30 years ago in other fields such as statistics, computer science (AI), psychology etc has given us the tools (language) to make causal statements 
+
+
+---
+# Causal inference
+
+The economists toolkit:
+
+  - .hi[Empirics]: tells us what actually happened
+  
+  - .hi.purple[Theory]: helps us understand why things happened the way they did
+  
+--
+
+.hi[Be careful in distinguishing between:]
+
+  - Empirical facts such as _.pink[average unemployment was lower after minimum wage was placed]_
+  
+--
+
+  - Empirical or theoretical claims (supported by facts) such as: _.purple[average unemployment was lower] .hi.purple[because] .purple[of minimum wage]_ or
+  
+    -  _average unemployment was lower after minimum wage was placed because the market was a monosopsony_
+
+---
+# Causal revolution: Counterfactual
+
+
+Suppose we want to answer the question:
+
+ _Does minimum wage lead to increases in unemployment_?
+ 
+ .hi[What would be the best way to answer this question?]
+ 
+--
+
+.hi[Definition: Counterfactual]
+
+&gt; The outcome of a policy (or event or treatment) had that policy not happenend
+
+--
+
+- Think of parallel universes
+
+---
+# The ideal experiment
+
+Suppose we want to answer the question: _Does minimum wage lead to increases in unemployment_?
+
+--
+
+What would be the ideal experiment with unlimited resources and data?
+
+--
+
+.hii[(i).] Implement minimum wage in one state - New Jersey
+
+--
+
+.hii[(ii).] Compute unemployment in NJ .hi[post minimum wage] and call it `\(u_{\text{min wage}, NJ}\)`
+
+--
+
+.hii[(iii).] Have a .hi[parallel universe] in which you did not implement min wage in NJ. Compute `\(u_{\text{min wage}, NJ}\)`
+
+--
+
+.hii[(iv).] .hi[Treatment effect] of the min wage for NJ, given by: `$$\tau_{\text{min wage}, NJ} = u_{\text{min wage}, NJ} - u_{\text{min wage}, NJ}$$`
+
+---
+# Issues with the ideal experiment
+
+
+Unfortunately, we do not have a parallel universe at our disposal
+
+--
+
+This is called the .hi[fundamental problem of causal inference]. Put in a different way:
+
+- We can never see the same individual (unit) when they are both treated and untreated
+
+--
+
+We can never _guaruntee_ all else is equal, but we will try our best.
+
+--
+
+.qa[Q:] How can we answer this question, without a parallel universe?
+
+---
+# Setup
+
+.qa[Q:]  _Does minimum wage lead to increases in unemployment_?
+
+We need a setting: in 1993 NJ rose minimum wage from 4.25 to 5.05.
+
+--
+
+.qa[Q:] What .hi[comparisons could you make] to under the the effect of NJ min wage on unemployment?
+
+--
+
+.hi[(i).] Compare average unemployment in NJ .hii[before] and .hi-gold[after] the policy
+
+--
+
+.hi[(ii).] Also could compare average unemployment in .hii[NJ] to .hi-gold[other states]
+
+--
+
+.qa[Q:] .hi[Problems?]
+
+--
+
+.hii[(i).] Other factors could be influencing unemployment at same time as NJ as min wage implementation
+
+--
+
+.hii[(ii).] Could be _many_ things that cause average wages to be different in NJ and other states (not related to min wage)
+
+
+---
+# Issues
+
+.center[.hi[A causal statement is a high bar]]
+
+Both issues were violations of the _.hii[all else equal]_ assumption
+
+--
+
+Otherwise known broadly as .hi[Endogeneity], .hii[Simultaneous Equations], or .hi-gold[Selection Bias]
+
+--
+
+When _.hii[all]_ factors are held constant, statistical comparisons detect .hi[causal relationships]. You have likely heard the saying:
+
+&gt; Correlation is not causation
+
+--
+
+- Often times there are violations of the .hii[all else equal assumption]
+
+--
+
+.hi[New saying:]
+
+  &gt; Correlation + all else equal is causation.
+  
+---
+# Path to Causality
+
+So the minimum wage comparison we made probably violates the .hii[all else equal] assumption
+
+How might we solve this problem?
+
+--
+
+.center[.hi[Random Experiments]]
+
+--
+
+Ideally, we would randomly assign firms to have min wage 
+- Randomization helps us maintain the _all else equal_ assumption 
+
+--
+
+Here we have __two groups__:
+
+1. .hi[Treatment:] Assigned minimum wage
+
+2. .hi[Control:] Not assigned minimum wage
+
+--
+
+.hi[Average Treatment Effect]: ATE = Average(treated) - Average(control)
+- Unobservable/observable differences average out to zero due to random assignment
+  
+---
+# Problem
+
+We can't randomly assign firms to minimum wage. If we _invited_ firms to participate (very few would, probably), we would have .hi[selection bias] (non-random assignment of treatment)
+
+- Simple comparisons of treatment and control units might violate .pink[all else equal] 
+
+--
+
+.hi[What do we do?]
+
+--
+
+1. Give up
+
+--
+
+2. .hi[Think of a different comparison that gets us closer to all else equal.]
+
+---
+
+# Another Comparsion
+
+So we tried:
+
+1) Comparing NJ to itself before and after the policy ❌
+
+--
+
+2) Comparing NJ to another state after the policy ❌
+
+--
+
+.hii[Another idea:] 
+
+--
+
+What if we .pink[compared] the .purple[difference] between NJ and another state .hi[before] __&amp;__ after the minimum wage?
+
+--
+
+If the _.pink[pre-treatment]_ difference is constant, then comparing this to the _.purple[post-treatment]_ should give us the treatment effect of the policy.
+  
+--
+
+This is called the .hi[Difference in Differences] estimator (or DiD, double diff, etc.)
+
+---
+# Differences-in-Differences 
+
+.hi[Card and Krueger (1994)]
+
+.center[**Effect of Minimum Wage on Employment**]
+&lt;table class="table" style="margin-left: auto; margin-right: auto;"&gt;
+&lt;caption&gt;Outcome: Number Full-Time Workers&lt;/caption&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt; Group &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; After &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; Before &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;line-height: 110%;"&gt; .pink[Treatment (NJ)] &lt;/td&gt;
+   &lt;td style="text-align:center;line-height: 110%;"&gt; 21.03 &lt;/td&gt;
+   &lt;td style="text-align:center;line-height: 110%;"&gt; 20.44 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;line-height: 110%;"&gt; .purple[Control (PA)] &lt;/td&gt;
+   &lt;td style="text-align:center;line-height: 110%;"&gt; 21.17 &lt;/td&gt;
+   &lt;td style="text-align:center;line-height: 110%;"&gt; 23.33 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Difference &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt;  &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt;  &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+Difference-in-differences .mono[=]
+
+---
+count: false
+# Differences-in-Differences 
+
+.hi[Card and Krueger (1994)]
+
+.center[**Effect of Minimum Wage on Employment**]
+&lt;table class="table" style="margin-left: auto; margin-right: auto;"&gt;
+&lt;caption&gt;Outcome: Number Full-Time Workers&lt;/caption&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt; Group &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; After &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; Before &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;line-height: 110%;"&gt; .pink[Treatment (NJ)] &lt;/td&gt;
+   &lt;td style="text-align:center;line-height: 110%;"&gt; 21.03 &lt;/td&gt;
+   &lt;td style="text-align:center;line-height: 110%;"&gt; 20.44 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;line-height: 110%;"&gt; .purple[Control (PA)] &lt;/td&gt;
+   &lt;td style="text-align:center;line-height: 110%;"&gt; 21.17 &lt;/td&gt;
+   &lt;td style="text-align:center;line-height: 110%;"&gt; 23.33 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Difference &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; -0.14 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; -2.89 &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+Difference-in-differences .mono[=]
+
+---
+count: false
+# Differences-in-Differences 
+
+.hi[Card and Krueger (1994)]
+
+.center[**Effect of Minimum Wage on Employment**]
+&lt;table class="table" style="margin-left: auto; margin-right: auto;"&gt;
+&lt;caption&gt;Outcome: Number Full-Time Workers&lt;/caption&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt; Group &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; After &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; Before &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;line-height: 110%;"&gt; .pink[Treatment (NJ)] &lt;/td&gt;
+   &lt;td style="text-align:center;line-height: 110%;"&gt; 21.03 &lt;/td&gt;
+   &lt;td style="text-align:center;line-height: 110%;"&gt; 20.44 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;line-height: 110%;"&gt; .purple[Control (PA)] &lt;/td&gt;
+   &lt;td style="text-align:center;line-height: 110%;"&gt; 21.17 &lt;/td&gt;
+   &lt;td style="text-align:center;line-height: 110%;"&gt; 23.33 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Difference &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; -0.14 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; -2.89 &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+Difference-in-differences .mono[=] -.pink[0.14] .mono[-] .purple[-2.89]
+--
+&lt;br&gt; `\(\quad\)` .mono[=] 2.75. ( a .hi[13%] increase!!)
+
+--
+
+**Result:** Increasing the minimum wage did not reduce employment!
+
+---
+# DiD Plot
+
+
+&lt;img src="08-mw-causality_files/figure-html/did_1-1.svg" style="display: block; margin: auto;" /&gt;
+
+---
+
+count:false
+# DiD Plot
+&lt;img src="08-mw-causality_files/figure-html/did_2-1.svg" style="display: block; margin: auto;" /&gt;
+
+
+---
+
+
+
+
+count:false
+# DiD Plot
+&lt;img src="08-mw-causality_files/figure-html/did_3-1.svg" style="display: block; margin: auto;" /&gt;
+
+
+---
+
+
+
+count:false
+# DiD Plot
+&lt;img src="08-mw-causality_files/figure-html/did_34-1.svg" style="display: block; margin: auto;" /&gt;
+
+---
+
+count:false
+# DiD Plot
+&lt;img src="08-mw-causality_files/figure-html/did_4-1.svg" style="display: block; margin: auto;" /&gt;
+
+
+---
+
+
+
+
+# DiD Plot
+
+&lt;img src="08-mw-causality_files/figure-html/did_8-1.svg" style="display: block; margin: auto;" /&gt;
+
+
+To be clear, the average treatment effect, `\(\tau\)` is given by:
+`\begin{align*}
+\tau = (\underbrace{y_{\text{treat, post}} - y_{\text{control, post}}}_\text{diff (post)}) - (\underbrace{y_{\text{treat, pre}} - y_{\text{control, pre}}}_\text{diff (pre)})
+\end{align*}`
+
+---
+# The Evidence and Metrics
+
+- [Card &amp; Krueger (1993)](https://www.nber.org/papers/w4509) _Minimum Wages and Employment: A Case Study of the Fast Food Industry in New Jersey and Pennsylvania_
+  
+  - Min wage in NJ rose from $ 4.25 to $ 5.05
+  
+--
+
+  - Here: NJ is the .hi.slate[treatment] group and Penn is the .hi.slate[control] group. NJ exposed to policy, NY not
+
+--
+
+- Finds that employment in NJ __increased__! 
+
+---
+
+# Metrics
+
+.hi[Research Design]
+
+ - Compares employment of fast food restaurants in NJ to Pennsylvania (where min wage stayed at $4.25) 
+ - .pink[Treatment]: NJ, .purple[Control]: Pennsylvania
+
+--
+
+ - .hi[DiD estimates] of min wage effect on unemployment, prices, and wages
+
+--
+
+.hii[Main Findings]
+ 
+ 1. Policy _increased_ employment in NJ fast food establishments by a whopping .hi[13]%
+
+--
+
+ 2. Business increased prices, .pink[suggesting] that most of the burden of the min wage was handed to others
+
+---
+# Comments
+
+- Pretty clear result from the paper: minimum wage increased employment .hi[in fast food, in NJ].
+- They comment about possible monopsony power in this labor market, which would be consistent with our earlier theory
+
+--
+
+.hi[Issues]
+
+- Nothing about hours worked. Employment might have increased, but its not clear that average number of hours worked increased
+
+  - .qa[Q]: Do we care about unemployment? Or do we care about maximizing incomes for the largest group of people? Different things.
+
+---
+
+
+# Another Problem
+
+.hi[Issues] part ii
+
+
+The .pink[mechansim] for the increase is not tested or clear. Possible stories:
+
+1. Fast food chains generally have more capital than small businesses. Small food places went out of business, and demand shifted to the fast food chains (causing employment to increase)
+
+--
+2. Monoposony power in fast food chains
+
+3. Both 1 and 2? Something else?
+
+--
+
+.hi.slate[Policy Implications] will depend .hi[heavily] on what the underlying mechanism is. If most of the results are driven by 1, maybe the net-effect on employment is negative. 
+
+---
+# Internal Vs. External Validity
+
+.hi[Internal Validity] 
+
+Addresses the question: _.blue[should we believe this study?]_
+
+--
+
+A study has internal validity if we believe the .hi[causal effect] of a variable on another variable has been .purple[well identified] (ie: we have maintained .pink[all else equal])
+  
+--
+
+.hii[External Validity]
+
+Addresses the question: _.blue[how far can we generalize the results of this study?]_
+
+--
+
+  - External validity is often harder to show. Need to argue that your context is similar to other contexts. Even then, you might not be believed.
+  
+--
+
+.hi[Card &amp; Krueger] very hard to argue external validity
+
+
+---
+
+class: inverse, middle
+# Fin
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="macros.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
