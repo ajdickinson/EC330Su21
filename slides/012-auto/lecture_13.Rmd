@@ -172,18 +172,18 @@ class: inverse, middle
 ---
 # Vehicle Miles Traveled
 
-<iframe src="https://fred.stlouisfed.org/graph/graph-landing.php?g=FW1b&width=800&height=475" scrolling="no" frameborder="0" style="overflow:hidden; "target=_self"; width:800px; height:525px;" allowTransparency="true" loading="lazy"></iframe>
+*iframe src="https://fred.stlouisfed.org/graph/graph-landing.php?g=FW1b&width=800&height=475" scrolling="no" frameborder="0" style="overflow:hidden; "target=_self"; width:800px; height:525px;" allowTransparency="true" loading="lazy"></iframe>
 
 ---
 
 # US: People like Cars
 
-<iframe src="https://ourworldindata.org/grapher/road-vehicles-per-1000-inhabitants-vs-gdp-per-capita" loading="lazy" style="width: 100%; height: 500px; "target=_self"; border: 0px none;"></iframe>
+*iframe src="https://ourworldindata.org/grapher/road-vehicles-per-1000-inhabitants-vs-gdp-per-capita" loading="lazy" style="width: 100%; height: 500px; "target=_self"; border: 0px none;"></iframe>
 
 ---
 # Carbon Emissions
 
-<iframe src="https://ourworldindata.org/grapher/road-vehicles-per-1000-inhabitants-vs-gdp-per-capita" loading="lazy" style="width: 100%; "target=_self"; height: 500px; border: 0px none;"></iframe>
+*iframe src="https://ourworldindata.org/grapher/road-vehicles-per-1000-inhabitants-vs-gdp-per-capita" loading="lazy" style="width: 100%; "target=_self"; height: 500px; border: 0px none;"></iframe>
 
 ---
 # Climate crisis
@@ -224,14 +224,14 @@ Other consequences include:
 ---
 # Carbon emissions
 
-<iframe src="https://ourworldindata.org/grapher/co-emissions-per-capita?tab=chart&country=USA~BRA~Europe+%28excl.+EU-27%29~IND~RUS~CHN~JPN" loading="lazy" style="width: 100%; "target=_self"; height: 500px; border: 0px none;"></iframe>
+*iframe src="https://ourworldindata.org/grapher/co-emissions-per-capita?tab=chart&country=USA~BRA~Europe+%28excl.+EU-27%29~IND~RUS~CHN~JPN" loading="lazy" style="width: 100%; "target=_self"; height: 500px; border: 0px none;"></iframe>
 
 ---
 
 
 # Carbon emissions
 
-<iframe src="https://ourworldindata.org/grapher/annual-co2-emissions-per-country?tab=chart&country=USA~CHN~EU-28~IND~RUS~JPN~BRA" loading="lazy" style="width: 100%; height: 500px; "target=_self"; border: 0px none;"></iframe>
+*iframe src="https://ourworldindata.org/grapher/annual-co2-emissions-per-country?tab=chart&country=USA~CHN~EU-28~IND~RUS~JPN~BRA" loading="lazy" style="width: 100%; height: 500px; "target=_self"; border: 0px none;"></iframe>
 
 ---
 # Policy questions
@@ -447,7 +447,7 @@ What actually causes congestion/traffic?
 
 <center>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/7wm-pZp_mi0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+*iframe width="560" height="315" src="https://www.youtube.com/embed/7wm-pZp_mi0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 </center>
 

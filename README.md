@@ -106,6 +106,8 @@ __Office hours:__ After class each day from 2:00-2:30 pm + by appointment
   
     - [slides](https://rawcdn.githack.com/ajdickinson/ec330-summer21/966db8ec55d93f12c801f30d1853c61e5428f7a2/slides/012-auto/lecture_13.html)
 
-  - __Lecture 15:__ Energy, Pollution, and Sustainabiliy
+  - __Lecture 15:__ Opportunity
+  
+    - [slides](https://rawcdn.githack.com/ajdickinson/ec330-summer21/8bef63f11731a3749a55293b188c572516bc1caa/slides/015-opportunity/15-opportunity.html), [pdf](https://raw.githubusercontent.com/ajdickinson/ec330-summer21/main/slides/015-opportunity/15-opportunity.pdf)
   
   - __Lecture 16:__ __Final Exam__
