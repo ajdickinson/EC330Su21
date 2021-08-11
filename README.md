@@ -100,7 +100,7 @@ __Office hours:__ After class each day from 2:00-2:30 pm + by appointment
 
   - __Lecture 13:__ Housing policy + Causal inference (part ii)
   
-   - [slides](https://rawcdn.githack.com/ajdickinson/ec330-summer21/966db8ec55d93f12c801f30d1853c61e5428f7a2/slides/008-mw-causality/08-mw-causality.html)
+    - [slides](https://rawcdn.githack.com/ajdickinson/ec330-summer21/966db8ec55d93f12c801f30d1853c61e5428f7a2/slides/008-mw-causality/08-mw-causality.html)
 
   - __Lecture 14:__ Automobiles
   
